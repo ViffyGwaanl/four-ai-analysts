@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f4e9"><title>时间的合伙人 · 和巴菲特一起做决定</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="noise" aria-hidden="true"></div>
+<header><button id="home" class="brand" aria-label="返回首页"><span class="brand-icon">时</span><span>时间的合伙人<small>THE LONG VIEW</small></span></button><div class="header-note">一场关于生意、时间与选择的旅程</div><div class="header-actions"><button id="motion" class="quiet" aria-pressed="false">动效 · 开</button><button id="archive" class="quiet">历史档案 <span>↗</span></button></div></header>
+<main id="main">
+<section id="intro" class="screen intro">
+ <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> 1967 — 2011 · 十个真实决定</div><h1>和巴菲特一起<br>做<span class="accent">决定。</span></h1><p class="hero-description">站在当时的路口，先做你的选择。<br>再翻开股东信，看看他如何思考。<br>那些漂亮的决定，那些坦诚的错误。</p><button id="start" class="primary">开启我的时间旅程 <span>↗</span></button><div class="hero-meta"><span>10 道历史选择</span><i></i><span>约 6 分钟</span><i></i><span>无须金融知识</span></div><div class="mini-quote"><span>·</span><p>旅程提示：真正的考题，往往没有标准答案。<small>契合度只记录历史选择，不评判你的投资能力。</small></p></div></div>
+ <div class="world-space" aria-hidden="true"><div class="orbit-label label-one"><span>01 / 保险</span>让资本走得更远</div><div class="orbit-label label-two"><span>02 / 实业</span>拥有一门好生意</div><div class="world-badge"><b>44</b><span>年决策片段<br>一座时间小镇</span></div></div>
+ <div class="intro-bottom"><span>把时间拨回去，结果暂时留在未来。</span><span>基于伯克希尔致股东信 · 独立历史研究</span></div>
+</section>
+<section id="play" class="screen play" hidden>
+ <div class="scene-side"><div class="eyebrow" id="scene-tag"></div><div id="year" class="year">1967</div><h2 id="scene-title"></h2><div class="scene-caption"><span class="live-dot"></span><span id="scene-caption">决定尚未揭晓</span></div><div class="scene-counter"><span id="question-num">01</span><span> / 10<br><small>DECISION ARCHIVE</small></span></div></div>
+ <div class="decision-panel" id="decision-panel"><div class="panel-top"><span id="phase">当时的处境</span><span id="chapter">01 / 10</span></div><div id="question-content"><h3 id="question-title"></h3><p id="context"></p><div class="choice-heading">如果是你，会怎样选择？</div><div id="choices"></div><p class="choice-hint">选择后即揭晓 · 没有倒计时，慢慢想</p></div>
+ <div id="reveal" hidden aria-live="polite"><div id="match-badge" class="match-badge"></div><h3 id="actual"></h3><p id="why"></p><div class="letter"><span class="letter-label" id="letter-year"></span><blockquote id="quote"></blockquote><p id="source"></p></div><div class="lesson"><span>带走一个想法</span><p id="lesson"></p></div><button id="next" class="primary">下一站 <span>→</span></button></div></div>
+ <nav id="timeline" class="timeline" aria-label="旅程进度"></nav>
+</section>
+<section id="result" class="screen result" hidden><div class="result-top"><div class="eyebrow">旅程完成 · 留下你自己的判断</div><h1>相似的选择，<br>独立的<span class="accent">思考。</span></h1><p>你已经走过十个历史路口。契合不是胜负，<br>理解决定背后的条件，才是这次旅程的收获。</p><div class="result-actions"><button id="restart" class="primary">再走一次 <span>↻</span></button><button id="review" class="secondary">翻阅我的决定</button></div></div><div class="score-card"><div class="score-ring"><svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="84"/><circle id="score-arc" cx="100" cy="100" r="84"/></svg><div><strong id="score">0</strong><span>%</span><small>历史选择契合度</small></div></div><h3 id="score-title"></h3><p id="score-detail"></p><div class="score-foot">每题一致得 10 分，共 100 分。<br>包括历史上的错误决定，不衡量收益或能力。</div></div><div id="recap" class="recap" hidden></div></section>
+</main>
+<div id="world" aria-label="以保险、商店、工厂和铁路为主题的三维微缩小镇"><div id="webgl-fallback" hidden>时间小镇 · 3D 预览暂不可用，历史旅程仍可继续。</div></div>
+<footer><span>历史学习体验 · 不涉及当下股票买卖 · 不构成投资建议</span><span id="footer-state">先选择，再看历史</span></footer>
+<dialog id="archive-dialog"><div class="dialog-head"><div><div class="eyebrow">阅读说明</div><h2>每个决定，都有来处。</h2></div><button id="close-dialog" aria-label="关闭历史档案">×</button></div><p>十题来自提供的致股东信。决定年份与信件年份可能不同，揭晓时显示原文、信件年份及章节。引文每处不超过两句；题目处境、选项和中文解读由研究者整理。</p><div id="archive-list"></div><div class="archive-note">请先完成旅程，再在结尾逐题复盘。游戏只记录“是否与历史实际选择一致”，不能用于评价投资能力。2025 年股东信署名 Greg Abel，未作为巴菲特引文使用。</div></dialog>
+<script type="module" src="app.js"></script>
+</body></html>

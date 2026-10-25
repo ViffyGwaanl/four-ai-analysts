@@ -1,0 +1,31 @@
+{
+  "checks": [
+    "underwriting 2023–2025",
+    "underwriting H1",
+    "insurance_income 2023–2025",
+    "insurance_income H1",
+    "rail 2023–2025",
+    "rail H1",
+    "energy 2023–2025",
+    "energy H1",
+    "msr 2023–2025",
+    "msr H1",
+    "other 2023–2025",
+    "other H1",
+    "net 2023–2025",
+    "net H1",
+    "invest_gain 2023–2025",
+    "invest_gain H1",
+    "bank 2025/2026H1",
+    "consumer 2025/2026H1",
+    "industry 2025/2026H1",
+    "equity_buy H1",
+    "equity_sell H1",
+    "operating_cash H1",
+    "capex H1",
+    "acquisition H1",
+    "buyback_cash H1"
+  ],
+  "passed": true,
+  "method": "将本地原始HTML表的利润、行业和现金流行与结构化输入逐项核对；另有人工逐节核对历史数据。"
+}

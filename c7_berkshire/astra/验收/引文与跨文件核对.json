@@ -1,0 +1,82 @@
+[
+  {
+    "decision_year": 1967,
+    "letter_year": 1985,
+    "source": "材料/股东信/1985ltr.html · Shutdown of Textile Business",
+    "exact_quote_after_whitespace_normalization": true,
+    "workbook_matches_web": true,
+    "sentences": 1
+  },
+  {
+    "decision_year": 1972,
+    "letter_year": 2007,
+    "source": "材料/股东信/2007ltr.pdf · Businesses – The Great, the Good and the Gruesome，印刷页7",
+    "exact_quote_after_whitespace_normalization": true,
+    "workbook_matches_web": true,
+    "sentences": 1
+  },
+  {
+    "decision_year": 1983,
+    "letter_year": 1983,
+    "source": "材料/股东信/1983ltr.html · Nebraska Furniture Mart",
+    "exact_quote_after_whitespace_normalization": true,
+    "workbook_matches_web": true,
+    "sentences": 1
+  },
+  {
+    "decision_year": 1985,
+    "letter_year": 1985,
+    "source": "材料/股东信/1985ltr.html · Shutdown of Textile Business",
+    "exact_quote_after_whitespace_normalization": true,
+    "workbook_matches_web": true,
+    "sentences": 1
+  },
+  {
+    "decision_year": 1994,
+    "letter_year": 2022,
+    "source": "材料/股东信/2022ltr.pdf · The Secret Sauce，印刷页4",
+    "exact_quote_after_whitespace_normalization": true,
+    "workbook_matches_web": true,
+    "sentences": 2
+  },
+  {
+    "decision_year": 1995,
+    "letter_year": 1995,
+    "source": "材料/股东信/1995ltr.html · GEICO Corporation",
+    "exact_quote_after_whitespace_normalization": true,
+    "workbook_matches_web": true,
+    "sentences": 1
+  },
+  {
+    "decision_year": 1998,
+    "letter_year": 1998,
+    "source": "材料/股东信/1998ltr.pdf · General Re，印刷页9",
+    "exact_quote_after_whitespace_normalization": true,
+    "workbook_matches_web": true,
+    "sentences": 1
+  },
+  {
+    "decision_year": 2008,
+    "letter_year": 2008,
+    "source": "材料/股东信/2008ltr.pdf · Investments，印刷页16",
+    "exact_quote_after_whitespace_normalization": true,
+    "workbook_matches_web": true,
+    "sentences": 1
+  },
+  {
+    "decision_year": 2009,
+    "letter_year": 2021,
+    "source": "材料/股东信/2021ltr.pdf · BNSF 收购回顾，印刷页11",
+    "exact_quote_after_whitespace_normalization": true,
+    "workbook_matches_web": true,
+    "sentences": 2
+  },
+  {
+    "decision_year": 2011,
+    "letter_year": 2011,
+    "source": "材料/股东信/2011ltr.pdf · Share Repurchases，印刷页6",
+    "exact_quote_after_whitespace_normalization": true,
+    "workbook_matches_web": true,
+    "sentences": 2
+  }
+]

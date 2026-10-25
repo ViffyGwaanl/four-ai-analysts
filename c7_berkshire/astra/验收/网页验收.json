@@ -1,0 +1,12 @@
+{
+  "desktop": "1920×1080",
+  "mobile": "390×844",
+  "webgl": true,
+  "allCorrect": 100,
+  "allDifferent": 0,
+  "recapCount": 10,
+  "resume": true,
+  "reducedMotion": true,
+  "errors": [],
+  "externalRequests": []
+}

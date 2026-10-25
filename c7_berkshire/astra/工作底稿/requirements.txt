@@ -1,0 +1,5 @@
+xlsxwriter==3.3.0
+openpyxl==3.1.5
+python-docx==1.2.0
+beautifulsoup4==4.15.0
+lxml==6.1.3

@@ -1,0 +1,33 @@
+{
+  "xlsx_opened": true,
+  "sheets": [
+    "阅读指南",
+    "变化",
+    "利润",
+    "资本",
+    "股票组合",
+    "法定分部",
+    "现金流",
+    "对账",
+    "假设",
+    "变化明细",
+    "来源",
+    "历史决策",
+    "取数索引"
+  ],
+  "formulas_evaluated": 399,
+  "formula_errors": [],
+  "cached_results_match": true,
+  "balance_checks": "利润归母对账 / 行业组合 / 法定分部合计通过",
+  "assumption_test": {
+    "yield_change_before": -0.01,
+    "yield_change_after": -0.02,
+    "after_tax_before": -1155.0242400000002,
+    "after_tax_after": -2310.0484800000004,
+    "dashboard_updates": true
+  },
+  "docx_opened": true,
+  "docx_paragraphs": 65,
+  "docx_tables": 4,
+  "scope": "使用openpyxl/python-docx打开包；独立公式求值器复算全部公式，不声称已用Microsoft Office GUI或LibreOffice验证分页。"
+}

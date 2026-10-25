@@ -1,0 +1,161 @@
+{
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 7487,
+      "sha256": "2be7b3fb9047b1294bcbc96da9a32e90aa0947640e968c9c3b911bed0a79085c"
+    },
+    {
+      "file": "web/app.js",
+      "bytes": 15827,
+      "sha256": "ba9ba24f235e7cfffbcbcc5bdb107b3f2fecb774af24b136ddf6037f3345b121"
+    },
+    {
+      "file": "web/decisions.json",
+      "bytes": 12249,
+      "sha256": "a8feed077864a3acde10dfead27ff839839673e5873234671c0a5f6efcb35dba"
+    },
+    {
+      "file": "web/index.html",
+      "bytes": 5647,
+      "sha256": "d8f03d69cc5a739cdaa2a3ba238a264ce5a559a363ef28a1d5d1445744cfc6c5"
+    },
+    {
+      "file": "web/style.css",
+      "bytes": 15010,
+      "sha256": "602671b5b4abee24ff6e0bbe3fb207ff6c46568f42d914cdfbb9706f19923322"
+    },
+    {
+      "file": "web/vendor/LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "file": "web/vendor/three.module.js",
+      "bytes": 1314681,
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+    },
+    {
+      "file": "伯克希尔账本.xlsx",
+      "bytes": 74063,
+      "sha256": "fc29fb4da9dfb156768c49bfeb41d97986cd8c9801dce8c92d381c1e7fd2814a"
+    },
+    {
+      "file": "工作底稿/build_data.py",
+      "bytes": 2212,
+      "sha256": "f837b246904f80089d756606aac1bb001c7c4467e2c8524620e964ca212a824d"
+    },
+    {
+      "file": "工作底稿/build_memo.py",
+      "bytes": 17281,
+      "sha256": "caea7eb74f08e850a5c12b4425fa16604aa4cc3430676c3e31447a9cf18b2b2d"
+    },
+    {
+      "file": "工作底稿/build_workbook.py",
+      "bytes": 32060,
+      "sha256": "fd0cb5ed4555f359c253cd22ccf6dae4cde7ff002c55ba8836447885c6e3817b"
+    },
+    {
+      "file": "工作底稿/financial_data.json",
+      "bytes": 3466,
+      "sha256": "6042e68b2352b1ae5154ae4ead6087940c9e85b371e1465ab96f97ffbf4ed84c"
+    },
+    {
+      "file": "工作底稿/formula_manifest.json",
+      "bytes": 54211,
+      "sha256": "954139b72b392f7e575e792b26ddfd45ca0724e5eac15eb6eaf7c1d2c68def67"
+    },
+    {
+      "file": "工作底稿/requirements.txt",
+      "bytes": 88,
+      "sha256": "8d3f61ee32552d48ef421087c936feab1280812381b9086f349883ff825569f8"
+    },
+    {
+      "file": "工作底稿/source_index.json",
+      "bytes": 40023,
+      "sha256": "2c37befacb2336e96575d0d1787fe957c3a815ffe39f1cd57db9780f3743404d"
+    },
+    {
+      "file": "工作底稿/test_web.cjs",
+      "bytes": 3241,
+      "sha256": "79dd7fd5f6d46d6af996a02942e70f0be60fc83e1c3dde118949daf2f6eb4f9a"
+    },
+    {
+      "file": "工作底稿/validate_workbook.py",
+      "bytes": 3704,
+      "sha256": "1c6681a3a12e1a36c2cb1cacd01728b237563c5ff516b54b831843c43e23f77c"
+    },
+    {
+      "file": "工作底稿/历史决策出处.md",
+      "bytes": 5719,
+      "sha256": "64711bc33e3bb1eb5de36af8b3461f9a5c3392e54c334be243dd9f9c9eace177"
+    },
+    {
+      "file": "研究备忘录.docx",
+      "bytes": 45529,
+      "sha256": "7c586118167ee3d24c1adabf2be3ef0555a3703b189a7413a1221c1a1fd8701a"
+    },
+    {
+      "file": "验收/原始表核对.json",
+      "bytes": 758,
+      "sha256": "d82b07aeaa99473d75273218d9999752b585322455fb2e6d8be1732fe54e2940"
+    },
+    {
+      "file": "验收/备忘录阅读校样.html",
+      "bytes": 14152,
+      "sha256": "5b37c5617ead73e6847c48b0dd4d9bc581bb8c60aac538087932d731f430599e"
+    },
+    {
+      "file": "验收/引文与跨文件核对.json",
+      "bytes": 2504,
+      "sha256": "786e509a7c48a22c3ebe33f3a68dafb31f6b9efd554b122c022038c9a3ef9fa6"
+    },
+    {
+      "file": "验收/网页-手机揭晓.png",
+      "bytes": 303490,
+      "sha256": "90923c619a4ec01ed88b0580fa3696903d4620aaf100c845f321e9721869ce65"
+    },
+    {
+      "file": "验收/网页-手机题目.png",
+      "bytes": 290520,
+      "sha256": "9c0e11b86f70a5a6101952dd631100cbaec0eefe7a929e41329de96594f974c0"
+    },
+    {
+      "file": "验收/网页-手机首页.png",
+      "bytes": 278053,
+      "sha256": "07279693ff4619a93206050e89a834b7794bee6e70dfc747ffa3b1986baad122"
+    },
+    {
+      "file": "验收/网页-桌面揭晓.png",
+      "bytes": 934786,
+      "sha256": "34f61a2b9e3a043baf39f76b847cb6e6ac9ecf4b83b618c5af02656010364344"
+    },
+    {
+      "file": "验收/网页-桌面题目.png",
+      "bytes": 917736,
+      "sha256": "91f203be258bb2a4dae70887cddc0043fb32af81afc87fbe077e2d77f7962163"
+    },
+    {
+      "file": "验收/网页-桌面首页.png",
+      "bytes": 1003535,
+      "sha256": "c3a1dcb8a05ffafa8720110e2c99b1d457aed698fd8008548623f5fc306edc2f"
+    },
+    {
+      "file": "验收/网页-结果.png",
+      "bytes": 938556,
+      "sha256": "8fc779491334c72920c9940ad381dd897c839043cfb730fbfcdf29f6ae0672e3"
+    },
+    {
+      "file": "验收/网页验收.json",
+      "bytes": 217,
+      "sha256": "50e41a9d2d442092ca63cb16005a5a6226bfff1d217af2b7d39a3ff0c7f8584a"
+    },
+    {
+      "file": "验收/财务与文档验收.json",
+      "bytes": 874,
+      "sha256": "5048b3df1b07afaebec2de7dad865a79ca1bf4ecb125c17ccc05ae30fa1e4e15"
+    }
+  ],
+  "email_scan": [],
+  "note": "未使用公司标志、国旗、网址二维码或个人联系方式；所有浏览器资源本地化。"
+}
