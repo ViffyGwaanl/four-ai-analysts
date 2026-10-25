@@ -1,0 +1,63 @@
+{
+  "errors": [],
+  "formula_count": 104,
+  "formula_cache_mismatches": [],
+  "document_open": "python-docx + LibreOffice PDF conversion",
+  "report_pages": 14,
+  "slides": 7,
+  "presentation_open": "python-pptx + LibreOffice PDF conversion",
+  "excel_open": "openpyxl + LibreOffice Calc actual recalculation",
+  "charts": 2,
+  "web_workbook_hash_match": true,
+  "web_numbers_equal_excel": true,
+  "mutation_test": {
+    "inputs": {
+      "A01": 1.1,
+      "A11": 1.3
+    },
+    "checks": {
+      "K14": {
+        "expected": 1045,
+        "actual": 1045,
+        "pass": true
+      },
+      "K15": {
+        "expected": 836,
+        "actual": 836,
+        "pass": true
+      },
+      "K16": {
+        "expected": 1254,
+        "actual": 1254,
+        "pass": true
+      },
+      "K20": {
+        "expected": 9.6798,
+        "actual": 9.6798,
+        "pass": true
+      },
+      "K22": {
+        "expected": 871.182,
+        "actual": 871.182,
+        "pass": true
+      },
+      "renewables": {
+        "expected": 418,
+        "actual": 418,
+        "pass": true
+      },
+      "summary": {
+        "expected": 1045,
+        "actual": 1045,
+        "pass": true
+      }
+    },
+    "main_workbook_unchanged": true
+  },
+  "content_checks": {
+    "email_found": false,
+    "flag_characters_found": false,
+    "screenshots_nonblank": true,
+    "final_workbook_hash_match": true
+  }
+}

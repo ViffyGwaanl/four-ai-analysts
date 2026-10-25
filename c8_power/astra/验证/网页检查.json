@@ -1,0 +1,191 @@
+{
+  "errors": [],
+  "external_requests": [],
+  "checks": [
+    {
+      "desktop_initial": {
+        "scenario": "base",
+        "stage": 0,
+        "progress": 0,
+        "webgl": true,
+        "revision": "170",
+        "flows": [
+          {
+            "key": "coal",
+            "name": "煤电",
+            "color": "#A58D76",
+            "historical": 124.5,
+            "base": 171,
+            "low": 136.79999999999998,
+            "high": 205.2,
+            "share2024": 0.3,
+            "share2030": 0.18
+          },
+          {
+            "key": "gas",
+            "name": "燃气",
+            "color": "#DF9E4B",
+            "historical": 107.9,
+            "base": 247,
+            "low": 197.6,
+            "high": 296.40000000000003,
+            "share2024": 0.26,
+            "share2030": 0.26
+          },
+          {
+            "key": "nuclear",
+            "name": "核裂变",
+            "color": "#497CE8",
+            "historical": 62.25,
+            "base": 133,
+            "low": 106.4,
+            "high": 159.60000000000002,
+            "share2024": 0.15,
+            "share2030": 0.14
+          },
+          {
+            "key": "renewables",
+            "name": "可再生能源",
+            "color": "#26A88B",
+            "historical": 112.05000000000001,
+            "base": 380,
+            "low": 304,
+            "high": 456,
+            "share2024": 0.27,
+            "share2030": 0.4
+          },
+          {
+            "key": "other",
+            "name": "其他",
+            "color": "#A6A7C6",
+            "historical": 8.3,
+            "base": 19.000000000000018,
+            "low": 15.200000000000014,
+            "high": 22.80000000000002,
+            "share2024": 0.02,
+            "share2030": 0.020000000000000018
+          },
+          {
+            "key": "fusion",
+            "name": "聚变",
+            "color": "#CA78D7",
+            "historical": 0,
+            "base": 0,
+            "low": 0,
+            "high": 0,
+            "share2024": 0,
+            "share2030": 0
+          }
+        ],
+        "total": 950,
+        "paused": false,
+        "frame": 9
+      }
+    },
+    {
+      "exploded": {
+        "scenario": "base",
+        "stage": 3,
+        "progress": 2.9727485892606786,
+        "webgl": true,
+        "revision": "170",
+        "flows": [
+          {
+            "key": "coal",
+            "name": "煤电",
+            "color": "#A58D76",
+            "historical": 124.5,
+            "base": 171,
+            "low": 136.79999999999998,
+            "high": 205.2,
+            "share2024": 0.3,
+            "share2030": 0.18
+          },
+          {
+            "key": "gas",
+            "name": "燃气",
+            "color": "#DF9E4B",
+            "historical": 107.9,
+            "base": 247,
+            "low": 197.6,
+            "high": 296.40000000000003,
+            "share2024": 0.26,
+            "share2030": 0.26
+          },
+          {
+            "key": "nuclear",
+            "name": "核裂变",
+            "color": "#497CE8",
+            "historical": 62.25,
+            "base": 133,
+            "low": 106.4,
+            "high": 159.60000000000002,
+            "share2024": 0.15,
+            "share2030": 0.14
+          },
+          {
+            "key": "renewables",
+            "name": "可再生能源",
+            "color": "#26A88B",
+            "historical": 112.05000000000001,
+            "base": 380,
+            "low": 304,
+            "high": 456,
+            "share2024": 0.27,
+            "share2030": 0.4
+          },
+          {
+            "key": "other",
+            "name": "其他",
+            "color": "#A6A7C6",
+            "historical": 8.3,
+            "base": 19.000000000000018,
+            "low": 15.200000000000014,
+            "high": 22.80000000000002,
+            "share2024": 0.02,
+            "share2030": 0.020000000000000018
+          },
+          {
+            "key": "fusion",
+            "name": "聚变",
+            "color": "#CA78D7",
+            "historical": 0,
+            "base": 0,
+            "low": 0,
+            "high": 0,
+            "share2024": 0,
+            "share2030": 0
+          }
+        ],
+        "total": 950,
+        "paused": false,
+        "frame": 26
+      }
+    },
+    {
+      "scenario": "historical",
+      "total": 415,
+      "conservation": true
+    },
+    {
+      "scenario": "low",
+      "total": 760,
+      "conservation": true
+    },
+    {
+      "scenario": "high",
+      "total": 1140,
+      "conservation": true
+    },
+    {
+      "scenario": "base",
+      "total": 950,
+      "conservation": true
+    },
+    {
+      "mobile_390x844": "no horizontal overflow",
+      "version": "170",
+      "webgl": true
+    }
+  ]
+}
