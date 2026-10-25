@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>拆开的火箭 · SpaceX × 特斯拉合并备考</title>
+<meta name="description" content="把 SpaceX 与特斯拉的合并备考做成一枚可以逐级分离的火箭：每一级对应一块业务，高度按 LTM 营收占比；最后一屏为合并后的整体数字与换股比例情景。研究与展示用，不构成投资建议。">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="scene" aria-label="3D 动画：一枚由五级组成的通用造型火箭，随页面滚动逐级分离；每一级代表合并后公司的一块业务"></canvas>
+<div class="vignette"></div>
+<div class="scrim"></div>
+<div class="letterbox top"></div><div class="letterbox bottom"></div>
+
+<header class="topbar">
+  <div class="brand"><i></i><span>拆开的火箭 · SpaceX × 特斯拉合并备考</span></div>
+  <div class="meta" id="meta">研究与展示用，不构成投资建议</div>
+</header>
+
+<nav class="rail" id="rail" aria-label="章节导航"></nav>
+
+<div class="fallback-note" id="fallback">
+  <div class="card"><h2>当前环境未能启用 WebGL</h2><p>3D 火箭无法显示，以下为同样内容的文字版（数字与合并模型一致）。</p></div>
+</div>
+
+<main id="story">
+  <section class="chapter" data-ch="0"><h2 class="sr">起飞前：合并后的公司</h2></section>
+  <section class="chapter" data-ch="1"><h2 class="sr">点火升空：五级业务</h2></section>
+  <section class="chapter" data-ch="2"><h2 class="sr">第一级分离</h2></section>
+  <section class="chapter" data-ch="3"><h2 class="sr">第二级分离</h2></section>
+  <section class="chapter" data-ch="4"><h2 class="sr">第三级分离</h2></section>
+  <section class="chapter" data-ch="5"><h2 class="sr">第四级分离</h2></section>
+  <section class="chapter" data-ch="6"><h2 class="sr">第五级：整流罩分离</h2></section>
+  <section class="chapter" data-ch="7"><h2 class="sr">合并后的整体与换股比例情景</h2></section>
+</main>
+
+<!-- overlays (filled by main.js from data.js, which is exported from 合并模型.xlsx) -->
+<div class="overlay hero" id="ov-hero" data-ch="0"></div>
+<div class="overlay caption" id="ov-lift" data-ch="1"></div>
+<div id="ov-stages"></div>
+<div class="overlay final" id="ov-final" data-ch="7"></div>
+
+<svg id="leader" aria-hidden="true"><line id="leader-line" x1="0" y1="0" x2="0" y2="0" opacity="0"/><circle id="leader-dot" cx="0" cy="0" r="4.5" opacity="0"/></svg>
+<div id="labels" aria-hidden="true"></div>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<footer class="sources">
+  <span class="l" id="src-line">数据来源：SpaceX 招股书、二季报、三季度业绩公告；特斯拉年报、三季报、三季度业绩公告、股东大会委托书；股价：Nasdaq.com 历史行情（2026-10-22 访问）</span>
+  <span class="r">研究与展示用 · 非投资建议</span>
+</footer>
+
+<div class="loader" id="loader"><div class="c"><div class="ring"></div><div>正在组装火箭…</div></div></div>
+
+<script type="module" src="main.js"></script>
+<script>
+  // 兜底：若模块脚本未能加载（网络中断、浏览器过旧等），12 秒后给出提示，而不是一直停在加载页
+  setTimeout(function () {
+    if (!window.__appStarted) {
+      var l = document.getElementById('loader');
+      if (l) { var c = l.querySelector('.c'); if (c) c.innerHTML = '<div>页面资源加载失败或浏览器不支持 ES 模块。<br>请通过本地 http 服务打开 index.html 并刷新，或使用较新版本的浏览器。</div>'; }
+    }
+  }, 12000);
+</script>
+<script nomodule>document.body.classList.add('no-webgl');document.getElementById('loader').className='loader done';</script>
+</body>
+</html>

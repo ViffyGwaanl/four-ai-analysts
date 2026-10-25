@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#eaf6ff">
+<title>把两家公司，装进一枚火箭｜SpaceX × Tesla 合并备考</title>
+<meta name="description" content="SpaceX 与 Tesla 合并备考的 3D 火箭拆解：六个业务逐级分离，最后汇总合并后的收入、利润、现金与换股比例情景。">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="sky-wash" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="sun-flare" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark"></span><span>ORBITAL / MERGER</span></div>
+    <div class="top-meta"><span>PRO FORMA 2026</span><span class="sep"></span><span id="top-progress">00 / 06</span></div>
+  </header>
+
+  <section id="intro" class="intro" aria-label="开场">
+    <div class="intro-inner">
+      <div class="eyebrow">SPACEX × TESLA · 合并备考</div>
+      <h1>把两家公司，<br><em>装进一枚火箭。</em></h1>
+      <p class="intro-sub">六个业务，一级一级拆开。滚动，点火，分离。</p>
+      <button id="start" class="start" type="button">滚动点火 <span>↓</span></button>
+      <div class="intro-meta">2026 · 备考 LTM · 美元</div>
+    </div>
+    <div class="intro-rail" aria-hidden="true"><span>01</span><i></i><span>06</span></div>
+  </section>
+
+  <aside id="panel" class="panel" aria-live="polite">
+    <div class="panel-head">
+      <span id="panel-index" class="panel-index">00</span>
+      <span class="panel-total">/ 06</span>
+      <span id="panel-tag" class="panel-tag">OVERVIEW</span>
+    </div>
+    <h2 id="panel-name">合并后的公司</h2>
+    <p id="panel-desc" class="panel-desc">把两家公司当成一家看：六个业务、一枚火箭、一张备考报表。滚动，让每一级依次分离。</p>
+    <div class="panel-stats">
+      <div class="stat"><span>LTM 收入</span><strong id="panel-rev">1,347 亿</strong><small>美元</small></div>
+      <div class="stat"><span>收入占比</span><strong id="panel-share">100%</strong><small>合并口径</small></div>
+      <div class="stat"><span>贡献利润</span><strong id="panel-profit">26 亿</strong><small>美元</small></div>
+      <div class="stat"><span>利润率</span><strong id="panel-margin">1.9%</strong><small>经营口径</small></div>
+    </div>
+    <div class="panel-bar" aria-hidden="true"><i id="panel-bar-fill"></i></div>
+    <div class="panel-foot"><span id="panel-metric">6 个业务 / 1 枚火箭</span><span id="panel-growth">+19.3% vs FY25</span></div>
+  </aside>
+
+  <div id="stage-mark" class="stage-mark" aria-hidden="true">
+    <span id="mark-index" class="num">00</span>
+    <span id="mark-name" class="name">MERGED / PRO FORMA</span>
+    <span class="line"></span>
+  </div>
+
+  <nav id="rail" class="rail" aria-label="业务层级">
+    <button class="rail-item" data-i="0" type="button"><span class="dot"></span><span class="label">汽车</span></button>
+    <button class="rail-item" data-i="1" type="button"><span class="dot"></span><span class="label">服务</span></button>
+    <button class="rail-item" data-i="2" type="button"><span class="dot"></span><span class="label">能源</span></button>
+    <button class="rail-item" data-i="3" type="button"><span class="dot"></span><span class="label">Connectivity</span></button>
+    <button class="rail-item" data-i="4" type="button"><span class="dot"></span><span class="label">SI</span></button>
+    <button class="rail-item" data-i="5" type="button"><span class="dot"></span><span class="label">Space</span></button>
+    <button class="rail-item rail-final" data-i="6" type="button"><span class="dot"></span><span class="label">合并</span></button>
+  </nav>
+
+  <div id="hint" class="hint"><span class="mouse"><i></i></span><span>滚动，逐级分离</span></div>
+
+  <section id="final" class="final" aria-hidden="true" aria-label="合并后总览">
+    <div class="final-panel">
+      <div class="final-top"><span class="eyebrow">FINAL ASSEMBLY · 合并后</span><span class="final-close">向上滚动返回</span></div>
+      <h2>一枚火箭，六块业务，<br><span>一张 1,347 亿美元的收入表。</span></h2>
+      <p class="final-map">火箭自下而上：汽车 · 服务 · 能源 · Connectivity · SI · Space</p>
+      <div class="final-kpis">
+        <div class="fk"><span>LTM 收入</span><strong>1,347 亿</strong><small>美元 · +19.3%</small></div>
+        <div class="fk"><span>调整后 EBITDA</span><strong>297 亿</strong><small>利润率 22.1%</small></div>
+        <div class="fk"><span>净现金</span><strong>869 亿</strong><small>有息负债 484 亿</small></div>
+        <div class="fk"><span>自由现金流</span><strong class="neg">-359 亿</strong><small>capex 699 亿</small></div>
+      </div>
+      <div class="final-split">
+        <div class="final-left">
+          <h3>换股比例情景 <span>20% 溢价</span></h3>
+          <div id="scenario-bars" class="scenario-bars"></div>
+          <p class="scenario-note">横条 = Tesla 原股东在合并后公司的持股比例；金色为基准（A 市值法 + 20% 溢价）。</p>
+        </div>
+        <div class="final-right">
+          <div class="base-ratio"><span>基准换股比例</span><strong>2.911 : 1</strong><small>SpaceX 股 / Tesla 股</small></div>
+          <div class="own-grid">
+            <div><span>Tesla 原股东</span><b>45.9%</b></div>
+            <div><span>SpaceX 原股东</span><b>54.1%</b></div>
+            <div><span>马斯克经济</span><b>33.7%</b></div>
+            <div><span>马斯克投票</span><b>75.3%</b></div>
+          </div>
+          <button id="reset" class="reset" type="button">重新点火 ↑</button>
+        </div>
+      </div>
+      <div class="final-foot">备考 LTM = 2025Q4–2026Q3；历史报表相加并抵消关联交易，不含购买会计与协同效应。来源：公司披露；市场数据 stockanalysis.com，2026-10-21 收盘。非投资建议。</div>
+    </div>
+  </section>
+
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-label">正在装配火箭</div>
+      <div class="loader-bar"><i></i></div>
+    </div>
+  </div>
+
+  <div id="fallback" class="fallback" hidden>
+    <div class="fallback-inner">
+      <div class="eyebrow">STATIC VIEW</div>
+      <h2>这枚火箭需要 WebGL 才能点火。</h2>
+      <p>当前浏览器没有可用的 WebGL。核心数字：备考 LTM 收入 1,347 亿美元、调整后 EBITDA 297 亿美元、净现金 869 亿美元、自由现金流 -359 亿美元；基准换股比例 2.911 股 SpaceX / 1 股 Tesla，Tesla 原股东 45.9%，马斯克经济权益 33.7%、投票权 75.3%。</p>
+      <p class="fallback-src">来源：公司披露；市场数据 stockanalysis.com，2026-10-21 收盘。</p>
+    </div>
+  </div>
+</div>
+
+<div id="scroll-space" aria-hidden="true"></div>
+
+<script src="data.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

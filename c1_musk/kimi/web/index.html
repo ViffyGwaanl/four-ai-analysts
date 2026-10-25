@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#eaf6ff">
+  <meta name="description" content="SpaceX 与 Tesla 合并财务分析：可拆解的五级业务火箭与换股情景。">
+  <title>ORBITAL / 合并后的公司</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="scene" aria-label="可随滚动拆解的五级业务火箭三维场景"></canvas>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="brand"><span class="brand-orbit"></span><span>ORBITAL</span><span class="brand-divider">/</span><span class="brand-sub">MERGER STUDY</span></div>
+    <div class="asof">FINANCIAL MODEL <span>·</span> 2026.10.22</div>
+  </header>
+  <div class="scene-caption" aria-hidden="true"><span class="caption-line"></span><span>GENERIC ROCKET / NO CORPORATE MARKS</span></div>
+  <div class="progress-rail" aria-label="页面进度">
+    <button class="rail-dot is-active" data-target="intro" aria-label="回到总览"></button>
+    <button class="rail-dot" data-target="stage-Automotive" aria-label="汽车业务"></button>
+    <button class="rail-dot" data-target="stage-Energy" aria-label="能源业务"></button>
+    <button class="rail-dot" data-target="stage-Connectivity" aria-label="连接业务"></button>
+    <button class="rail-dot" data-target="stage-SI" aria-label="超级智能业务"></button>
+    <button class="rail-dot" data-target="stage-Space" aria-label="航天业务"></button>
+    <button class="rail-dot" data-target="final" aria-label="整体数字与换股情景"></button>
+  </div>
+  <div class="scroll-note"><span class="scroll-wheel"></span><span>滚动拆解</span></div>
+  <div class="scene-status" id="scene-status">ASSEMBLED / 总装</div>
+
+  <main id="scroll-content">
+    <section class="panel intro" id="intro" data-index="0">
+      <div class="intro-copy">
+        <p class="eyebrow">A COMPANY IN FIVE STAGES</p>
+        <h1>一枚火箭，<br><em>五块业务。</em></h1>
+        <p class="lede">把 SpaceX 与 Tesla 当成一家公司。<br>滚动，看合并后的收入结构如何逐级分离。</p>
+        <div class="hero-metrics">
+          <div><strong id="hero-revenue">—</strong><span>LTM 营收</span></div>
+          <div><strong id="hero-fcf">—</strong><span>LTM 自由现金流</span></div>
+        </div>
+        <p class="micro-note">LTM = 2025Q4–2026Q3  ·  未抵销汇总  ·  US$</p>
+      </div>
+      <div class="intro-side">
+        <div class="orbit-ring"></div>
+        <p>每一级的高度<br><strong>按 LTM 收入占比</strong></p>
+        <span>从汽车到航天，业务体量成为结构。</span>
+      </div>
+      <div class="intro-bottom"><span>01 / 07</span><span>向下滚动开始拆解 <b>↓</b></span></div>
+    </section>
+
+    <section class="panel stage-panel" id="stage-Automotive" data-stage="Automotive" data-index="1">
+      <div class="stage-copy"><p class="eyebrow">01 / REVENUE ENGINE</p><h2>汽车，<br><em>压舱石。</em></h2><p class="stage-desc" id="desc-Automotive"></p><div class="stage-number"><span>LTM 收入</span><strong id="revenue-Automotive">—</strong></div><div class="stage-facts"><div><span>收入占比</span><b id="mix-Automotive">—</b></div><div><span>可比毛利</span><b id="gross-Automotive">—</b></div></div><p class="stage-source" id="source-Automotive"></p></div>
+      <div class="stage-tag">AUTOMOTIVE <span>01</span></div>
+    </section>
+    <section class="panel stage-panel" id="stage-Energy" data-stage="Energy" data-index="2">
+      <div class="stage-copy"><p class="eyebrow">02 / POWER LAYER</p><h2>能源，<br><em>让算力落地。</em></h2><p class="stage-desc" id="desc-Energy"></p><div class="stage-number"><span>LTM 收入</span><strong id="revenue-Energy">—</strong></div><div class="stage-facts"><div><span>收入占比</span><b id="mix-Energy">—</b></div><div><span>可比毛利</span><b id="gross-Energy">—</b></div></div><p class="stage-source" id="source-Energy"></p></div>
+      <div class="stage-tag">ENERGY <span>02</span></div>
+    </section>
+    <section class="panel stage-panel" id="stage-Connectivity" data-stage="Connectivity" data-index="3">
+      <div class="stage-copy"><p class="eyebrow">03 / NETWORK EFFECT</p><h2>连接，<br><em>利润的支点。</em></h2><p class="stage-desc" id="desc-Connectivity"></p><div class="stage-number"><span>LTM 收入</span><strong id="revenue-Connectivity">—</strong></div><div class="stage-facts"><div><span>收入占比</span><b id="mix-Connectivity">—</b></div><div><span>可比毛利</span><b id="gross-Connectivity">—</b></div><div><span>经营利润</span><b id="op-Connectivity">—</b></div></div><p class="stage-source" id="source-Connectivity"></p></div>
+      <div class="stage-tag">CONNECTIVITY <span>03</span></div>
+    </section>
+    <section class="panel stage-panel" id="stage-SI" data-stage="SI" data-index="4">
+      <div class="stage-copy"><p class="eyebrow">04 / COMPUTE FRONTIER</p><h2>超级智能，<br><em>增长与投入。</em></h2><p class="stage-desc" id="desc-SI"></p><div class="stage-number"><span>LTM 收入</span><strong id="revenue-SI">—</strong></div><div class="stage-facts"><div><span>收入占比</span><b id="mix-SI">—</b></div><div><span>可比毛利</span><b id="gross-SI">—</b></div><div><span>经营利润</span><b id="op-SI">—</b></div></div><p class="stage-source" id="source-SI"></p></div>
+      <div class="stage-tag">SUPER INTELLIGENCE <span>04</span></div>
+    </section>
+    <section class="panel stage-panel" id="stage-Space" data-stage="Space" data-index="5">
+      <div class="stage-copy"><p class="eyebrow">05 / LAUNCH PAD</p><h2>航天，<br><em>向上打开边界。</em></h2><p class="stage-desc" id="desc-Space"></p><div class="stage-number"><span>LTM 收入</span><strong id="revenue-Space">—</strong></div><div class="stage-facts"><div><span>收入占比</span><b id="mix-Space">—</b></div><div><span>可比毛利</span><b id="gross-Space">—</b></div><div><span>经营利润</span><b id="op-Space">—</b></div></div><p class="stage-source" id="source-Space"></p></div>
+      <div class="stage-tag">SPACE <span>05</span></div>
+    </section>
+
+    <section class="panel final" id="final" data-index="6">
+      <div class="final-head"><p class="eyebrow">06 / THE COMBINED COMPANY</p><h2>拆开之后，<br><em>看见整体。</em></h2><p>五级业务重新回到同一张财务地图。<br>整体数字为未抵销汇总，换股为相对定价情景。</p></div>
+      <div class="overall-grid">
+        <div class="overall-card"><span>LTM 营收</span><strong id="final-revenue">—</strong></div>
+        <div class="overall-card"><span>LTM 毛利 / 毛利率</span><strong id="final-gross">—</strong></div>
+        <div class="overall-card"><span>LTM 经营利润</span><strong id="final-op">—</strong></div>
+        <div class="overall-card"><span>LTM 自由现金流</span><strong id="final-fcf">—</strong></div>
+        <div class="overall-card"><span>现金＋短期投资</span><strong id="final-cash">—</strong></div>
+        <div class="overall-card"><span>有息负债 / 净现金</span><strong id="final-debt">—</strong></div>
+      </div>
+      <div class="scenario-head"><span>换股情景 / 0% 溢价</span><small>每 1 股 Tesla 换取 SpaceX 股数</small></div>
+      <div class="scenario-grid" id="scenario-grid"></div>
+      <p class="final-note">Musk 比例为静态经济持股，不是投票权预测。收入倍数 6.0x / 2.0x、EBITDA 共同 20.0x 为假设；VWAP* 为分析计算。未扣交叉持股、协同、税务及购买法影响。</p>
+      <div class="final-sources">来源：SpaceX / Tesla 披露文件；Yahoo Finance Chart API（2026-10-22 访问，定价日 2026-10-21）。网页仅展示来源名称与日期，不放外部链接。</div>
+      <div class="intro-bottom"><span>07 / 07</span><button id="restart">重新回到总装 ↑</button></div>
+    </section>
+  </main>
+  <div class="fallback" id="fallback" hidden><h2>当前设备使用简化视图</h2><p>三维场景不可用，但所有业务数据与换股情景仍可查看。</p></div>
+  <noscript><div class="noscript">请启用 JavaScript 以查看本地三维火箭。数据来源：SpaceX / Tesla 披露文件及 Yahoo Finance，2026-10-22。</div></noscript>
+  <script src="vendor/three.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
