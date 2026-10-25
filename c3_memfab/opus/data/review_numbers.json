@@ -1,0 +1,128 @@
+{
+ "writedown_total": 1.5541,
+ "net_interest_total": -0.4715000000000001,
+ "interest_paid_q1_q12": 1.5588,
+ "tax_total": 33.1103,
+ "hbm_rev_total": 152.8512,
+ "hbm_cost_total": 16.040249850000002,
+ "hbm_gp_total": 136.81095015,
+ "gp_total": 230.12109999999998,
+ "rev_total": 318.1111,
+ "expansion_capex": 19.8,
+ "unmet_std_q14_16": 494.62999999999994,
+ "unmet_std_value": 47.57031599999999,
+ "phases": {
+  "下行（Q1-Q4）": {
+   "rev": 12.894,
+   "hbm": 0.2688,
+   "ni": -9.2058,
+   "gm": -0.1409182565534357,
+   "capex": 6.0,
+   "ocf": -4.2698,
+   "price_start": 0.8,
+   "price_end": 0.53,
+   "cash_end": 3.7302,
+   "debt_end": 10.0,
+   "eq_end": 25.7542,
+   "inv_end": 333.0
+  },
+  "复苏与布局（Q5-Q8）": {
+   "rev": 25.424400000000002,
+   "hbm": 5.136,
+   "ni": 2.3611,
+   "gm": 0.30776340837935207,
+   "capex": 17.4,
+   "ocf": 9.960799999999999,
+   "price_start": 0.6,
+   "price_end": 0.92,
+   "cash_end": 1.791,
+   "debt_end": 15.5,
+   "eq_end": 28.1152,
+   "inv_end": 337.0
+  },
+  "加速（Q9-Q12）": {
+   "rev": 64.5024,
+   "hbm": 29.5104,
+   "ni": 28.7218,
+   "gm": 0.599098638190207,
+   "capex": 14.399999999999999,
+   "ocf": 43.4558,
+   "price_start": 1.0,
+   "price_end": 1.28,
+   "cash_end": 15.3468,
+   "debt_end": 0.0,
+   "eq_end": 56.837,
+   "inv_end": 111.38
+  },
+  "超级周期（Q13-Q16）": {
+   "rev": 215.2903,
+   "hbm": 117.936,
+   "ni": 155.8052,
+   "gm": 0.861488418196268,
+   "capex": 6.0,
+   "ocf": 172.4755,
+   "price_start": 1.7,
+   "price_end": 4.55,
+   "cash_end": 181.8223,
+   "debt_end": 0.0,
+   "eq_end": 212.6423,
+   "inv_end": 0.0
+  }
+ },
+ "debt_limit_at_decision": [
+  20.976,
+  18.912,
+  17.77,
+  16.398,
+  15.453,
+  15.01,
+  15.022,
+  15.574,
+  16.869,
+  19.149,
+  22.124,
+  26.663,
+  34.102,
+  46.547,
+  66.578,
+  94.149
+ ],
+ "redo": {
+  "R0 只做：Q1满开工": {
+   "final_equity": 214.94334595595157,
+   "delta": 2.3010005697470888,
+   "min_cash": 1.5406262716903933,
+   "em_peak": 0.0,
+   "max_debt": 16.8,
+   "new_borrow_violations": [],
+   "cum_interest": 0.0
+  },
+  "R1 Q1满开工+Q1预借14.9": {
+   "final_equity": 214.30220818795706,
+   "delta": 1.6598628017525812,
+   "min_cash": 6.436949073074643,
+   "em_peak": 0.0,
+   "max_debt": 20.9,
+   "new_borrow_violations": [],
+   "cum_interest": 0.0
+  },
+  "R2 R1+Q5-Q7每季多扩1.5": {
+   "final_equity": 225.98062670268882,
+   "delta": 13.338281316484341,
+   "min_cash": 1.873646598194644,
+   "em_peak": 0.0,
+   "max_debt": 20.9,
+   "new_borrow_violations": [],
+   "cum_interest": 0.0
+  },
+  "R3 R2+Q11/Q12每季多扩3.6": {
+   "final_equity": 229.70132885269368,
+   "delta": 17.058983466489195,
+   "min_cash": 1.873646598194644,
+   "em_peak": 0.0,
+   "max_debt": 20.9,
+   "new_borrow_violations": [],
+   "cum_interest": 0.0
+  }
+ }
+}

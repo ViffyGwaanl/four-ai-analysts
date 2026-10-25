@@ -1,0 +1,62 @@
+{
+ "quarter_to_decide": 1,
+ "quarters_total": 16,
+ "ended": false,
+ "bankrupt": false,
+ "balance_sheet_now": {
+  "cash": 10.0,
+  "inventory": 0.96,
+  "ppe_net": 30.0,
+  "total_assets": 40.96,
+  "debt": 6.0,
+  "emergency_debt": 0.0,
+  "equity": 34.96,
+  "inventory_kwafers": 60.0,
+  "capacity_kwafers": 300.0
+ },
+ "hbm": {
+  "rnd_cumulative": 0.0,
+  "rnd_needed": 3.0,
+  "qualified_from_quarter": null
+ },
+ "capacity_pipeline": [],
+ "debt_limit_now": 20.976,
+ "history": [],
+ "decision_bounds": {
+  "utilization": [
+   0.4,
+   1.0,
+   "开工率，0.40 到 1.00"
+  ],
+  "sell_fraction": [
+   0.0,
+   1.0,
+   "本季可售库存（期初库存加本季产出）里，拿出多少比例去卖，0 到 1；实际卖出量不会超过市场需求"
+  ],
+  "capex": [
+   0.0,
+   15.0,
+   "本季资本开支（十亿美元）。每季先要 15 亿美元维持现有产能，超出部分 4 个季度后形成新产能，每 1.2 亿美元增加 1 千片/季"
+  ],
+  "hbm_rnd": [
+   0.0,
+   3.0,
+   "本季额外投入的 HBM 研发（十亿美元），累计满 30 亿美元后再过 2 个季度才能量产 HBM"
+  ],
+  "hbm_share": [
+   0.0,
+   0.6,
+   "量产 HBM 之后，产能里划给 HBM 的比例，0 到 0.6"
+  ],
+  "borrow": [
+   -20.0,
+   10.0,
+   "本季新增借款（正数）或还款（负数），十亿美元"
+  ]
+ },
+ "signals": {
+  "last_quarter_price_index": 1.0,
+  "news": "游戏开始。行业刚经历一轮高景气，最近一个季度价格开始松动，客户下单变得谨慎。",
+  "consensus": "分析师一致预期：本季合约价下跌约 15%～25%。"
+ }
+}

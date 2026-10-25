@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>内存厂 16 季经营沙盘 · 剖开的工厂</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./vendor/three/build/three.module.min.js",
+        "three/addons/": "./vendor/three/examples/jsm/"
+      }
+    }
+  </script>
+  <script>
+    /* 若脚本因本地服务器偶发断连而加载失败：自动刷新一次（仅一次） */
+    window.__memfabRetry = function () {
+      try {
+        if (sessionStorage.getItem('memfab-retry') === '1') return false;
+        sessionStorage.setItem('memfab-retry', '1');
+      } catch (e) { return false; }
+      setTimeout(function () { location.reload(); }, 250);
+      return true;
+    };
+  </script>
+  <script src="data/game-data.js"></script>
+</head>
+<body>
+  <canvas id="scene" aria-label="内存厂剖开模型（三维）"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div id="labels" class="labels"></div>
+
+  <header id="brand" class="panel brand">
+    <h1 id="title">内存厂 16 季经营沙盘</h1>
+    <p class="subtitle">剖开的工厂 · 数字来自经营模拟引擎导出</p>
+  </header>
+
+  <section id="quarterCard" class="panel quarter" aria-live="polite">
+    <div class="q-big"><span id="qLabel" class="q-cur">Q1</span><span class="q-of">/ <span id="qTotal">16</span></span></div>
+    <div class="q-text">
+      <h2 id="qTitle">—</h2>
+      <p id="qEvent" class="q-event">—</p>
+    </div>
+    <button id="noteToggle" class="note-toggle" type="button" aria-expanded="false" aria-controls="notePanel">
+      <span>本季决策笔记</span>
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div id="notePanel" class="note" hidden><p id="noteText"></p></div>
+  </section>
+
+  <nav id="zoneNav" class="panel zones" aria-label="视角切换"></nav>
+
+  <aside id="kpiPanel" class="panel kpis" aria-label="本季经营数据">
+    <button id="drawerBtn" class="kpi-head" type="button" aria-expanded="false">
+      <span class="kh-title">本季经营数据</span>
+      <span id="kpiQ" class="kh-q">Q1</span>
+      <span id="kpiMini" class="kh-mini"></span>
+      <svg class="kh-chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="kpi-body">
+      <div id="kpiGroups"></div>
+      <div class="chart-card">
+        <div class="chart-title"><span>股东权益 · 现金 · 负债</span><small id="chartSub">十亿美元 · Q1–Q16</small></div>
+        <div class="chart-wrap">
+          <canvas id="chart" aria-label="股东权益、现金、负债走势图"></canvas>
+          <div id="chartTip" class="chart-tip" hidden></div>
+        </div>
+        <div id="chartLegend" class="chart-legend"></div>
+      </div>
+    </div>
+  </aside>
+
+  <footer id="timeline" class="panel timeline">
+    <button id="playBtn" class="tl-play" type="button" data-mode="paused" aria-label="播放">
+      <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>
+      <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="5.5" width="4" height="13" rx="1.2" fill="currentColor"/><rect x="13.5" y="5.5" width="4" height="13" rx="1.2" fill="currentColor"/></svg>
+      <svg class="i-replay" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12a6.5 6.5 0 1 0 2-4.7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M6.6 3.8v4.4h4.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button id="speedBtn" class="tl-speed" type="button" aria-label="播放速度">1×</button>
+    <div class="tl-track">
+      <input id="slider" type="range" min="1" max="16" step="1" value="1" aria-label="季度">
+      <div id="ticks" class="tl-ticks"></div>
+    </div>
+    <div class="tl-status">
+      <span id="playStatus">—</span>
+      <span class="tl-keys">← → 切换季度 · 空格 播放/暂停</span>
+    </div>
+  </footer>
+
+  <p id="footnote" class="footnote">数据：经营模拟引擎导出（memfab-opus），2026-10-22 · 单位：十亿美元、千片/季 · 示意模型，非真实工厂</p>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <div id="fallback" class="fallback" hidden>
+    <div class="fb-card">
+      <h2>无法显示 3D 工厂模型</h2>
+      <p>您的浏览器或设备暂时不支持 WebGL 2，或已关闭硬件加速。请尝试使用最新版 Chrome、Edge、Safari 或 Firefox，并开启硬件加速后刷新。</p>
+      <p class="fb-detail"></p>
+      <p class="fb-note">季度时间轴与数据面板仍可正常使用。</p>
+    </div>
+  </div>
+
+  <div class="veil" aria-hidden="true"><div class="veil-inner"><span class="veil-dot"></span>正在搭建工厂模型…</div></div>
+
+  <script type="module" src="js/main.js"></script>
+  <script>
+    /* 若模块脚本未能运行（例如直接用 file:// 打开），给出中文提示 */
+    setTimeout(function () {
+      if (window.__memfab && window.__memfab.booted) return;
+      if (location.protocol !== 'file:' && window.__memfabRetry && window.__memfabRetry()) return;
+      var f = document.getElementById('fallback');
+      f.hidden = false;
+      f.querySelector('h2').textContent = '页面脚本未能加载';
+      f.querySelector('p').textContent = '本页使用 ES 模块，需要通过本地静态服务器打开：在本目录运行 python3 -m http.server 8811，再用浏览器打开本机 8811 端口。';
+      f.querySelector('.fb-note').textContent = '';
+      document.body.classList.add('is-ready', 'no-webgl');
+    }, 6000);
+  </script>
+</body>
+</html>
