@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e8f3f7">
+  <meta name="description" content="16季度内存芯片公司经营数据驱动的3D剖面工厂">
+  <title>MEMFAB｜16季度经营工厂</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="app">
+    <div id="scene-container" role="img" aria-label="随季度变化的内存芯片剖面工厂三维模型"></div>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="eyebrow">MEMFAB / BOARD SIMULATION</span>
+        <h1>剖面工厂 <span>16Q</span></h1>
+      </div>
+      <div class="top-actions">
+        <div class="live-pill"><span class="live-dot"></span><span id="status-text">Q1 · 下行防御</span></div>
+        <button class="text-button" id="labels-button" type="button" aria-pressed="true">标注</button>
+        <button class="text-button" id="metrics-button" type="button" aria-pressed="false">指标</button>
+        <button class="text-button" id="reset-button" type="button">全景</button>
+      </div>
+    </header>
+
+    <aside class="panel narrative-panel" aria-label="季度经营简报">
+      <div class="panel-kicker">QUARTER BRIEF</div>
+      <div class="quarter-heading">
+        <span class="quarter-number" id="quarter-number">01</span>
+        <div>
+          <h2 id="phase-name">下行防御</h2>
+          <p id="quarter-tag">去库与研发启动</p>
+        </div>
+      </div>
+      <p class="news" id="news-text"></p>
+      <div class="consensus"><span>当季可见预期</span><p id="consensus-text"></p></div>
+      <div class="kpi-grid">
+        <div class="kpi-card"><span>营业收入</span><strong id="revenue-value">—</strong><small>十亿美元</small></div>
+        <div class="kpi-card"><span>净利润</span><strong id="income-value">—</strong><small>十亿美元</small></div>
+        <div class="kpi-card"><span>股东权益</span><strong id="equity-value">—</strong><small>十亿美元</small></div>
+        <div class="kpi-card"><span>毛利率</span><strong id="margin-value">—</strong><small>引擎披露</small></div>
+      </div>
+      <details class="decision-details">
+        <summary>本季决策理由</summary>
+        <p id="decision-note"></p>
+      </details>
+    </aside>
+
+    <aside class="panel factory-panel" aria-label="工厂实时指标">
+      <div class="panel-heading">
+        <div><span class="panel-kicker">FACTORY PULSE</span><h2>工厂实时状态</h2></div>
+        <span class="qualification-badge" id="qualification-badge">研发中</span>
+      </div>
+      <div class="metric-list">
+        <div class="metric-row">
+          <div class="metric-copy"><span>开工率</span><strong id="utilization-value">—</strong></div>
+          <div class="metric-bar"><i id="utilization-bar" class="bar-blue"></i></div>
+          <small id="production-sub">—</small>
+        </div>
+        <div class="metric-row">
+          <div class="metric-copy"><span>库存</span><strong id="inventory-value">—</strong></div>
+          <div class="metric-bar"><i id="inventory-bar" class="bar-amber"></i></div>
+          <small id="inventory-sub">—</small>
+        </div>
+        <div class="metric-row">
+          <div class="metric-copy"><span>HBM产量</span><strong id="hbm-value">—</strong></div>
+          <div class="metric-bar"><i id="hbm-bar" class="bar-violet"></i></div>
+          <small id="hbm-sub">—</small>
+        </div>
+        <div class="metric-row">
+          <div class="metric-copy"><span>现金</span><strong id="cash-value">—</strong></div>
+          <div class="metric-bar"><i id="cash-bar" class="bar-teal"></i></div>
+          <small>金库采用对数视觉映射</small>
+        </div>
+        <div class="metric-row">
+          <div class="metric-copy"><span>普通及紧急债务</span><strong id="debt-value">—</strong></div>
+          <div class="metric-bar"><i id="debt-bar" class="bar-red"></i></div>
+          <small id="debt-sub">—</small>
+        </div>
+      </div>
+      <div class="capacity-strip"><span>季末产能</span><strong id="capacity-value">—</strong><small>千片/季</small></div>
+      <div class="spark-wrap">
+        <div class="spark-heading"><span>股东权益轨迹</span><strong id="spark-value">—</strong></div>
+        <svg id="equity-spark" viewBox="0 0 280 76" preserveAspectRatio="none" aria-label="股东权益逐季走势图">
+          <defs><linearGradient id="spark-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#129b8d" stop-opacity=".28"/><stop offset="1" stop-color="#129b8d" stop-opacity="0"/></linearGradient></defs>
+          <path id="spark-full" class="spark-full"></path>
+          <path id="spark-area" class="spark-area"></path>
+          <path id="spark-current" class="spark-current"></path>
+          <circle id="spark-dot" class="spark-dot" r="4"></circle>
+        </svg>
+        <div class="spark-axis"><span>Q1</span><span>Q8</span><span>Q16</span></div>
+      </div>
+      <div class="zone-legend"><span><i class="legend-blue"></i>洁净室</span><span><i class="legend-violet"></i>HBM</span><span><i class="legend-amber"></i>仓储</span><span><i class="legend-gold"></i>金库</span></div>
+    </aside>
+
+    <nav class="view-switcher" aria-label="工厂视角">
+      <button type="button" data-view="overview" class="active">全景</button>
+      <button type="button" data-view="cleanroom">洁净室</button>
+      <button type="button" data-view="hbm">HBM产线</button>
+      <button type="button" data-view="boardroom">董事会</button>
+      <button type="button" data-view="vault">金库</button>
+    </nav>
+
+    <section class="timeline-panel" aria-label="季度播放控制">
+      <div class="transport">
+        <button type="button" id="previous-button" aria-label="上一季">上一季</button>
+        <button type="button" id="play-button" class="play-button" aria-label="播放季度"><span class="play-icon" aria-hidden="true"></span><span id="play-label">播放</span></button>
+        <button type="button" id="next-button" aria-label="下一季">下一季</button>
+      </div>
+      <div class="timeline-main">
+        <div class="timeline-meta"><span>经营时间轴</span><strong id="timeline-caption">Q1 / Q16</strong></div>
+        <input id="quarter-slider" type="range" min="1" max="16" step="1" value="1" aria-label="拖动选择季度">
+        <div class="timeline-ticks"><span>Q1</span><span>Q4</span><span>Q8</span><span>Q12</span><span>Q16</span></div>
+      </div>
+      <div class="timeline-stats">
+        <div><span>累计净利润</span><strong id="cumulative-income">—</strong></div>
+        <div><span>当季资本开支</span><strong id="capex-value">—</strong></div>
+      </div>
+    </section>
+
+    <div id="zone-tooltip" class="zone-tooltip" role="status"></div>
+    <div class="source-note">数据：经营模拟引擎导出 · 2026-10-22｜Three.js 0.160.0 本地库｜空间与动画为视觉映射，数值以面板为准</div>
+    <div class="keyboard-hint">拖动旋转 · 滚轮缩放 · 点击区域切换视角 · 空格播放</div>
+
+    <div id="loading-screen">
+      <div class="loader-mark"><span></span><span></span><span></span></div>
+      <p>正在装配经营工厂</p>
+      <small>载入本地三维引擎与16季度数据</small>
+    </div>
+    <div id="webgl-error" hidden>
+      <h2>三维视图未能启动</h2>
+      <p>请使用支持 WebGL 的现代浏览器，并开启硬件加速。经营数据仍可在《三张表.xlsx》中查看。</p>
+    </div>
+  </main>
+  <script src="./data.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+ "booked": {
+  "quarter": 16,
+  "decision": {
+   "utilization": 1.0,
+   "sell_fraction": 1.0,
+   "capex": 1.5,
+   "hbm_rnd": 0.0,
+   "hbm_share": 0.3246,
+   "borrow": 0.0,
+   "note": "收官季普通内存价格3.90，涨幅开始收窄，客户抱怨价格且新产能消息增多；一致预期本季仍涨10%至20%、明年可能持平。第16季最后60千片扩产投产，总产能570。按HBM需求约185千片的假设，以32.46%产能产出185.022千片，其余生产普通内存；100%开工并全售，在需求仍高于供给时兑现收入且不留库存。资本开支仅1.5维持，不做经营期外扩张，不新增借款。"
+  },
+  "market": {
+   "price_index": 4.55,
+   "hbm_price_index": 9.6,
+   "demand_kwafers": 510,
+   "hbm_demand_kwafers": 185
+  },
+  "operations": {
+   "produced_kwafers": 570.0,
+   "hbm_kwafers": 185.02,
+   "std_sold_kwafers": 384.98,
+   "hbm_sold_kwafers": 185,
+   "unit_cost_musd": 14.684,
+   "capacity_kwafers": 570.0,
+   "hbm_qualified": true
+  },
+  "income_statement": {
+   "revenue": 84.6636,
+   "revenue_std": 42.0396,
+   "revenue_hbm": 42.624,
+   "cogs": 8.37,
+   "inventory_writedown": 0.0,
+   "gross_profit": 76.2936,
+   "gross_margin": 0.9011,
+   "rnd": 0.8,
+   "sga": 0.25,
+   "operating_income": 75.2436,
+   "net_interest": -0.8043,
+   "tax": 11.4072,
+   "net_income": 64.6407
+  },
+  "cash_flow": {
+   "operating": 69.1607,
+   "investing": -1.5,
+   "financing": 0.0,
+   "depreciation": 4.52,
+   "emergency_borrowing": 0.0
+  },
+  "balance_sheet": {
+   "cash": 168.1994,
+   "inventory": 0.0,
+   "ppe_net": 43.51,
+   "total_assets": 211.7094,
+   "debt": 0.0,
+   "emergency_debt": 0.0,
+   "equity": 211.7094,
+   "inventory_kwafers": 0.0,
+   "capacity_kwafers": 570.0
+  }
+ },
+ "next": {
+  "ended": true,
+  "final_equity": 211.7094,
+  "bankrupt": false
+ }
+}

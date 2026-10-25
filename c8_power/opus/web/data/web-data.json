@@ -1,0 +1,936 @@
+{
+ "generated": "2026-10-22",
+ "workbook": "数据表.xlsx · 网页数据",
+ "hero": [
+  {
+   "v": 485.0,
+   "u": "TWh",
+   "k": "2025 年全球数据中心用电",
+   "s": "IEA 2026-04-16"
+  },
+  {
+   "v": 945.0,
+   "u": "TWh",
+   "k": "2030 年（IEA 基准情景）",
+   "s": "IEA 2026-04-16"
+  },
+  {
+   "v": 7350.0,
+   "u": "亿美元",
+   "k": "四大科技公司 2026 年资本开支预期",
+   "s": "公司指引，截至 2026-10"
+  },
+  {
+   "v": 9976.0,
+   "u": "MW",
+   "k": "科技公司已签核电长约（现役 / 重启 / 增容）",
+   "s": "公司公告，2024-09 至 2026-10"
+  }
+ ],
+ "bridge": "微软与 Helion 约定最早 2028 年供电，Google 预订了 CFS 首座 400 MW 电站的一半电量；聚变企业累计融资约 142 亿美元。但在第一度聚变电进网之前，数据中心的电只能来自今天的电网。",
+ "tokamak": {
+  "steps": [
+   {
+    "key": "overview",
+    "idx": "00 / 09",
+    "name": "托卡马克",
+    "en": "Tokamak",
+    "color": "#6b4dff",
+    "text": "托卡马克用强磁场把上亿度的氘氚等离子体“悬”在一个环形真空容器里，让原子核聚变放出能量。ITER 是目前在建规模最大的托卡马克，下面按从外到内的顺序逐层拆开。",
+    "specs": [
+     {
+      "k": "等离子体温度",
+      "v": "150",
+      "u": "百万摄氏度"
+     },
+     {
+      "k": "聚变功率（Q≥10 目标）",
+      "v": "500",
+      "u": "MW"
+     },
+     {
+      "k": "加热功率",
+      "v": "50",
+      "u": "MW"
+     },
+     {
+      "k": "整机重量",
+      "v": "23,000",
+      "u": "吨"
+     }
+    ],
+    "src": "参数来源：ITER 组织官网“事实与数据”（页面未标日期，2026-10-22 访问）",
+    "anchor": null
+   },
+   {
+    "key": "cryostat",
+    "idx": "01 / 09",
+    "name": "杜瓦（低温恒温器）",
+    "en": "Cryostat",
+    "color": "#8ea3bd",
+    "text": "最外层的不锈钢大罐，把整台装置包在真空里，给零下 269 摄氏度的超导磁体做“保温瓶”，挡住外界的热量。",
+    "specs": [
+     {
+      "k": "宽度与高度",
+      "v": "30",
+      "u": "米（约）"
+     },
+     {
+      "k": "重量",
+      "v": "3,850",
+      "u": "吨"
+     },
+     {
+      "k": "容积",
+      "v": "16,000",
+      "u": "立方米"
+     }
+    ],
+    "src": "参数来源：ITER 组织官网“杜瓦”页面（2026-10-22 访问）",
+    "anchor": "cryostat"
+   },
+   {
+    "key": "tf",
+    "idx": "02 / 09",
+    "name": "环向场线圈",
+    "en": "Toroidal field coils",
+    "color": "#2f62e0",
+    "text": "18 个 D 形超导线圈围成一圈，产生沿环方向的强磁场，是把等离子体约束住、不碰到器壁的主力。",
+    "specs": [
+     {
+      "k": "线圈数量",
+      "v": "18",
+      "u": "个"
+     },
+     {
+      "k": "最大磁场",
+      "v": "11.8",
+      "u": "特斯拉"
+     },
+     {
+      "k": "单个重量",
+      "v": "330",
+      "u": "吨"
+     }
+    ],
+    "src": "参数来源：ITER 组织官网“磁体”页面（2026-10-22 访问）",
+    "anchor": "tf"
+   },
+   {
+    "key": "pf",
+    "idx": "03 / 09",
+    "name": "极向场线圈",
+    "en": "Poloidal field coils",
+    "color": "#e07a3c",
+    "text": "6 个水平大环套在外侧，像“缰绳”一样控制等离子体的形状和上下位置，让它保持 D 形截面。",
+    "specs": [
+     {
+      "k": "线圈数量",
+      "v": "6",
+      "u": "个"
+     },
+     {
+      "k": "最大直径",
+      "v": "24",
+      "u": "米"
+     },
+     {
+      "k": "最大磁场",
+      "v": "6",
+      "u": "特斯拉"
+     }
+    ],
+    "src": "参数来源：ITER 组织官网“磁体”页面（2026-10-22 访问）",
+    "anchor": "pf"
+   },
+   {
+    "key": "cs",
+    "idx": "04 / 09",
+    "name": "中心螺线管",
+    "en": "Central solenoid",
+    "color": "#d9a52f",
+    "text": "立在中心孔里的 6 段超导线圈，相当于一个大变压器的初级线圈，在等离子体里感应出强大电流并维持数分钟。",
+    "specs": [
+     {
+      "k": "模块数量",
+      "v": "6",
+      "u": "个"
+     },
+     {
+      "k": "最大磁场",
+      "v": "13",
+      "u": "特斯拉"
+     },
+     {
+      "k": "驱动的等离子体电流",
+      "v": "15",
+      "u": "兆安"
+     }
+    ],
+    "src": "参数来源：ITER 组织官网“磁体”页面（2026-10-22 访问）",
+    "anchor": "cs"
+   },
+   {
+    "key": "vv",
+    "idx": "05 / 09",
+    "name": "真空室",
+    "en": "Vacuum vessel",
+    "color": "#8e9bad",
+    "text": "双层钢壁的密封环形容器，里面抽成高真空、装着等离子体，是阻挡放射性物质的第一道屏障；壁间填满屏蔽块和冷却水。",
+    "specs": [
+     {
+      "k": "外径",
+      "v": "19.4",
+      "u": "米"
+     },
+     {
+      "k": "高度",
+      "v": "11.4",
+      "u": "米"
+     },
+     {
+      "k": "重量（空载）",
+      "v": "5,200",
+      "u": "吨"
+     },
+     {
+      "k": "扇区数",
+      "v": "9",
+      "u": "个"
+     }
+    ],
+    "src": "参数来源：ITER 组织官网“真空室”页面；ITER Newsline 2026-10-05",
+    "anchor": "vv"
+   },
+   {
+    "key": "blanket",
+    "idx": "06 / 09",
+    "name": "包层",
+    "en": "Blanket",
+    "color": "#c19a5b",
+    "text": "贴满真空室内壁的数百块模块，直面等离子体，吸收中子和热量、保护后面的钢壁和磁体；未来电站要靠它用锂“增殖”氚燃料。",
+    "specs": [
+     {
+      "k": "模块数量",
+      "v": "440",
+      "u": "块"
+     },
+     {
+      "k": "可带走热功率",
+      "v": "736",
+      "u": "MW"
+     },
+     {
+      "k": "覆盖面积",
+      "v": "600",
+      "u": "平方米"
+     }
+    ],
+    "src": "参数来源：ITER 组织官网“包层”页面（2026-10-22 访问）",
+    "anchor": "blanket"
+   },
+   {
+    "key": "divertor",
+    "idx": "07 / 09",
+    "name": "偏滤器",
+    "en": "Divertor",
+    "color": "#4a515c",
+    "text": "装在真空室底部的“排气口”，承受最集中的热流，把聚变产生的氦“灰”和杂质导出，防止污染等离子体。",
+    "specs": [
+     {
+      "k": "盒式模块数量",
+      "v": "54",
+      "u": "个"
+     },
+     {
+      "k": "稳态热流",
+      "v": "10",
+      "u": "MW/平方米"
+     }
+    ],
+    "src": "参数来源：ITER 组织官网“偏滤器”页面（2026-10-22 访问）",
+    "anchor": "divertor"
+   },
+   {
+    "key": "plasma",
+    "idx": "08 / 09",
+    "name": "等离子体",
+    "en": "Plasma",
+    "color": "#e04fc0",
+    "text": "氘和氚被加热到约 1.5 亿摄氏度后形成的发光等离子体，被磁力线约束成环形；聚变产生的高能中子把能量带给包层，最终转换成电。",
+    "specs": [
+     {
+      "k": "等离子体体积",
+      "v": "830",
+      "u": "立方米"
+     },
+     {
+      "k": "中性束加热（两台合计）",
+      "v": "33",
+      "u": "MW"
+     }
+    ],
+    "src": "参数来源：ITER 组织官网“事实与数据”“外部加热系统”页面（2026-10-22 访问）",
+    "anchor": "plasma"
+   },
+   {
+    "key": "final",
+    "idx": "09 / 09",
+    "name": "重新组装",
+    "en": "Assembled",
+    "color": "#6b4dff",
+    "text": "各层重新合拢。即便进度最快的私营聚变公司，向客户供电的目标最早也要到 2028 年，大规模商业发电要到 2030 年代；在此之前，数据中心的电主要来自现有电网。",
+    "specs": [
+     {
+      "k": "SPARC 轴上磁场（CFS，高温超导）",
+      "v": "12.2",
+      "u": "特斯拉"
+     },
+     {
+      "k": "ARC 电站净发电功率（CFS）",
+      "v": "400",
+      "u": "MW"
+     }
+    ],
+    "src": "参数来源：SPARC 概述论文（Journal of Plasma Physics，2020-09-29）；CFS 博客（2026-08-05）",
+    "anchor": null
+   }
+  ],
+  "pills": [
+   {
+    "key": "cryostat",
+    "name": "杜瓦",
+    "color": "#8ea3bd"
+   },
+   {
+    "key": "tf",
+    "name": "环向场线圈",
+    "color": "#2f62e0"
+   },
+   {
+    "key": "pf",
+    "name": "极向场线圈",
+    "color": "#e07a3c"
+   },
+   {
+    "key": "cs",
+    "name": "中心螺线管",
+    "color": "#d9a52f"
+   },
+   {
+    "key": "vv",
+    "name": "真空室",
+    "color": "#8e9bad"
+   },
+   {
+    "key": "blanket",
+    "name": "包层",
+    "color": "#c19a5b"
+   },
+   {
+    "key": "divertor",
+    "name": "偏滤器",
+    "color": "#4a515c"
+   },
+   {
+    "key": "plasma",
+    "name": "等离子体",
+    "color": "#e04fc0"
+   }
+  ]
+ },
+ "flow": {
+  "views": [
+   {
+    "type": "mix",
+    "key": "y2024",
+    "tab": "2024 全球",
+    "title": "2024 年 · 全球数据中心",
+    "color": "#a0522d",
+    "idx": "A · 2024 年（估计）",
+    "cardTitle": "煤、可再生能源、天然气三分天下",
+    "en": "Global data centres · 2024",
+    "text": "2024 年全球数据中心用电约 415 TWh，约占全球用电的 1.5%。为它们发电约 460 TWh（含输配损耗）：煤电约 138、可再生能源约 124、天然气约 120、核电约 69 TWh。美国一国约占全球数据中心用电的 44%。",
+    "facts": [
+     {
+      "k": "数据中心用电",
+      "v": "415 TWh"
+     },
+     {
+      "k": "为其发电（含损耗）",
+      "v": "460 TWh"
+     },
+     {
+      "k": "美国 / 中国 / 欧洲",
+      "v": "183 / 102 / 68 TWh"
+     }
+    ],
+    "src": "数据：IEA《能源与人工智能》（2025-04）电源占比；IEA《能源与人工智能关键问题》（2026-04-16）分地区用电",
+    "total": 415.0,
+    "unit": "TWh 用电",
+    "cap": "为其发电约 460 TWh（含输配损耗），约占全球用电 1.5%",
+    "hubName": "电网与直供",
+    "sources": [
+     {
+      "key": "coal",
+      "name": "煤电",
+      "twh": 138.0,
+      "color": "#a0522d",
+      "icon": "coal",
+      "shareText": "30%"
+     },
+     {
+      "key": "gas",
+      "name": "天然气",
+      "twh": 119.6,
+      "color": "#2a78d6",
+      "icon": "gas",
+      "shareText": "26%"
+     },
+     {
+      "key": "renew",
+      "name": "可再生能源",
+      "twh": 124.2,
+      "color": "#1baf7a",
+      "icon": "renewables",
+      "shareText": "27%"
+     },
+     {
+      "key": "nuclear",
+      "name": "核电",
+      "twh": 69.0,
+      "color": "#4a3aa7",
+      "icon": "nuclear",
+      "shareText": "15%"
+     },
+     {
+      "key": "other",
+      "name": "其他",
+      "twh": 9.2,
+      "color": "#eda100",
+      "icon": "other",
+      "shareText": "2%"
+     }
+    ],
+    "sinks": [
+     {
+      "key": "us",
+      "name": "美国数据中心",
+      "twh": 183.0,
+      "color": "#6b4dff"
+     },
+     {
+      "key": "cn",
+      "name": "中国数据中心",
+      "twh": 102.0,
+      "color": "#6b4dff"
+     },
+     {
+      "key": "eu",
+      "name": "欧洲数据中心",
+      "twh": 68.0,
+      "color": "#6b4dff"
+     },
+     {
+      "key": "row",
+      "name": "其他地区数据中心",
+      "twh": 62.0,
+      "color": "#6b4dff"
+     },
+     {
+      "key": "loss",
+      "name": "输配损耗等",
+      "twh": 45.0,
+      "color": "#9aa3b2"
+     }
+    ]
+   },
+   {
+    "type": "mix",
+    "key": "y2030",
+    "tab": "2030 预测",
+    "title": "2030 年 · IEA 基准情景",
+    "color": "#2a78d6",
+    "idx": "B · 2030 年（预测）",
+    "cardTitle": "用电翻倍，气电与可再生能源扛起增量",
+    "en": "Global data centres · 2030 base case",
+    "text": "IEA 基准情景下，2030 年全球数据中心用电约 945 TWh（约占全球 2.8%）。为其发电约 1,051 TWh（推算）：可再生能源 360、天然气 340、核电 120 TWh，煤电约 210 TWh。2024–2030 年新增发电中约 40% 来自可再生能源、37% 来自天然气；化石能源仍占约 52%。",
+    "facts": [
+     {
+      "k": "数据中心用电",
+      "v": "945 TWh"
+     },
+     {
+      "k": "为其发电（推算）",
+      "v": "1,051 TWh"
+     },
+     {
+      "k": "美国 / 中国 / 欧洲",
+      "v": "426 / 277 / 114 TWh"
+     }
+    ],
+    "src": "数据：IEA《能源与人工智能关键问题》（2026-04-16）；煤电与“其他”按 2% 其他占比假设推算（见数据表“假设”页）",
+    "total": 945.0,
+    "unit": "TWh 用电",
+    "cap": "为其发电约 1,051 TWh（推算），约占全球用电 2.8%",
+    "hubName": "电网与直供",
+    "sources": [
+     {
+      "key": "coal",
+      "name": "煤电",
+      "twh": 210.26,
+      "color": "#a0522d",
+      "icon": "coal",
+      "shareText": "20%"
+     },
+     {
+      "key": "gas",
+      "name": "天然气",
+      "twh": 340.0,
+      "color": "#2a78d6",
+      "icon": "gas",
+      "shareText": "32%"
+     },
+     {
+      "key": "renew",
+      "name": "可再生能源",
+      "twh": 360.0,
+      "color": "#1baf7a",
+      "icon": "renewables",
+      "shareText": "34%"
+     },
+     {
+      "key": "nuclear",
+      "name": "核电",
+      "twh": 120.0,
+      "color": "#4a3aa7",
+      "icon": "nuclear",
+      "shareText": "11%"
+     },
+     {
+      "key": "other",
+      "name": "其他",
+      "twh": 21.03,
+      "color": "#eda100",
+      "icon": "other",
+      "shareText": "2%"
+     }
+    ],
+    "sinks": [
+     {
+      "key": "us",
+      "name": "美国数据中心",
+      "twh": 426.0,
+      "color": "#6b4dff"
+     },
+     {
+      "key": "cn",
+      "name": "中国数据中心",
+      "twh": 277.0,
+      "color": "#6b4dff"
+     },
+     {
+      "key": "eu",
+      "name": "欧洲数据中心",
+      "twh": 114.0,
+      "color": "#6b4dff"
+     },
+     {
+      "key": "row",
+      "name": "其他地区数据中心",
+      "twh": 128.0,
+      "color": "#6b4dff"
+     },
+     {
+      "key": "loss",
+      "name": "输配损耗等",
+      "twh": 106.28,
+      "color": "#9aa3b2"
+     }
+    ]
+   },
+   {
+    "type": "mix",
+    "key": "us2024",
+    "tab": "美国 2024",
+    "title": "2024 年 · 美国数据中心",
+    "color": "#4a3aa7",
+    "idx": "C · 美国",
+    "cardTitle": "美国：天然气挑大梁",
+    "en": "United States · 2024",
+    "text": "2024 年美国数据中心用电 183 TWh，约占全美电力需求 4.4%。按 IEA 的占比估算，供电中天然气约 83、可再生能源约 49、煤电约 41、核电约 30 TWh。基准情景下，2030 年美国数据中心用电将升至 426 TWh。",
+    "facts": [
+     {
+      "k": "美国数据中心用电",
+      "v": "183 TWh"
+     },
+     {
+      "k": "天然气占比（假设取值）",
+      "v": "41%"
+     },
+     {
+      "k": "2030 年（基准）",
+      "v": "426 TWh"
+     }
+    ],
+    "src": "数据：IEA《能源与人工智能》（2025-04）美国电源占比，天然气占比取 41%（假设）；IEA 2026-04-16 用电量",
+    "total": 183.0,
+    "unit": "TWh 用电",
+    "cap": "为其发电约 203 TWh（推算），约占全美电力需求 4.4%",
+    "hubName": "电网与直供",
+    "sources": [
+     {
+      "key": "coal",
+      "name": "煤电",
+      "twh": 40.57,
+      "color": "#a0522d",
+      "icon": "coal",
+      "shareText": "20%"
+     },
+     {
+      "key": "gas",
+      "name": "天然气",
+      "twh": 83.17,
+      "color": "#2a78d6",
+      "icon": "gas",
+      "shareText": "41%"
+     },
+     {
+      "key": "renew",
+      "name": "可再生能源",
+      "twh": 48.68,
+      "color": "#1baf7a",
+      "icon": "renewables",
+      "shareText": "24%"
+     },
+     {
+      "key": "nuclear",
+      "name": "核电",
+      "twh": 30.43,
+      "color": "#4a3aa7",
+      "icon": "nuclear",
+      "shareText": "15%"
+     },
+     {
+      "key": "other",
+      "name": "其他",
+      "twh": 0.0,
+      "color": "#eda100",
+      "icon": "other",
+      "shareText": "0%"
+     }
+    ],
+    "sinks": [
+     {
+      "key": "us",
+      "name": "美国数据中心",
+      "twh": 183.0,
+      "color": "#6b4dff"
+     },
+     {
+      "key": "loss",
+      "name": "输配损耗等",
+      "twh": 19.84,
+      "color": "#9aa3b2"
+     }
+    ]
+   },
+   {
+    "type": "ppa",
+    "key": "ppa",
+    "tab": "科技公司长约",
+    "title": "科技公司 · 核电与聚变长期购电协议",
+    "color": "#4a3aa7",
+    "idx": "D · 合同流向",
+    "cardTitle": "锁定核电：约 10 GW 已签约",
+    "en": "Long-term PPAs",
+    "text": "2024 年 9 月以来，微软、Meta、亚马逊、Google 与核电企业签下的现役、重启和增容机组确定协议合计约 9,976 MW，按 91% 的容量系数（假设）约合每年 80 TWh，相当于 2025 年美国数据中心用电的 36%；其中真正新增上网的（重启 + 增容）约 3,089 MW。聚变只有微软—Helion 与 Google—CFS 两份，合计 250 MW，最早目标 2028 年。",
+    "facts": [
+     {
+      "k": "确定协议合计",
+      "v": "9,976 MW"
+     },
+     {
+      "k": "其中新增上网",
+      "v": "3,089 MW"
+     },
+     {
+      "k": "先进堆意向（未计入）",
+      "v": "7,840 MW"
+     }
+    ],
+    "src": "数据：Constellation、Vistra、Talen、NextEra、佐治亚电力、Helion、CFS 公告（2023-05 至 2026-10）；Constellation 10-K（2026-02-24）",
+    "total": 10226.0,
+    "unit": "MW 合同容量",
+    "cap": "核电确定协议 9,976 MW + 聚变 250 MW（计划）；均未披露电价",
+    "left": [
+     {
+      "key": "PPA-01",
+      "name": "Crane（重启）",
+      "value": 835.0,
+      "color": "#4a3aa7",
+      "icon": "nuclear-restart",
+      "sub": "Constellation · 2027"
+     },
+     {
+      "key": "PPA-02",
+      "name": "Clinton",
+      "value": 1121.0,
+      "color": "#7b6fd6",
+      "icon": "nuclear",
+      "sub": "Constellation · 2027 起"
+     },
+     {
+      "key": "PPA-03",
+      "name": "Susquehanna",
+      "value": 1920.0,
+      "color": "#5c4fc0",
+      "icon": "nuclear",
+      "sub": "Talen · 至 2042"
+     },
+     {
+      "key": "PPA-04",
+      "name": "Comanche Peak",
+      "value": 1200.0,
+      "color": "#5c4fc0",
+      "icon": "nuclear",
+      "sub": "Vistra · 2027 起"
+     },
+     {
+      "key": "PPA-05",
+      "name": "Perry / Davis-Besse 等",
+      "value": 2609.0,
+      "color": "#7b6fd6",
+      "icon": "nuclear",
+      "sub": "Vistra · 2026 起"
+     },
+     {
+      "key": "PPA-06",
+      "name": "Duane Arnold（重启）",
+      "value": 615.0,
+      "color": "#4a3aa7",
+      "icon": "nuclear-restart",
+      "sub": "NextEra · 2029"
+     },
+     {
+      "key": "PPA-07",
+      "name": "Calvert Cliffs",
+      "value": 690.0,
+      "color": "#7b6fd6",
+      "icon": "nuclear",
+      "sub": "Constellation · 增容 2030 起"
+     },
+     {
+      "key": "PPA-08",
+      "name": "11 台机组增容",
+      "value": 890.0,
+      "color": "#7b6fd6",
+      "icon": "nuclear",
+      "sub": "Constellation · 2028 起"
+     },
+     {
+      "key": "PPA-09",
+      "name": "Vogtle / Hatch 增容",
+      "value": 96.0,
+      "color": "#7b6fd6",
+      "icon": "nuclear",
+      "sub": "佐治亚电力 · 待批准"
+     },
+     {
+      "key": "FU-P01",
+      "name": "Orion（聚变）",
+      "value": 50.0,
+      "color": "#e87ba4",
+      "icon": "fusion",
+      "sub": "Helion · 目标 2028"
+     },
+     {
+      "key": "FU-P02",
+      "name": "ARC（聚变）",
+      "value": 200.0,
+      "color": "#e87ba4",
+      "icon": "fusion",
+      "sub": "CFS · 2030 年代初"
+     }
+    ],
+    "right": [
+     {
+      "key": "ms",
+      "name": "微软",
+      "value": 885.0,
+      "color": "#2a78d6"
+     },
+     {
+      "key": "me",
+      "name": "Meta",
+      "value": 3730.0,
+      "color": "#eda100"
+     },
+     {
+      "key": "am",
+      "name": "亚马逊",
+      "value": 3810.0,
+      "color": "#1baf7a"
+     },
+     {
+      "key": "go",
+      "name": "Google",
+      "value": 1801.0,
+      "color": "#eb6834"
+     }
+    ],
+    "links": [
+     {
+      "from": "PPA-01",
+      "to": "ms",
+      "value": 835.0,
+      "color": "#4a3aa7"
+     },
+     {
+      "from": "PPA-02",
+      "to": "me",
+      "value": 1121.0,
+      "color": "#7b6fd6"
+     },
+     {
+      "from": "PPA-03",
+      "to": "am",
+      "value": 1920.0,
+      "color": "#5c4fc0"
+     },
+     {
+      "from": "PPA-04",
+      "to": "am",
+      "value": 1200.0,
+      "color": "#5c4fc0"
+     },
+     {
+      "from": "PPA-05",
+      "to": "me",
+      "value": 2609.0,
+      "color": "#7b6fd6"
+     },
+     {
+      "from": "PPA-06",
+      "to": "go",
+      "value": 615.0,
+      "color": "#4a3aa7"
+     },
+     {
+      "from": "PPA-07",
+      "to": "am",
+      "value": 690.0,
+      "color": "#7b6fd6"
+     },
+     {
+      "from": "PPA-08",
+      "to": "go",
+      "value": 890.0,
+      "color": "#7b6fd6"
+     },
+     {
+      "from": "PPA-09",
+      "to": "go",
+      "value": 96.0,
+      "color": "#7b6fd6"
+     },
+     {
+      "from": "FU-P01",
+      "to": "ms",
+      "value": 50.0,
+      "color": "#e87ba4",
+      "planned": true
+     },
+     {
+      "from": "FU-P02",
+      "to": "go",
+      "value": 200.0,
+      "color": "#e87ba4",
+      "planned": true
+     }
+    ],
+    "legend": [
+     {
+      "name": "重启机组",
+      "color": "#4a3aa7"
+     },
+     {
+      "name": "现役 + 增容",
+      "color": "#7b6fd6"
+     },
+     {
+      "name": "现役机组",
+      "color": "#5c4fc0"
+     },
+     {
+      "name": "聚变（计划）",
+      "color": "#e87ba4"
+     }
+    ]
+   }
+  ]
+ },
+ "sources": [
+  {
+   "name": "IEA《能源与人工智能》Energy and AI",
+   "date": "2025-04",
+   "use": "2024 年用电与电源结构"
+  },
+  {
+   "name": "IEA《能源与人工智能关键问题》Key Questions on Energy and AI",
+   "date": "2026-04-16",
+   "use": "2025、2030 年用电与 2030 年电源"
+  },
+  {
+   "name": "IEA《电力 2026》Electricity 2026",
+   "date": "2026-02",
+   "use": "全球与美国电力需求"
+  },
+  {
+   "name": "Meta Platforms 10-Q 季报（截至 2026-09-30）",
+   "date": "2026-10-21",
+   "use": "资本开支与指引（原始材料）"
+  },
+  {
+   "name": "微软、Alphabet、亚马逊、Meta 季度业绩与电话会",
+   "date": "2024-04 至 2026-10",
+   "use": "资本开支"
+  },
+  {
+   "name": "Constellation Energy 10-K（2025）/ 10-Q（2026 年二季度）",
+   "date": "2026-02-24 / 2026-08-06",
+   "use": "核电与购电协议（原始材料）"
+  },
+  {
+   "name": "Constellation、Vistra、Talen、NextEra、佐治亚电力 公告",
+   "date": "2024-09 至 2026-10",
+   "use": "核电购电协议"
+  },
+  {
+   "name": "Helion、Commonwealth Fusion Systems 公告",
+   "date": "2023-05 至 2026-08",
+   "use": "聚变购电协议"
+  },
+  {
+   "name": "聚变产业协会（FIA）年度报告新闻稿",
+   "date": "2026-07-13",
+   "use": "聚变融资"
+  },
+  {
+   "name": "ITER 组织官网（真空室、磁体、包层、偏滤器、杜瓦、事实与数据）",
+   "date": "页面未标日期，2026-10-22 访问",
+   "use": "托卡马克部件参数"
+  },
+  {
+   "name": "SPARC 概述论文（Journal of Plasma Physics）",
+   "date": "2020-09-29",
+   "use": "SPARC 参数"
+  },
+  {
+   "name": "美国能源信息署（EIA）电力月报",
+   "date": "2026-09-24",
+   "use": "美国电网结构"
+  }
+ ],
+ "note": "本页为研究与展示用途，不构成任何投资建议。托卡马克模型按 ITER 装置大致比例示意，非工程图纸；“2030 年”为 IEA 情景预测，煤电与“其他”为本研究按假设推算；购电协议容量为合同容量，不等于实际发电量。"
+}
