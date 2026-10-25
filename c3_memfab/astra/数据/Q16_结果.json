@@ -1,0 +1,67 @@
+{
+  "booked": {
+    "quarter": 16,
+    "decision": {
+      "utilization": 1.0,
+      "sell_fraction": 1.0,
+      "capex": 1.5,
+      "hbm_rnd": 0.0,
+      "hbm_share": 0.553846,
+      "borrow": 0.0,
+      "note": "Q16：涨幅收窄、客户抱怨价格、新产能将上线，普通价格预期仍涨10%～20%但明年可能持平。假设HBM需求增长放缓至180千片，配置55.3846%，保持满开工、普通约145千片全部出售。现金1076.449亿美元、零债务，坚持15亿美元维护以保留持续经营能力，不在最后季度做无法验证的扩张；结束后用导出数据审计而不回写决策。"
+    },
+    "market": {
+      "price_index": 4.55,
+      "hbm_price_index": 9.6,
+      "demand_kwafers": 510,
+      "hbm_demand_kwafers": 185
+    },
+    "operations": {
+      "produced_kwafers": 325.0,
+      "hbm_kwafers": 180.0,
+      "std_sold_kwafers": 145.0,
+      "hbm_sold_kwafers": 180.0,
+      "unit_cost_musd": 17.462,
+      "capacity_kwafers": 325.0,
+      "hbm_qualified": true
+    },
+    "income_statement": {
+      "revenue": 57.306,
+      "revenue_std": 15.834,
+      "revenue_hbm": 41.472,
+      "cogs": 5.675,
+      "inventory_writedown": 0.0,
+      "gross_profit": 51.631,
+      "gross_margin": 0.901,
+      "rnd": 0.8,
+      "sga": 0.25,
+      "operating_income": 50.581,
+      "net_interest": -0.8612,
+      "tax": 7.7163,
+      "net_income": 43.7258
+    },
+    "cash_flow": {
+      "operating": 46.7758,
+      "investing": -1.5,
+      "financing": 0.0,
+      "depreciation": 3.05,
+      "emergency_borrowing": 0.0
+    },
+    "balance_sheet": {
+      "cash": 152.9207,
+      "inventory": 0.0,
+      "ppe_net": 18.325,
+      "total_assets": 171.2457,
+      "debt": 0.0,
+      "emergency_debt": 0.0,
+      "equity": 171.2457,
+      "inventory_kwafers": 0.0,
+      "capacity_kwafers": 325.0
+    }
+  },
+  "next": {
+    "ended": true,
+    "final_equity": 171.2457,
+    "bankrupt": false
+  }
+}

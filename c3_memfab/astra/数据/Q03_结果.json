@@ -1,0 +1,318 @@
+{
+  "booked": {
+    "quarter": 3,
+    "decision": {
+      "utilization": 0.65,
+      "sell_fraction": 1.0,
+      "capex": 1.5,
+      "hbm_rnd": 0.0,
+      "hbm_share": 0.0,
+      "borrow": 0.0,
+      "note": "Q3：普通库存已清零，上一季市场需求210千片而仅供195千片；价格仍预期下跌5%～15%。假设需求约195千片，开工65%，不为抬高利用率积库。Q2产出和成本显示固定成本负担大，适量销售仍有助现金回收。现金52.098亿美元可覆盖本季维护和预估经营缺口，保留借款能力等待HBM于Q4启动。"
+    },
+    "market": {
+      "price_index": 0.5,
+      "hbm_price_index": 1.3,
+      "demand_kwafers": 205,
+      "hbm_demand_kwafers": 6
+    },
+    "operations": {
+      "produced_kwafers": 195.0,
+      "hbm_kwafers": 0.0,
+      "std_sold_kwafers": 195.0,
+      "hbm_sold_kwafers": 0.0,
+      "unit_cost_musd": 20.385,
+      "capacity_kwafers": 300.0,
+      "hbm_qualified": false
+    },
+    "income_statement": {
+      "revenue": 2.34,
+      "revenue_std": 2.34,
+      "revenue_hbm": 0.0,
+      "cogs": 3.975,
+      "inventory_writedown": 0.0,
+      "gross_profit": -1.635,
+      "gross_margin": -0.6987,
+      "rnd": 0.8,
+      "sga": 0.25,
+      "operating_income": -2.685,
+      "net_interest": 0.0483,
+      "tax": 0.0,
+      "net_income": -2.7333
+    },
+    "cash_flow": {
+      "operating": -0.7333,
+      "investing": -1.5,
+      "financing": 0.0,
+      "depreciation": 2.0,
+      "emergency_borrowing": 0.0
+    },
+    "balance_sheet": {
+      "cash": 2.9765,
+      "inventory": 0.0,
+      "ppe_net": 28.5,
+      "total_assets": 31.4765,
+      "debt": 6.0,
+      "emergency_debt": 0.0,
+      "equity": 25.4765,
+      "inventory_kwafers": 0.0,
+      "capacity_kwafers": 300.0
+    }
+  },
+  "next": {
+    "quarter_to_decide": 4,
+    "quarters_total": 16,
+    "ended": false,
+    "bankrupt": false,
+    "balance_sheet_now": {
+      "cash": 2.9765,
+      "inventory": 0.0,
+      "ppe_net": 28.5,
+      "total_assets": 31.4765,
+      "debt": 6.0,
+      "emergency_debt": 0.0,
+      "equity": 25.4765,
+      "inventory_kwafers": 0.0,
+      "capacity_kwafers": 300.0
+    },
+    "hbm": {
+      "rnd_cumulative": 3.0,
+      "rnd_needed": 3.0,
+      "qualified_from_quarter": 4
+    },
+    "capacity_pipeline": [
+      {
+        "kwafers": 0.0,
+        "online_quarter": 5
+      },
+      {
+        "kwafers": 0.0,
+        "online_quarter": 6
+      },
+      {
+        "kwafers": 0.0,
+        "online_quarter": 7
+      }
+    ],
+    "debt_limit_now": 15.286,
+    "history": [
+      {
+        "quarter": 1,
+        "decision": {
+          "utilization": 0.7,
+          "sell_fraction": 1.0,
+          "capex": 1.5,
+          "hbm_rnd": 3.0,
+          "hbm_share": 0.0,
+          "borrow": 0.0,
+          "note": "Q1：已知合约价预期下跌15%～25%，期初库存60千片、现金100亿美元。假设下行风险高于缺货风险，开工降至70%，全部可售库存挂牌；维持性资本开支15亿美元，不扩产。一次投入30亿美元HBM研发争取Q3取得资格，保留现金缓冲，暂不借款或还债。"
+        },
+        "market": {
+          "price_index": 0.8,
+          "hbm_price_index": 1.6,
+          "demand_kwafers": 240,
+          "hbm_demand_kwafers": 5
+        },
+        "operations": {
+          "produced_kwafers": 210.0,
+          "hbm_kwafers": 0.0,
+          "std_sold_kwafers": 240,
+          "hbm_sold_kwafers": 0.0,
+          "unit_cost_musd": 19.286,
+          "capacity_kwafers": 300.0,
+          "hbm_qualified": false
+        },
+        "income_statement": {
+          "revenue": 4.608,
+          "revenue_std": 4.608,
+          "revenue_hbm": 0.0,
+          "cogs": 4.4628,
+          "inventory_writedown": 0.0095,
+          "gross_profit": 0.1452,
+          "gross_margin": 0.0315,
+          "rnd": 3.8,
+          "sga": 0.25,
+          "operating_income": -3.9048,
+          "net_interest": 0.01,
+          "tax": 0.0,
+          "net_income": -3.9148
+        },
+        "cash_flow": {
+          "operating": -1.502,
+          "investing": -1.5,
+          "financing": 0.0,
+          "depreciation": 2.0,
+          "emergency_borrowing": 0.0
+        },
+        "balance_sheet": {
+          "cash": 6.998,
+          "inventory": 0.5472,
+          "ppe_net": 29.5,
+          "total_assets": 37.0452,
+          "debt": 6.0,
+          "emergency_debt": 0.0,
+          "equity": 31.0452,
+          "inventory_kwafers": 30.0,
+          "capacity_kwafers": 300.0
+        }
+      },
+      {
+        "quarter": 2,
+        "decision": {
+          "utilization": 0.55,
+          "sell_fraction": 1.0,
+          "capex": 1.5,
+          "hbm_rnd": 0.0,
+          "hbm_share": 0.0,
+          "borrow": 0.0,
+          "note": "Q2：Q1价格0.8、销量240千片、期末库存30千片；客户推迟下单，价格预期再跌20%～30%。假设需求下降至约195千片，以55%开工生产165千片并销售全部可售量，优先去库存。保持15亿美元维护、不扩产，研发达标后不追加。接口明确量产资格在Q4，修正Q1对Q3的理解；现金69.98亿美元，暂不借款。"
+        },
+        "market": {
+          "price_index": 0.56,
+          "hbm_price_index": 1.4,
+          "demand_kwafers": 210,
+          "hbm_demand_kwafers": 5
+        },
+        "operations": {
+          "produced_kwafers": 165.0,
+          "hbm_kwafers": 0.0,
+          "std_sold_kwafers": 195.0,
+          "hbm_sold_kwafers": 0.0,
+          "unit_cost_musd": 23.182,
+          "capacity_kwafers": 300.0,
+          "hbm_qualified": false
+        },
+        "income_statement": {
+          "revenue": 2.6208,
+          "revenue_std": 2.6208,
+          "revenue_hbm": 0.0,
+          "cogs": 4.3722,
+          "inventory_writedown": 0.0,
+          "gross_profit": -1.7514,
+          "gross_margin": -0.6683,
+          "rnd": 0.8,
+          "sga": 0.25,
+          "operating_income": -2.8014,
+          "net_interest": 0.034,
+          "tax": 0.0,
+          "net_income": -2.8354
+        },
+        "cash_flow": {
+          "operating": -0.2882,
+          "investing": -1.5,
+          "financing": 0.0,
+          "depreciation": 2.0,
+          "emergency_borrowing": 0.0
+        },
+        "balance_sheet": {
+          "cash": 5.2098,
+          "inventory": 0.0,
+          "ppe_net": 29.0,
+          "total_assets": 34.2098,
+          "debt": 6.0,
+          "emergency_debt": 0.0,
+          "equity": 28.2098,
+          "inventory_kwafers": 0.0,
+          "capacity_kwafers": 300.0
+        }
+      },
+      {
+        "quarter": 3,
+        "decision": {
+          "utilization": 0.65,
+          "sell_fraction": 1.0,
+          "capex": 1.5,
+          "hbm_rnd": 0.0,
+          "hbm_share": 0.0,
+          "borrow": 0.0,
+          "note": "Q3：普通库存已清零，上一季市场需求210千片而仅供195千片；价格仍预期下跌5%～15%。假设需求约195千片，开工65%，不为抬高利用率积库。Q2产出和成本显示固定成本负担大，适量销售仍有助现金回收。现金52.098亿美元可覆盖本季维护和预估经营缺口，保留借款能力等待HBM于Q4启动。"
+        },
+        "market": {
+          "price_index": 0.5,
+          "hbm_price_index": 1.3,
+          "demand_kwafers": 205,
+          "hbm_demand_kwafers": 6
+        },
+        "operations": {
+          "produced_kwafers": 195.0,
+          "hbm_kwafers": 0.0,
+          "std_sold_kwafers": 195.0,
+          "hbm_sold_kwafers": 0.0,
+          "unit_cost_musd": 20.385,
+          "capacity_kwafers": 300.0,
+          "hbm_qualified": false
+        },
+        "income_statement": {
+          "revenue": 2.34,
+          "revenue_std": 2.34,
+          "revenue_hbm": 0.0,
+          "cogs": 3.975,
+          "inventory_writedown": 0.0,
+          "gross_profit": -1.635,
+          "gross_margin": -0.6987,
+          "rnd": 0.8,
+          "sga": 0.25,
+          "operating_income": -2.685,
+          "net_interest": 0.0483,
+          "tax": 0.0,
+          "net_income": -2.7333
+        },
+        "cash_flow": {
+          "operating": -0.7333,
+          "investing": -1.5,
+          "financing": 0.0,
+          "depreciation": 2.0,
+          "emergency_borrowing": 0.0
+        },
+        "balance_sheet": {
+          "cash": 2.9765,
+          "inventory": 0.0,
+          "ppe_net": 28.5,
+          "total_assets": 31.4765,
+          "debt": 6.0,
+          "emergency_debt": 0.0,
+          "equity": 25.4765,
+          "inventory_kwafers": 0.0,
+          "capacity_kwafers": 300.0
+        }
+      }
+    ],
+    "decision_bounds": {
+      "utilization": [
+        0.4,
+        1.0,
+        "开工率，0.40 到 1.00"
+      ],
+      "sell_fraction": [
+        0.0,
+        1.0,
+        "本季可售库存（期初库存加本季产出）里，拿出多少比例去卖，0 到 1；实际卖出量不会超过市场需求"
+      ],
+      "capex": [
+        0.0,
+        15.0,
+        "本季资本开支（十亿美元）。每季先要 15 亿美元维持现有产能，超出部分 4 个季度后形成新产能，每 1.2 亿美元增加 1 千片/季"
+      ],
+      "hbm_rnd": [
+        0.0,
+        3.0,
+        "本季额外投入的 HBM 研发（十亿美元），累计满 30 亿美元后再过 2 个季度才能量产 HBM"
+      ],
+      "hbm_share": [
+        0.0,
+        0.6,
+        "量产 HBM 之后，产能里划给 HBM 的比例，0 到 0.6"
+      ],
+      "borrow": [
+        -20.0,
+        10.0,
+        "本季新增借款（正数）或还款（负数），十亿美元"
+      ]
+    },
+    "signals": {
+      "last_quarter_price_index": 0.5,
+      "news": "行业库存仍高，但跌幅收窄；有消息称两家同业减产幅度超过 20%。",
+      "consensus": "分析师一致预期：下季持平到小幅上涨。"
+    }
+  }
+}

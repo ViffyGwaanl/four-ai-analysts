@@ -1,0 +1,13 @@
+{
+  "desktop": {
+    "webgl": true,
+    "width": 1920,
+    "height": 1080
+  },
+  "quarter_data": "16个季度的收入、净利、经营现金流、权益与导出逐项一致",
+  "playback": "播放、暂停、倍速通过",
+  "views": "俯视、缩放、复位通过",
+  "mobile": "390×844无横向溢出，WebGL可用，季度切换通过",
+  "console_errors": [],
+  "external_requests": []
+}
