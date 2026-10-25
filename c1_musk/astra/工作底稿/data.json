@@ -1,0 +1,2551 @@
+{
+  "files": {
+    "S1": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+    "S2": "SpaceX_2026Q2季报__spcx-20260630.htm",
+    "S3": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+    "T1": "Tesla_2025年报__tsla-20251231.htm",
+    "T2": "Tesla_2026Q3季报__tsla-20260930.htm",
+    "T3": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+    "T4": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm"
+  },
+  "raw": [
+    {
+      "id": "S_FY25_rev",
+      "co": "S",
+      "period": "FY25",
+      "metric": "rev",
+      "value": 18674,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_cost",
+      "co": "S",
+      "period": "FY25",
+      "metric": "cost",
+      "value": 9451,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_op",
+      "co": "S",
+      "period": "FY25",
+      "metric": "op",
+      "value": -2589,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_net",
+      "co": "S",
+      "period": "FY25",
+      "metric": "net",
+      "value": -4937,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_attrib",
+      "co": "S",
+      "period": "FY25",
+      "metric": "attrib",
+      "value": -4937,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_ocf",
+      "co": "S",
+      "period": "FY25",
+      "metric": "ocf",
+      "value": 6785,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_capex",
+      "co": "S",
+      "period": "FY25",
+      "metric": "capex",
+      "value": 20737,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_cash",
+      "co": "S",
+      "period": "FY25",
+      "metric": "cash",
+      "value": 24747,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_st",
+      "co": "S",
+      "period": "FY25",
+      "metric": "st",
+      "value": 0,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_dc",
+      "co": "S",
+      "period": "FY25",
+      "metric": "dc",
+      "value": 928,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_dl",
+      "co": "S",
+      "period": "FY25",
+      "metric": "dl",
+      "value": 21968,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_equity",
+      "co": "S",
+      "period": "FY25",
+      "metric": "equity",
+      "value": 2573,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_assets",
+      "co": "S",
+      "period": "FY25",
+      "metric": "assets",
+      "value": 92079,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_liab",
+      "co": "S",
+      "period": "FY25",
+      "metric": "liab",
+      "value": 50754,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_FY25_pref",
+      "co": "S",
+      "period": "FY25",
+      "metric": "pref",
+      "value": 38752,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-3/F-4/F-9 Consolidated financial statements; FY2025 restated"
+    },
+    {
+      "id": "S_9M25_rev",
+      "co": "S",
+      "period": "9M25",
+      "metric": "rev",
+      "value": 13714,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9–12 Consolidated statements; 9M2025 comparative"
+    },
+    {
+      "id": "S_9M25_cost",
+      "co": "S",
+      "period": "9M25",
+      "metric": "cost",
+      "value": 6949,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9–12 Consolidated statements; 9M2025 comparative"
+    },
+    {
+      "id": "S_9M25_op",
+      "co": "S",
+      "period": "9M25",
+      "metric": "op",
+      "value": -1216,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9–12 Consolidated statements; 9M2025 comparative"
+    },
+    {
+      "id": "S_9M25_net",
+      "co": "S",
+      "period": "9M25",
+      "metric": "net",
+      "value": -2590,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9–12 Consolidated statements; 9M2025 comparative"
+    },
+    {
+      "id": "S_9M25_attrib",
+      "co": "S",
+      "period": "9M25",
+      "metric": "attrib",
+      "value": -2590,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9–12 Consolidated statements; 9M2025 comparative"
+    },
+    {
+      "id": "S_9M25_ocf",
+      "co": "S",
+      "period": "9M25",
+      "metric": "ocf",
+      "value": 4120,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9–12 Consolidated statements; 9M2025 comparative"
+    },
+    {
+      "id": "S_9M25_capex",
+      "co": "S",
+      "period": "9M25",
+      "metric": "capex",
+      "value": 13846,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9–12 Consolidated statements; 9M2025 comparative"
+    },
+    {
+      "id": "S_Q126_rev",
+      "co": "S",
+      "period": "Q126",
+      "metric": "rev",
+      "value": 4694,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_cost",
+      "co": "S",
+      "period": "Q126",
+      "metric": "cost",
+      "value": 2388,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_op",
+      "co": "S",
+      "period": "Q126",
+      "metric": "op",
+      "value": -1943,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_net",
+      "co": "S",
+      "period": "Q126",
+      "metric": "net",
+      "value": -4276,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_attrib",
+      "co": "S",
+      "period": "Q126",
+      "metric": "attrib",
+      "value": -4947,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_ocf",
+      "co": "S",
+      "period": "Q126",
+      "metric": "ocf",
+      "value": 1047,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_capex",
+      "co": "S",
+      "period": "Q126",
+      "metric": "capex",
+      "value": 10107,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_cash",
+      "co": "S",
+      "period": "Q126",
+      "metric": "cash",
+      "value": 15852,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_st",
+      "co": "S",
+      "period": "Q126",
+      "metric": "st",
+      "value": 7823,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_dc",
+      "co": "S",
+      "period": "Q126",
+      "metric": "dc",
+      "value": 1538,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_dl",
+      "co": "S",
+      "period": "Q126",
+      "metric": "dl",
+      "value": 28727,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_equity",
+      "co": "S",
+      "period": "Q126",
+      "metric": "equity",
+      "value": 34533,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_assets",
+      "co": "S",
+      "period": "Q126",
+      "metric": "assets",
+      "value": 102094,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_liab",
+      "co": "S",
+      "period": "Q126",
+      "metric": "liab",
+      "value": 60512,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q126_pref",
+      "co": "S",
+      "period": "Q126",
+      "metric": "pref",
+      "value": 7049,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-64/F-65/F-69 Consolidated statements, March 31 2026"
+    },
+    {
+      "id": "S_Q226_rev",
+      "co": "S",
+      "period": "Q226",
+      "metric": "rev",
+      "value": 7814,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_cost",
+      "co": "S",
+      "period": "Q226",
+      "metric": "cost",
+      "value": 3495,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_op",
+      "co": "S",
+      "period": "Q226",
+      "metric": "op",
+      "value": -143,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_net",
+      "co": "S",
+      "period": "Q226",
+      "metric": "net",
+      "value": -541,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_attrib",
+      "co": "S",
+      "period": "Q226",
+      "metric": "attrib",
+      "value": -541,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_cash",
+      "co": "S",
+      "period": "Q226",
+      "metric": "cash",
+      "value": 93522,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_st",
+      "co": "S",
+      "period": "Q226",
+      "metric": "st",
+      "value": 6487,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_dc",
+      "co": "S",
+      "period": "Q226",
+      "metric": "dc",
+      "value": 2525,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_dl",
+      "co": "S",
+      "period": "Q226",
+      "metric": "dl",
+      "value": 36839,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_equity",
+      "co": "S",
+      "period": "Q226",
+      "metric": "equity",
+      "value": 127224,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_assets",
+      "co": "S",
+      "period": "Q226",
+      "metric": "assets",
+      "value": 192770,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_liab",
+      "co": "S",
+      "period": "Q226",
+      "metric": "liab",
+      "value": 65546,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_Q226_pref",
+      "co": "S",
+      "period": "Q226",
+      "metric": "pref",
+      "value": 0,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "pp.4–5 Consolidated Balance Sheets / Statements of Operations"
+    },
+    {
+      "id": "S_6M26_ocf",
+      "co": "S",
+      "period": "6M26",
+      "metric": "ocf",
+      "value": 3466,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "p.9 Consolidated Statements of Cash Flows"
+    },
+    {
+      "id": "S_6M26_capex",
+      "co": "S",
+      "period": "6M26",
+      "metric": "capex",
+      "value": 28476,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "p.9 Consolidated Statements of Cash Flows"
+    },
+    {
+      "id": "S_Q326_rev",
+      "co": "S",
+      "period": "Q326",
+      "metric": "rev",
+      "value": 14575,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_cost",
+      "co": "S",
+      "period": "Q326",
+      "metric": "cost",
+      "value": 5478,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_op",
+      "co": "S",
+      "period": "Q326",
+      "metric": "op",
+      "value": 2791,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_net",
+      "co": "S",
+      "period": "Q326",
+      "metric": "net",
+      "value": 4404,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_attrib",
+      "co": "S",
+      "period": "Q326",
+      "metric": "attrib",
+      "value": 4404,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_cash",
+      "co": "S",
+      "period": "Q326",
+      "metric": "cash",
+      "value": 51294,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_st",
+      "co": "S",
+      "period": "Q326",
+      "metric": "st",
+      "value": 38561,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_dc",
+      "co": "S",
+      "period": "Q326",
+      "metric": "dc",
+      "value": 2698,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_dl",
+      "co": "S",
+      "period": "Q326",
+      "metric": "dl",
+      "value": 36146,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_equity",
+      "co": "S",
+      "period": "Q326",
+      "metric": "equity",
+      "value": 176768,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_assets",
+      "co": "S",
+      "period": "Q326",
+      "metric": "assets",
+      "value": 254045,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_liab",
+      "co": "S",
+      "period": "Q326",
+      "metric": "liab",
+      "value": 77277,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_Q326_pref",
+      "co": "S",
+      "period": "Q326",
+      "metric": "pref",
+      "value": 0,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/11 Consolidated Statements of Operations / Balance Sheets"
+    },
+    {
+      "id": "S_9M26_rev",
+      "co": "S",
+      "period": "9M26",
+      "metric": "rev",
+      "value": 27083,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/12 Consolidated statements, nine months"
+    },
+    {
+      "id": "S_9M26_cost",
+      "co": "S",
+      "period": "9M26",
+      "metric": "cost",
+      "value": 11361,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/12 Consolidated statements, nine months"
+    },
+    {
+      "id": "S_9M26_op",
+      "co": "S",
+      "period": "9M26",
+      "metric": "op",
+      "value": 705,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/12 Consolidated statements, nine months"
+    },
+    {
+      "id": "S_9M26_net",
+      "co": "S",
+      "period": "9M26",
+      "metric": "net",
+      "value": -413,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/12 Consolidated statements, nine months"
+    },
+    {
+      "id": "S_9M26_attrib",
+      "co": "S",
+      "period": "9M26",
+      "metric": "attrib",
+      "value": -1084,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/12 Consolidated statements, nine months"
+    },
+    {
+      "id": "S_9M26_ocf",
+      "co": "S",
+      "period": "9M26",
+      "metric": "ocf",
+      "value": 13097,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/12 Consolidated statements, nine months"
+    },
+    {
+      "id": "S_9M26_capex",
+      "co": "S",
+      "period": "9M26",
+      "metric": "capex",
+      "value": 48069,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.9/12 Consolidated statements, nine months"
+    },
+    {
+      "id": "S_FY25_space_rev",
+      "co": "S",
+      "period": "FY25",
+      "metric": "space_rev",
+      "value": 4086,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-58 Note 19 Segments"
+    },
+    {
+      "id": "S_FY25_space_cost",
+      "co": "S",
+      "period": "FY25",
+      "metric": "space_cost",
+      "value": 1352,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-58 Note 19 Segments"
+    },
+    {
+      "id": "S_FY25_space_op",
+      "co": "S",
+      "period": "FY25",
+      "metric": "space_op",
+      "value": -657,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-58 Note 19 Segments"
+    },
+    {
+      "id": "S_FY25_conn_rev",
+      "co": "S",
+      "period": "FY25",
+      "metric": "conn_rev",
+      "value": 11387,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-58 Note 19 Segments"
+    },
+    {
+      "id": "S_FY25_conn_cost",
+      "co": "S",
+      "period": "FY25",
+      "metric": "conn_cost",
+      "value": 5921,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-58 Note 19 Segments"
+    },
+    {
+      "id": "S_FY25_conn_op",
+      "co": "S",
+      "period": "FY25",
+      "metric": "conn_op",
+      "value": 4423,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-58 Note 19 Segments"
+    },
+    {
+      "id": "S_FY25_si_rev",
+      "co": "S",
+      "period": "FY25",
+      "metric": "si_rev",
+      "value": 3201,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-58 Note 19 Segments"
+    },
+    {
+      "id": "S_FY25_si_cost",
+      "co": "S",
+      "period": "FY25",
+      "metric": "si_cost",
+      "value": 2178,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-58 Note 19 Segments"
+    },
+    {
+      "id": "S_FY25_si_op",
+      "co": "S",
+      "period": "FY25",
+      "metric": "si_op",
+      "value": -6355,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-58 Note 19 Segments"
+    },
+    {
+      "id": "S_9M25_space_rev",
+      "co": "S",
+      "period": "9M25",
+      "metric": "space_rev",
+      "value": 3277,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, 9M2025"
+    },
+    {
+      "id": "S_9M25_space_cost",
+      "co": "S",
+      "period": "9M25",
+      "metric": "space_cost",
+      "value": 1104,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, 9M2025"
+    },
+    {
+      "id": "S_9M25_space_op",
+      "co": "S",
+      "period": "9M25",
+      "metric": "space_op",
+      "value": -181,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, 9M2025"
+    },
+    {
+      "id": "S_9M25_conn_rev",
+      "co": "S",
+      "period": "9M25",
+      "metric": "conn_rev",
+      "value": 8159,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, 9M2025"
+    },
+    {
+      "id": "S_9M25_conn_cost",
+      "co": "S",
+      "period": "9M25",
+      "metric": "conn_cost",
+      "value": 4271,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, 9M2025"
+    },
+    {
+      "id": "S_9M25_conn_op",
+      "co": "S",
+      "period": "9M25",
+      "metric": "conn_op",
+      "value": 3147,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, 9M2025"
+    },
+    {
+      "id": "S_9M25_si_rev",
+      "co": "S",
+      "period": "9M25",
+      "metric": "si_rev",
+      "value": 2278,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, 9M2025"
+    },
+    {
+      "id": "S_9M25_si_cost",
+      "co": "S",
+      "period": "9M25",
+      "metric": "si_cost",
+      "value": 1574,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, 9M2025"
+    },
+    {
+      "id": "S_9M25_si_op",
+      "co": "S",
+      "period": "9M25",
+      "metric": "si_op",
+      "value": -4182,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, 9M2025"
+    },
+    {
+      "id": "S_Q126_space_rev",
+      "co": "S",
+      "period": "Q126",
+      "metric": "space_rev",
+      "value": 619,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-95 Note 18 Segments"
+    },
+    {
+      "id": "S_Q126_space_cost",
+      "co": "S",
+      "period": "Q126",
+      "metric": "space_cost",
+      "value": 281,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-95 Note 18 Segments"
+    },
+    {
+      "id": "S_Q126_space_op",
+      "co": "S",
+      "period": "Q126",
+      "metric": "space_op",
+      "value": -662,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-95 Note 18 Segments"
+    },
+    {
+      "id": "S_Q126_conn_rev",
+      "co": "S",
+      "period": "Q126",
+      "metric": "conn_rev",
+      "value": 3257,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-95 Note 18 Segments"
+    },
+    {
+      "id": "S_Q126_conn_cost",
+      "co": "S",
+      "period": "Q126",
+      "metric": "conn_cost",
+      "value": 1651,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-95 Note 18 Segments"
+    },
+    {
+      "id": "S_Q126_conn_op",
+      "co": "S",
+      "period": "Q126",
+      "metric": "conn_op",
+      "value": 1188,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-95 Note 18 Segments"
+    },
+    {
+      "id": "S_Q126_si_rev",
+      "co": "S",
+      "period": "Q126",
+      "metric": "si_rev",
+      "value": 818,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-95 Note 18 Segments"
+    },
+    {
+      "id": "S_Q126_si_cost",
+      "co": "S",
+      "period": "Q126",
+      "metric": "si_cost",
+      "value": 456,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-95 Note 18 Segments"
+    },
+    {
+      "id": "S_Q126_si_op",
+      "co": "S",
+      "period": "Q126",
+      "metric": "si_op",
+      "value": -2469,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-95 Note 18 Segments"
+    },
+    {
+      "id": "S_Q226_space_rev",
+      "co": "S",
+      "period": "Q226",
+      "metric": "space_rev",
+      "value": 962,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, Q2 comparative"
+    },
+    {
+      "id": "S_Q226_space_cost",
+      "co": "S",
+      "period": "Q226",
+      "metric": "space_cost",
+      "value": 329,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, Q2 comparative"
+    },
+    {
+      "id": "S_Q226_space_op",
+      "co": "S",
+      "period": "Q226",
+      "metric": "space_op",
+      "value": -542,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, Q2 comparative"
+    },
+    {
+      "id": "S_Q226_conn_rev",
+      "co": "S",
+      "period": "Q226",
+      "metric": "conn_rev",
+      "value": 4291,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, Q2 comparative"
+    },
+    {
+      "id": "S_Q226_conn_cost",
+      "co": "S",
+      "period": "Q226",
+      "metric": "conn_cost",
+      "value": 2060,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, Q2 comparative"
+    },
+    {
+      "id": "S_Q226_conn_op",
+      "co": "S",
+      "period": "Q226",
+      "metric": "conn_op",
+      "value": 1656,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, Q2 comparative"
+    },
+    {
+      "id": "S_Q226_si_rev",
+      "co": "S",
+      "period": "Q226",
+      "metric": "si_rev",
+      "value": 2561,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, Q2 comparative"
+    },
+    {
+      "id": "S_Q226_si_cost",
+      "co": "S",
+      "period": "Q226",
+      "metric": "si_cost",
+      "value": 1106,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, Q2 comparative"
+    },
+    {
+      "id": "S_Q226_si_op",
+      "co": "S",
+      "period": "Q226",
+      "metric": "si_op",
+      "value": -1257,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data, Q2 comparative"
+    },
+    {
+      "id": "S_Q326_space_rev",
+      "co": "S",
+      "period": "Q326",
+      "metric": "space_rev",
+      "value": 1767,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data"
+    },
+    {
+      "id": "S_Q326_space_cost",
+      "co": "S",
+      "period": "Q326",
+      "metric": "space_cost",
+      "value": 435,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data"
+    },
+    {
+      "id": "S_Q326_space_op",
+      "co": "S",
+      "period": "Q326",
+      "metric": "space_op",
+      "value": -7,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data"
+    },
+    {
+      "id": "S_Q326_conn_rev",
+      "co": "S",
+      "period": "Q326",
+      "metric": "conn_rev",
+      "value": 5248,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data"
+    },
+    {
+      "id": "S_Q326_conn_cost",
+      "co": "S",
+      "period": "Q326",
+      "metric": "conn_cost",
+      "value": 2368,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data"
+    },
+    {
+      "id": "S_Q326_conn_op",
+      "co": "S",
+      "period": "Q326",
+      "metric": "conn_op",
+      "value": 2367,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data"
+    },
+    {
+      "id": "S_Q326_si_rev",
+      "co": "S",
+      "period": "Q326",
+      "metric": "si_rev",
+      "value": 7560,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data"
+    },
+    {
+      "id": "S_Q326_si_cost",
+      "co": "S",
+      "period": "Q326",
+      "metric": "si_cost",
+      "value": 2675,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data"
+    },
+    {
+      "id": "S_Q326_si_op",
+      "co": "S",
+      "period": "Q326",
+      "metric": "si_op",
+      "value": 431,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.4–7 Segment Operating and Financial Data"
+    },
+    {
+      "id": "T_FY25_rev",
+      "co": "T",
+      "period": "FY25",
+      "metric": "rev",
+      "value": 94827,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_cost",
+      "co": "T",
+      "period": "FY25",
+      "metric": "cost",
+      "value": 77733,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_op",
+      "co": "T",
+      "period": "FY25",
+      "metric": "op",
+      "value": 4355,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_net",
+      "co": "T",
+      "period": "FY25",
+      "metric": "net",
+      "value": 3855,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_attrib",
+      "co": "T",
+      "period": "FY25",
+      "metric": "attrib",
+      "value": 3794,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_ocf",
+      "co": "T",
+      "period": "FY25",
+      "metric": "ocf",
+      "value": 14747,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_capex",
+      "co": "T",
+      "period": "FY25",
+      "metric": "capex",
+      "value": 8527,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_cash",
+      "co": "T",
+      "period": "FY25",
+      "metric": "cash",
+      "value": 16513,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_st",
+      "co": "T",
+      "period": "FY25",
+      "metric": "st",
+      "value": 27546,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_dc",
+      "co": "T",
+      "period": "FY25",
+      "metric": "dc",
+      "value": 1640,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_dl",
+      "co": "T",
+      "period": "FY25",
+      "metric": "dl",
+      "value": 6736,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_equity",
+      "co": "T",
+      "period": "FY25",
+      "metric": "equity",
+      "value": 82137,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_assets",
+      "co": "T",
+      "period": "FY25",
+      "metric": "assets",
+      "value": 137806,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_liab",
+      "co": "T",
+      "period": "FY25",
+      "metric": "liab",
+      "value": 54941,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_auto_rev",
+      "co": "T",
+      "period": "FY25",
+      "metric": "auto_rev",
+      "value": 69526,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_serv_rev",
+      "co": "T",
+      "period": "FY25",
+      "metric": "serv_rev",
+      "value": 12530,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_energy_rev",
+      "co": "T",
+      "period": "FY25",
+      "metric": "energy_rev",
+      "value": 12771,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_auto_cost",
+      "co": "T",
+      "period": "FY25",
+      "metric": "auto_cost",
+      "value": 57165,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_serv_cost",
+      "co": "T",
+      "period": "FY25",
+      "metric": "serv_cost",
+      "value": 11599,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_FY25_energy_cost",
+      "co": "T",
+      "period": "FY25",
+      "metric": "energy_cost",
+      "value": 8969,
+      "source": "Tesla_2025年报__tsla-20251231.htm",
+      "section": "pp.49–50/54; Note 16 Segment Reporting (p.85)"
+    },
+    {
+      "id": "T_Q425_rev",
+      "co": "T",
+      "period": "Q425",
+      "metric": "rev",
+      "value": 24901,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_cost",
+      "co": "T",
+      "period": "Q425",
+      "metric": "cost",
+      "value": 19892,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_op",
+      "co": "T",
+      "period": "Q425",
+      "metric": "op",
+      "value": 1409,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_net",
+      "co": "T",
+      "period": "Q425",
+      "metric": "net",
+      "value": 856,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_attrib",
+      "co": "T",
+      "period": "Q425",
+      "metric": "attrib",
+      "value": 840,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_ocf",
+      "co": "T",
+      "period": "Q425",
+      "metric": "ocf",
+      "value": 3813,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_capex",
+      "co": "T",
+      "period": "Q425",
+      "metric": "capex",
+      "value": 2393,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_liq",
+      "co": "T",
+      "period": "Q425",
+      "metric": "liq",
+      "value": 44059,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_dc",
+      "co": "T",
+      "period": "Q425",
+      "metric": "dc",
+      "value": 1640,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_dl",
+      "co": "T",
+      "period": "Q425",
+      "metric": "dl",
+      "value": 6736,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_equity",
+      "co": "T",
+      "period": "Q425",
+      "metric": "equity",
+      "value": 82137,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_assets",
+      "co": "T",
+      "period": "Q425",
+      "metric": "assets",
+      "value": 137806,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_liab",
+      "co": "T",
+      "period": "Q425",
+      "metric": "liab",
+      "value": 54941,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_auto_rev",
+      "co": "T",
+      "period": "Q425",
+      "metric": "auto_rev",
+      "value": 17693,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_serv_rev",
+      "co": "T",
+      "period": "Q425",
+      "metric": "serv_rev",
+      "value": 3371,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_energy_rev",
+      "co": "T",
+      "period": "Q425",
+      "metric": "energy_rev",
+      "value": 3837,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_auto_cost",
+      "co": "T",
+      "period": "Q425",
+      "metric": "auto_cost",
+      "value": 14080,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_serv_cost",
+      "co": "T",
+      "period": "Q425",
+      "metric": "serv_cost",
+      "value": 3073,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q425_energy_cost",
+      "co": "T",
+      "period": "Q425",
+      "metric": "energy_cost",
+      "value": 2739,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_rev",
+      "co": "T",
+      "period": "Q126",
+      "metric": "rev",
+      "value": 22387,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_cost",
+      "co": "T",
+      "period": "Q126",
+      "metric": "cost",
+      "value": 17667,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_op",
+      "co": "T",
+      "period": "Q126",
+      "metric": "op",
+      "value": 941,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_net",
+      "co": "T",
+      "period": "Q126",
+      "metric": "net",
+      "value": 491,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_attrib",
+      "co": "T",
+      "period": "Q126",
+      "metric": "attrib",
+      "value": 477,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_ocf",
+      "co": "T",
+      "period": "Q126",
+      "metric": "ocf",
+      "value": 3937,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_capex",
+      "co": "T",
+      "period": "Q126",
+      "metric": "capex",
+      "value": 2493,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_liq",
+      "co": "T",
+      "period": "Q126",
+      "metric": "liq",
+      "value": 44743,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_dc",
+      "co": "T",
+      "period": "Q126",
+      "metric": "dc",
+      "value": 1447,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_dl",
+      "co": "T",
+      "period": "Q126",
+      "metric": "dl",
+      "value": 7782,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_equity",
+      "co": "T",
+      "period": "Q126",
+      "metric": "equity",
+      "value": 84116,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_assets",
+      "co": "T",
+      "period": "Q126",
+      "metric": "assets",
+      "value": 143724,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_liab",
+      "co": "T",
+      "period": "Q126",
+      "metric": "liab",
+      "value": 58922,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_auto_rev",
+      "co": "T",
+      "period": "Q126",
+      "metric": "auto_rev",
+      "value": 16234,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_serv_rev",
+      "co": "T",
+      "period": "Q126",
+      "metric": "serv_rev",
+      "value": 3745,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_energy_rev",
+      "co": "T",
+      "period": "Q126",
+      "metric": "energy_rev",
+      "value": 2408,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_auto_cost",
+      "co": "T",
+      "period": "Q126",
+      "metric": "auto_cost",
+      "value": 12812,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_serv_cost",
+      "co": "T",
+      "period": "Q126",
+      "metric": "serv_cost",
+      "value": 3399,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q126_energy_cost",
+      "co": "T",
+      "period": "Q126",
+      "metric": "energy_cost",
+      "value": 1456,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_rev",
+      "co": "T",
+      "period": "Q226",
+      "metric": "rev",
+      "value": 28236,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_cost",
+      "co": "T",
+      "period": "Q226",
+      "metric": "cost",
+      "value": 23485,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_op",
+      "co": "T",
+      "period": "Q226",
+      "metric": "op",
+      "value": 398,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_net",
+      "co": "T",
+      "period": "Q226",
+      "metric": "net",
+      "value": 1128,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_attrib",
+      "co": "T",
+      "period": "Q226",
+      "metric": "attrib",
+      "value": 1114,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_ocf",
+      "co": "T",
+      "period": "Q226",
+      "metric": "ocf",
+      "value": 4697,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_capex",
+      "co": "T",
+      "period": "Q226",
+      "metric": "capex",
+      "value": 5789,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_liq",
+      "co": "T",
+      "period": "Q226",
+      "metric": "liq",
+      "value": 43524,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_dc",
+      "co": "T",
+      "period": "Q226",
+      "metric": "dc",
+      "value": 1418,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_dl",
+      "co": "T",
+      "period": "Q226",
+      "metric": "dl",
+      "value": 7924,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_equity",
+      "co": "T",
+      "period": "Q226",
+      "metric": "equity",
+      "value": 86858,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_assets",
+      "co": "T",
+      "period": "Q226",
+      "metric": "assets",
+      "value": 148524,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_liab",
+      "co": "T",
+      "period": "Q226",
+      "metric": "liab",
+      "value": 61005,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_auto_rev",
+      "co": "T",
+      "period": "Q226",
+      "metric": "auto_rev",
+      "value": 20516,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_serv_rev",
+      "co": "T",
+      "period": "Q226",
+      "metric": "serv_rev",
+      "value": 4581,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_energy_rev",
+      "co": "T",
+      "period": "Q226",
+      "metric": "energy_rev",
+      "value": 3139,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_auto_cost",
+      "co": "T",
+      "period": "Q226",
+      "metric": "auto_cost",
+      "value": 17053,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_serv_cost",
+      "co": "T",
+      "period": "Q226",
+      "metric": "serv_cost",
+      "value": 3933,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q226_energy_cost",
+      "co": "T",
+      "period": "Q226",
+      "metric": "energy_cost",
+      "value": 2499,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_rev",
+      "co": "T",
+      "period": "Q326",
+      "metric": "rev",
+      "value": 28046,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_cost",
+      "co": "T",
+      "period": "Q326",
+      "metric": "cost",
+      "value": 22552,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_op",
+      "co": "T",
+      "period": "Q326",
+      "metric": "op",
+      "value": 718,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_net",
+      "co": "T",
+      "period": "Q326",
+      "metric": "net",
+      "value": 804,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_attrib",
+      "co": "T",
+      "period": "Q326",
+      "metric": "attrib",
+      "value": 787,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_ocf",
+      "co": "T",
+      "period": "Q326",
+      "metric": "ocf",
+      "value": 6263,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_capex",
+      "co": "T",
+      "period": "Q326",
+      "metric": "capex",
+      "value": 4732,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_liq",
+      "co": "T",
+      "period": "Q326",
+      "metric": "liq",
+      "value": 45447,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_dc",
+      "co": "T",
+      "period": "Q326",
+      "metric": "dc",
+      "value": 1387,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_dl",
+      "co": "T",
+      "period": "Q326",
+      "metric": "dl",
+      "value": 8136,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_equity",
+      "co": "T",
+      "period": "Q326",
+      "metric": "equity",
+      "value": 89289,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_assets",
+      "co": "T",
+      "period": "Q326",
+      "metric": "assets",
+      "value": 157517,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_liab",
+      "co": "T",
+      "period": "Q326",
+      "metric": "liab",
+      "value": 67628,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_auto_rev",
+      "co": "T",
+      "period": "Q326",
+      "metric": "auto_rev",
+      "value": 20560,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_serv_rev",
+      "co": "T",
+      "period": "Q326",
+      "metric": "serv_rev",
+      "value": 4605,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_energy_rev",
+      "co": "T",
+      "period": "Q326",
+      "metric": "energy_rev",
+      "value": 2881,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_auto_cost",
+      "co": "T",
+      "period": "Q326",
+      "metric": "auto_cost",
+      "value": 16754,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_serv_cost",
+      "co": "T",
+      "period": "Q326",
+      "metric": "serv_cost",
+      "value": 3871,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_Q326_energy_cost",
+      "co": "T",
+      "period": "Q326",
+      "metric": "energy_cost",
+      "value": 1927,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "pp.27–29 Statements of Operations / Balance Sheet / Cash Flows; Q3 checked against T2"
+    },
+    {
+      "id": "T_9M26_rev",
+      "co": "T",
+      "period": "9M26",
+      "metric": "rev",
+      "value": 78669,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Consolidated statements; nine months ended September 30 2026"
+    },
+    {
+      "id": "T_9M26_cost",
+      "co": "T",
+      "period": "9M26",
+      "metric": "cost",
+      "value": 63704,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Consolidated statements; nine months ended September 30 2026"
+    },
+    {
+      "id": "T_9M26_op",
+      "co": "T",
+      "period": "9M26",
+      "metric": "op",
+      "value": 2057,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Consolidated statements; nine months ended September 30 2026"
+    },
+    {
+      "id": "T_9M26_net",
+      "co": "T",
+      "period": "9M26",
+      "metric": "net",
+      "value": 2423,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Consolidated statements; nine months ended September 30 2026"
+    },
+    {
+      "id": "T_9M26_attrib",
+      "co": "T",
+      "period": "9M26",
+      "metric": "attrib",
+      "value": 2378,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Consolidated statements; nine months ended September 30 2026"
+    },
+    {
+      "id": "T_9M26_ocf",
+      "co": "T",
+      "period": "9M26",
+      "metric": "ocf",
+      "value": 14897,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Consolidated statements; nine months ended September 30 2026"
+    },
+    {
+      "id": "T_9M26_capex",
+      "co": "T",
+      "period": "9M26",
+      "metric": "capex",
+      "value": 13014,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Consolidated statements; nine months ended September 30 2026"
+    },
+    {
+      "id": "X_Q326_megapack_rev",
+      "co": "X",
+      "period": "Q326",
+      "metric": "megapack_rev",
+      "value": 221,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 Related Party Transactions; Note 2 Fair Value"
+    },
+    {
+      "id": "X_Q326_megapack_cost",
+      "co": "X",
+      "period": "Q326",
+      "metric": "megapack_cost",
+      "value": 171,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 Related Party Transactions; Note 2 Fair Value"
+    },
+    {
+      "id": "X_Q326_fv_gain",
+      "co": "X",
+      "period": "Q326",
+      "metric": "fv_gain",
+      "value": -142,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 Related Party Transactions; Note 2 Fair Value"
+    },
+    {
+      "id": "X_9M26_megapack_rev",
+      "co": "X",
+      "period": "9M26",
+      "metric": "megapack_rev",
+      "value": 626,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 / Note 2; related_capex from S3 p.12 cash flow footnote"
+    },
+    {
+      "id": "X_9M26_megapack_cost",
+      "co": "X",
+      "period": "9M26",
+      "metric": "megapack_cost",
+      "value": 478,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 / Note 2; related_capex from S3 p.12 cash flow footnote"
+    },
+    {
+      "id": "X_9M26_fv_gain",
+      "co": "X",
+      "period": "9M26",
+      "metric": "fv_gain",
+      "value": 863,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 / Note 2; related_capex from S3 p.12 cash flow footnote"
+    },
+    {
+      "id": "X_9M26_related_capex",
+      "co": "X",
+      "period": "9M26",
+      "metric": "related_capex",
+      "value": 480,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 / Note 2; related_capex from S3 p.12 cash flow footnote"
+    },
+    {
+      "id": "X_SEP26_ar",
+      "co": "X",
+      "period": "SEP26",
+      "metric": "ar",
+      "value": 729,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 Related Party Transactions / Note 2 Fair Value"
+    },
+    {
+      "id": "X_SEP26_undelivered",
+      "co": "X",
+      "period": "SEP26",
+      "metric": "undelivered",
+      "value": 588,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 Related Party Transactions / Note 2 Fair Value"
+    },
+    {
+      "id": "X_SEP26_deferred",
+      "co": "X",
+      "period": "SEP26",
+      "metric": "deferred",
+      "value": 648,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 Related Party Transactions / Note 2 Fair Value"
+    },
+    {
+      "id": "X_SEP26_current_def",
+      "co": "X",
+      "period": "SEP26",
+      "metric": "current_def",
+      "value": 516,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 Related Party Transactions / Note 2 Fair Value"
+    },
+    {
+      "id": "X_SEP26_long_def",
+      "co": "X",
+      "period": "SEP26",
+      "metric": "long_def",
+      "value": 132,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 Related Party Transactions / Note 2 Fair Value"
+    },
+    {
+      "id": "X_SEP26_investment",
+      "co": "X",
+      "period": "SEP26",
+      "metric": "investment",
+      "value": 2865,
+      "source": "Tesla_2026Q3季报__tsla-20260930.htm",
+      "section": "Note 13 Related Party Transactions / Note 2 Fair Value"
+    },
+    {
+      "id": "X_6M26_related_capex",
+      "co": "X",
+      "period": "6M26",
+      "metric": "related_capex",
+      "value": 329,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "Note 17 Related Party Transactions"
+    },
+    {
+      "id": "X_6M26_valor_dc",
+      "co": "X",
+      "period": "6M26",
+      "metric": "valor_dc",
+      "value": 2039,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "Note 17 Related Party Transactions"
+    },
+    {
+      "id": "X_6M26_valor_dl",
+      "co": "X",
+      "period": "6M26",
+      "metric": "valor_dl",
+      "value": 11290,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "Note 17 Related Party Transactions"
+    },
+    {
+      "id": "X_6M26_valor_interest",
+      "co": "X",
+      "period": "6M26",
+      "metric": "valor_interest",
+      "value": 513,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "Note 17 Related Party Transactions"
+    },
+    {
+      "id": "X_Q226_related_capex",
+      "co": "X",
+      "period": "Q226",
+      "metric": "related_capex",
+      "value": 295,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "Note 17 Related Party Transactions"
+    },
+    {
+      "id": "X_Q226_valor_interest",
+      "co": "X",
+      "period": "Q226",
+      "metric": "valor_interest",
+      "value": 327,
+      "source": "SpaceX_2026Q2季报__spcx-20260630.htm",
+      "section": "Note 17 Related Party Transactions"
+    },
+    {
+      "id": "X_SEP26_valor_dc",
+      "co": "X",
+      "period": "SEP26",
+      "metric": "valor_dc",
+      "value": 2181,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "p.11 Balance Sheets, related-party debt parentheticals; counterparty attribution inferred from S2 Note 17"
+    },
+    {
+      "id": "X_SEP26_valor_dl",
+      "co": "X",
+      "period": "SEP26",
+      "metric": "valor_dl",
+      "value": 10716,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "p.11 Balance Sheets, related-party debt parentheticals; counterparty attribution inferred from S2 Note 17"
+    },
+    {
+      "id": "X_Q326_related_interest",
+      "co": "X",
+      "period": "Q326",
+      "metric": "related_interest",
+      "value": 351,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "p.9 Statements of Operations, related-party parentheticals"
+    },
+    {
+      "id": "X_Q326_related_other_income",
+      "co": "X",
+      "period": "Q326",
+      "metric": "related_other_income",
+      "value": 561,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "p.9 Statements of Operations, related-party parentheticals"
+    },
+    {
+      "id": "X_9M26_related_interest",
+      "co": "X",
+      "period": "9M26",
+      "metric": "related_interest",
+      "value": 864,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "p.9 Statements of Operations"
+    },
+    {
+      "id": "X_FY25_megapack_purchase",
+      "co": "X",
+      "period": "FY25",
+      "metric": "megapack_purchase",
+      "value": 506,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_cybertruck_purchase",
+      "co": "X",
+      "period": "FY25",
+      "metric": "cybertruck_purchase",
+      "value": 131,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_tesla_sales_spacex",
+      "co": "X",
+      "period": "FY25",
+      "metric": "tesla_sales_spacex",
+      "value": 143.3,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_tesla_sales_xai",
+      "co": "X",
+      "period": "FY25",
+      "metric": "tesla_sales_xai",
+      "value": 430.1,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_tesla_exp_spacex",
+      "co": "X",
+      "period": "FY25",
+      "metric": "tesla_exp_spacex",
+      "value": 11.4,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_aircraft",
+      "co": "X",
+      "period": "FY25",
+      "metric": "aircraft",
+      "value": 0.4,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_advertising_x",
+      "co": "X",
+      "period": "FY25",
+      "metric": "advertising_x",
+      "value": 3.3,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_tesla_exp_xai",
+      "co": "X",
+      "period": "FY25",
+      "metric": "tesla_exp_xai",
+      "value": 4,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_tesla_other_xai",
+      "co": "X",
+      "period": "FY25",
+      "metric": "tesla_other_xai",
+      "value": 0.3,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_tbc",
+      "co": "X",
+      "period": "FY25",
+      "metric": "tbc",
+      "value": 0.9,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_security",
+      "co": "X",
+      "period": "FY25",
+      "metric": "security",
+      "value": 4.8,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_redwood_exp",
+      "co": "X",
+      "period": "FY25",
+      "metric": "redwood_exp",
+      "value": 3.3,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "X_FY25_redwood_scrap",
+      "co": "X",
+      "period": "FY25",
+      "metric": "redwood_scrap",
+      "value": 12.9,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Related Person Transactions pp.65–66; purchases of 506 / 131 from S1 Note 18 F-57"
+    },
+    {
+      "id": "OWN_SEP26_t_shares",
+      "co": "OWN",
+      "period": "SEP26",
+      "metric": "t_shares",
+      "value": 3952.648559,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Ownership of Securities, pp.68–69 and footnote (2); units million shares"
+    },
+    {
+      "id": "OWN_SEP26_t_musk",
+      "co": "OWN",
+      "period": "SEP26",
+      "metric": "t_musk",
+      "value": 699.580882,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Ownership of Securities, pp.68–69 and footnote (2); units million shares"
+    },
+    {
+      "id": "OWN_SEP26_t_unearned",
+      "co": "OWN",
+      "period": "SEP26",
+      "metric": "t_unearned",
+      "value": 423.743904,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Ownership of Securities, pp.68–69 and footnote (2); units million shares"
+    },
+    {
+      "id": "OWN_SEP26_t_trust",
+      "co": "OWN",
+      "period": "SEP26",
+      "metric": "t_trust",
+      "value": 413.152109,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Ownership of Securities, pp.68–69 and footnote (2); units million shares"
+    },
+    {
+      "id": "OWN_SEP26_t_2018",
+      "co": "OWN",
+      "period": "SEP26",
+      "metric": "t_2018",
+      "value": 286.428773,
+      "source": "Tesla_2026股东大会委托书__tm267596-1_def14a.htm",
+      "section": "Ownership of Securities, pp.68–69 and footnote (2); units million shares"
+    },
+    {
+      "id": "OWN_MAY26_s_musk_a",
+      "co": "OWN",
+      "period": "MAY26",
+      "metric": "s_musk_a",
+      "value": 849.49444,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "Security Ownership of Certain Beneficial Owners and Management pp.248–249, footnote (1); units million shares"
+    },
+    {
+      "id": "OWN_MAY26_s_musk_b",
+      "co": "OWN",
+      "period": "MAY26",
+      "metric": "s_musk_b",
+      "value": 5569.053075,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "Security Ownership of Certain Beneficial Owners and Management pp.248–249, footnote (1); units million shares"
+    },
+    {
+      "id": "OWN_MAY26_s_musk_options",
+      "co": "OWN",
+      "period": "MAY26",
+      "metric": "s_musk_options",
+      "value": 350,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "Security Ownership of Certain Beneficial Owners and Management pp.248–249, footnote (1); units million shares"
+    },
+    {
+      "id": "OWN_MAY26_s_restricted",
+      "co": "OWN",
+      "period": "MAY26",
+      "metric": "s_restricted",
+      "value": 1302.072285,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "Security Ownership of Certain Beneficial Owners and Management pp.248–249, footnote (1); units million shares"
+    },
+    {
+      "id": "OWN_MAY26_s_a_preipo",
+      "co": "OWN",
+      "period": "MAY26",
+      "metric": "s_a_preipo",
+      "value": 6932.508,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "Security Ownership of Certain Beneficial Owners and Management pp.248–249, footnote (1); units million shares"
+    },
+    {
+      "id": "OWN_MAY26_s_b_preipo",
+      "co": "OWN",
+      "period": "MAY26",
+      "metric": "s_b_preipo",
+      "value": 5602.79041,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "Security Ownership of Certain Beneficial Owners and Management pp.248–249, footnote (1); units million shares"
+    },
+    {
+      "id": "OWN_MAY26_s_ipo",
+      "co": "OWN",
+      "period": "MAY26",
+      "metric": "s_ipo",
+      "value": 555.555555,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "Security Ownership of Certain Beneficial Owners and Management pp.248–249, footnote (1); units million shares"
+    },
+    {
+      "id": "OWN_MAY26_s_votes",
+      "co": "OWN",
+      "period": "MAY26",
+      "metric": "s_votes",
+      "value": 0.844,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "Security Ownership of Certain Beneficial Owners and Management pp.248–249, footnote (1); units million shares"
+    },
+    {
+      "id": "OWN_SEP26_s_a",
+      "co": "OWN",
+      "period": "SEP26",
+      "metric": "s_a",
+      "value": 8240,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "p.11 Consolidated Balance Sheets, issued and outstanding; units million shares, rounded"
+    },
+    {
+      "id": "OWN_SEP26_s_b",
+      "co": "OWN",
+      "period": "SEP26",
+      "metric": "s_b",
+      "value": 5339,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "p.11 Consolidated Balance Sheets, issued and outstanding; units million shares, rounded"
+    },
+    {
+      "id": "OWN_MAR26_t_holds_s_pre",
+      "co": "OWN",
+      "period": "MAR26",
+      "metric": "t_holds_s_pre",
+      "value": 3.8,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-61 Tesla’s xAI Investment and SpaceX Class A Common Stock Issuance; Note 1 five-for-one split; 3.8 is rounded"
+    },
+    {
+      "id": "OWN_MAR26_split",
+      "co": "OWN",
+      "period": "MAR26",
+      "metric": "split",
+      "value": 5,
+      "source": "SpaceX_招股书__spaceexplorationtechnologi.htm",
+      "section": "F-61 Tesla’s xAI Investment and SpaceX Class A Common Stock Issuance; Note 1 five-for-one split; 3.8 is rounded"
+    },
+    {
+      "id": "S_Q326_si_capex",
+      "co": "S",
+      "period": "Q326",
+      "metric": "si_capex",
+      "value": 16444,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.3/7/8 Segment Capex and Cursor Merger"
+    },
+    {
+      "id": "S_Q326_conn_capex",
+      "co": "S",
+      "period": "Q326",
+      "metric": "conn_capex",
+      "value": 1543,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.3/7/8 Segment Capex and Cursor Merger"
+    },
+    {
+      "id": "S_Q326_space_capex",
+      "co": "S",
+      "period": "Q326",
+      "metric": "space_capex",
+      "value": 1606,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.3/7/8 Segment Capex and Cursor Merger"
+    },
+    {
+      "id": "S_Q326_cursor_revenue",
+      "co": "S",
+      "period": "Q326",
+      "metric": "cursor_revenue",
+      "value": 608,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.3/7/8 Segment Capex and Cursor Merger"
+    },
+    {
+      "id": "S_Q326_cursor_consideration",
+      "co": "S",
+      "period": "Q326",
+      "metric": "cursor_consideration",
+      "value": 42500,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.3/7/8 Segment Capex and Cursor Merger"
+    },
+    {
+      "id": "S_Q326_cursor_service_awards",
+      "co": "S",
+      "period": "Q326",
+      "metric": "cursor_service_awards",
+      "value": 23400,
+      "source": "SpaceX_2026Q3业绩公告__spaceexplorationtechnologi.htm",
+      "section": "pp.3/7/8 Segment Capex and Cursor Merger"
+    },
+    {
+      "id": "T_SEP26_nci",
+      "co": "T",
+      "period": "SEP26",
+      "metric": "nci",
+      "value": 546,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "p.28 Balance Sheet; checked T2 consolidated balance sheet"
+    },
+    {
+      "id": "T_SEP26_rnci",
+      "co": "T",
+      "period": "SEP26",
+      "metric": "rnci",
+      "value": 54,
+      "source": "Tesla_2026Q3业绩公告__exhibit9914.htm",
+      "section": "p.28 Balance Sheet; checked T2 consolidated balance sheet"
+    }
+  ]
+}

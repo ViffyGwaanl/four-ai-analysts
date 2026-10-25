@@ -1,0 +1,72 @@
+{
+  "excel": {
+    "worksheets": [
+      "说明",
+      "来源登记",
+      "原始数据",
+      "假设",
+      "SpaceX财务",
+      "Tesla财务",
+      "分部财务",
+      "市场数据",
+      "关联交易",
+      "合并备考",
+      "股本与持股",
+      "换股比例",
+      "敏感性",
+      "校验"
+    ],
+    "formula_count": 670,
+    "formula_errors": [],
+    "missing_caches": [],
+    "checks": {
+      "Tesla B 分部收入勾稽": 0,
+      "Tesla C 分部收入勾稽": 0,
+      "Tesla D 分部收入勾稽": 0,
+      "Tesla E 分部收入勾稽": 0,
+      "Tesla F 分部收入勾稽": 0,
+      "Tesla G 分部收入勾稽": 0,
+      "SpaceX B 分部收入勾稽": 0,
+      "SpaceX C 分部收入勾稽": 0,
+      "SpaceX D 分部收入勾稽": 0,
+      "SpaceX E 分部收入勾稽": 0,
+      "SpaceX F 分部收入勾稽": 0,
+      "SpaceX G 分部收入勾稽": 0,
+      "换股股东占比合计 B": 0,
+      "换股股东占比合计 C": 0,
+      "换股股东占比合计 D": 0,
+      "Q3备考分部收入一致": 0,
+      "Q3 FCF重分类无虚增": 0,
+      "9M26 FCF重分类无虚增": 0,
+      "备考资产负债勾稽": 0
+    }
+  },
+  "docx": {
+    "paragraphs": 53,
+    "zip_valid": true
+  },
+  "pptx": {
+    "slides": 5,
+    "zip_valid": true
+  },
+  "投委会汇报.pdf": {
+    "pages": 5,
+    "chars_per_page": [
+      342,
+      387,
+      322,
+      473,
+      363
+    ]
+  },
+  "投委会备忘录.pdf": {
+    "pages": 5,
+    "chars_per_page": [
+      1033,
+      1183,
+      1144,
+      1265,
+      1321
+    ]
+  }
+}

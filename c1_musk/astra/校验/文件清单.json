@@ -1,0 +1,232 @@
+[
+  {
+    "file": "README.md",
+    "bytes": 11100,
+    "sha256": "5175400d08fc10f377cc8756ead466b0e656bdf2776a5dc85a4b1cd1f36d8ffb"
+  },
+  {
+    "file": "web/app.js",
+    "bytes": 12772,
+    "sha256": "650af1f5ee5e48744ae184db0ae7fcba86d47c5484d66abaf51a3ce80103e1f3"
+  },
+  {
+    "file": "web/data.js",
+    "bytes": 9037,
+    "sha256": "b3828b460ce3c8a6d18d6eea209ffca5567ddeb0162a1e1a065c3c69c8b4c332"
+  },
+  {
+    "file": "web/index.html",
+    "bytes": 4449,
+    "sha256": "9d5e81c3a4de684d2f3e232beb8409b33143157a3549f00fd639720f0404b24a"
+  },
+  {
+    "file": "web/style.css",
+    "bytes": 8681,
+    "sha256": "fc3442e5aba2b3cf9be3e5293acb2c4675248e5a35c5320576f3710599d2eebf"
+  },
+  {
+    "file": "web/vendor/LICENSE-three.txt",
+    "bytes": 1081,
+    "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+  },
+  {
+    "file": "web/vendor/three.module.js",
+    "bytes": 1314681,
+    "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb"
+  },
+  {
+    "file": "web/启动说明.md",
+    "bytes": 619,
+    "sha256": "75cec6076d26567671eec1952e98bf8c3515b0a261ede3d17ffe77ea44e79810"
+  },
+  {
+    "file": "合并模型.xlsx",
+    "bytes": 114969,
+    "sha256": "48e14bb0384bfcddd1d6f129435e48351d1b5e9f8bb74869d5adbdcd1ff6b516"
+  },
+  {
+    "file": "工作底稿/build_data.py",
+    "bytes": 7794,
+    "sha256": "2d07de044c7a2c491dcc9b5a507ef54415168244f13750793be8741918b02459"
+  },
+  {
+    "file": "工作底稿/build_documents.py",
+    "bytes": 22609,
+    "sha256": "68e82deffa8f9ce20a953694934ceb3b1ef5d89dcf92e02ad6c0a3c85f82bcac"
+  },
+  {
+    "file": "工作底稿/build_model.py",
+    "bytes": 34657,
+    "sha256": "ec744580b359d248b0c05c7f6dff348bd28d554396ac6500956c098674168a6d"
+  },
+  {
+    "file": "工作底稿/check_files.py",
+    "bytes": 1703,
+    "sha256": "3bda5d8f76ce04c699571f91bbfff8938d4c1d58b7074c58b025e3346051d398"
+  },
+  {
+    "file": "工作底稿/check_web.py",
+    "bytes": 2543,
+    "sha256": "6debc18364670495e3779e0d59852df1ab9e3d5832deda1e36249407952608df"
+  },
+  {
+    "file": "工作底稿/data.json",
+    "bytes": 80163,
+    "sha256": "f3f8481571fd2d5165f04c0d095156498adc26a51f09cd1a266e3861008dd8ba"
+  },
+  {
+    "file": "工作底稿/export_data.py",
+    "bytes": 1908,
+    "sha256": "274496ce493facd60401ba193d8a84af24a6f3486fff057b30323bd4cf39892e"
+  },
+  {
+    "file": "工作底稿/market.json",
+    "bytes": 2522,
+    "sha256": "1ab3caa1e720f655767d9484a5b9c7be666343ba6512ff3d9e0ac1844a25b2bb"
+  },
+  {
+    "file": "工作底稿/model_map.json",
+    "bytes": 1671,
+    "sha256": "0ba64e011a666c9641d6a2ab818c611998931ee9d82512dfa43865d0c2aacde3"
+  },
+  {
+    "file": "工作底稿/requirements.txt",
+    "bytes": 86,
+    "sha256": "80cacf8526883270578e227943749536b6995e310176cbf096901006ceac26d3"
+  },
+  {
+    "file": "工作底稿/summary.json",
+    "bytes": 9015,
+    "sha256": "80df9febf62c2cde7409f524cd21fa6ad86552c261e8758a346a09c11cda03a5"
+  },
+  {
+    "file": "投委会备忘录.docx",
+    "bytes": 44850,
+    "sha256": "87e2e0a48fea62f91b0f5fd9c1c0fe21a2b7f072027e6ccc09ee261fb8db4440"
+  },
+  {
+    "file": "投委会汇报.pptx",
+    "bytes": 41100,
+    "sha256": "a44beeb88a2dbac59ffd5755b7aa4e4f6cf16909e883bd7c46a4c846735d1a0f"
+  },
+  {
+    "file": "校验/desktop_分离.png",
+    "bytes": 675671,
+    "sha256": "20b62df189fa1ef063a45c131166c611bc0d5a01561608ccc96cc0226df9d62a"
+  },
+  {
+    "file": "校验/desktop_整体.png",
+    "bytes": 157791,
+    "sha256": "6b6dd944f6af795551c4598e341bebcb509375f9537f983ebe0e132c832a158a"
+  },
+  {
+    "file": "校验/desktop_首页.png",
+    "bytes": 669604,
+    "sha256": "ef13c4854debeb75f7ebc30354889b17082a1534ca16ab1a97c5a9ca6af24e3c"
+  },
+  {
+    "file": "校验/mobile_分离.png",
+    "bytes": 177422,
+    "sha256": "3e653bed4113d6cad3f2d4eabe83d4a2ecaa49b4a71f3ee4ec78027b7b9f5e13"
+  },
+  {
+    "file": "校验/mobile_整体.png",
+    "bytes": 58775,
+    "sha256": "0c632d1be3705d1585d7bbd717791a2fac26cc54f4cb9dd7ec1ca5cb254126b2"
+  },
+  {
+    "file": "校验/mobile_首页.png",
+    "bytes": 169946,
+    "sha256": "532575f04bde74854706f3c2ab0706f39b1061b6bebc64f5be4cb310d602837d"
+  },
+  {
+    "file": "校验/公式联动检查.json",
+    "bytes": 405,
+    "sha256": "4741820200def25890a4becad84853623c9404615d875a0cd5ae6ba14d0e7164"
+  },
+  {
+    "file": "校验/内容检查.json",
+    "bytes": 242,
+    "sha256": "d14a9927f063d0cc92d998d4b60fe87c20bec865485f538e7c228797af3d3427"
+  },
+  {
+    "file": "校验/投委会备忘录.pdf",
+    "bytes": 350898,
+    "sha256": "9b5d03bf3723c49aea89332bda12d4eab7e421408be81596defa8e373aa92bf5"
+  },
+  {
+    "file": "校验/投委会备忘录_1.png",
+    "bytes": 105706,
+    "sha256": "86e3ebddc46e1038121e5c12940833a219d9bb0e4c1716d229e7effb022122da"
+  },
+  {
+    "file": "校验/投委会备忘录_2.png",
+    "bytes": 104562,
+    "sha256": "672eed915b2aff42206cc06959e7b9d304de0697f34117bd31cf722951d51630"
+  },
+  {
+    "file": "校验/投委会备忘录_3.png",
+    "bytes": 102123,
+    "sha256": "8b96a8d20d1222971ff6e1671ef3f8e890c6dec1a7106f8fbaf8ce8d7fc7b469"
+  },
+  {
+    "file": "校验/投委会备忘录_4.png",
+    "bytes": 106004,
+    "sha256": "6d394b0e0daf5a904d8215bb5b60666bb3bc2d7df9e87437ac2816b884176a87"
+  },
+  {
+    "file": "校验/投委会备忘录_5.png",
+    "bytes": 102602,
+    "sha256": "7fea6f84e661469ac0de5e5f7ce239a79c36477b258579e9cbeac575cc8f26d6"
+  },
+  {
+    "file": "校验/投委会汇报.pdf",
+    "bytes": 341366,
+    "sha256": "606d64ef9aaf3bcbb6876a2decfabe169b2dc59e49cc0374aacced87dc555b11"
+  },
+  {
+    "file": "校验/投委会汇报_1.png",
+    "bytes": 52091,
+    "sha256": "3cd3cda497dcf00fb6f8131962bc99430505a2aa41f0797633b635854ab1b5ae"
+  },
+  {
+    "file": "校验/投委会汇报_2.png",
+    "bytes": 49687,
+    "sha256": "a2938538b160c4aae9af0445246cb6209a63036aa47e50149ad6475d95bde327"
+  },
+  {
+    "file": "校验/投委会汇报_3.png",
+    "bytes": 47926,
+    "sha256": "daf12004a06773b2878a1d630fbe399d785a13f96836e61de4d6a000c1db197e"
+  },
+  {
+    "file": "校验/投委会汇报_4.png",
+    "bytes": 51713,
+    "sha256": "651ef1ac86822ea2b513c12e25444aa8b981268444bd653c7668fcd30735a0ec"
+  },
+  {
+    "file": "校验/投委会汇报_5.png",
+    "bytes": 69694,
+    "sha256": "6cd5d44d9b3489ce7da162273cdff7809e3c118402763a1b2db91d51e642feea"
+  },
+  {
+    "file": "校验/文件检查.json",
+    "bytes": 1566,
+    "sha256": "ecb1864b296bb365b06213b2ae600afebdf8651d3e582e6da36edfb0ecfc8257"
+  },
+  {
+    "file": "校验/检查说明.md",
+    "bytes": 1318,
+    "sha256": "8455a97499fce381c0279d3e1890ccc83c54732239721d593237fa1233b84fd8"
+  },
+  {
+    "file": "校验/模型快照.json",
+    "bytes": 2295,
+    "sha256": "077c34bc5df8d77551e2f6194761ea7bb135b01298ab25db2bd158f66623dfa1"
+  },
+  {
+    "file": "校验/网页检查.json",
+    "bytes": 2347,
+    "sha256": "f756ad7e6df729dab80e4029d67e188697ae58d0253ba9ce19930b3b64b6a62a"
+  }
+]
