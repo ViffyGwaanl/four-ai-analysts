@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="theme-color" content="#8FD8FF"/>
+<meta name="description" content="和巴菲特一起做决定：十个来自致股东信的真实历史决定。只讲历史，不构成投资建议。"/>
+<title>和巴菲特一起做决定 · 伯克希尔时间列车</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230E7C7B'/%3E%3Cpath d='M32 12l5.2 14.8L52 32l-14.8 5.2L32 52l-5.2-14.8L12 32l14.8-5.2z' fill='%23FFF8EC'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div id="app">
+  <div class="sky-fallback"></div>
+  <canvas id="world" aria-hidden="true"></canvas>
+  <div class="vignette"></div>
+  <div class="grain"></div>
+
+  <header id="hud" class="hud is-hidden">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">✦</div>
+      <div>
+        <b>THE BUFFETT LINE</b>
+        <small>历史决策号 · 1967—2020</small>
+      </div>
+    </div>
+    <div class="progress" aria-label="游戏进度">
+      <div class="progress-meta">
+        <span id="progressLabel">第 01 站</span>
+        <span><b id="progressCount">01 / 10</b></span>
+      </div>
+      <div class="dots" id="dots"></div>
+    </div>
+    <button id="soundBtn" class="icon-btn" aria-label="关闭声音" title="声音">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 9.5v5h3.2L12 18V6L7.2 9.5H4z"/>
+        <path class="wave1" d="M15.2 9.2a4 4 0 0 1 0 5.6"/>
+        <path class="wave2" d="M17.8 6.8a7.4 7.4 0 0 1 0 10.4"/>
+      </svg>
+    </button>
+  </header>
+
+  <main id="stage">
+    <section id="start" class="screen start" aria-labelledby="startTitle">
+      <div class="start-card">
+        <div class="eyebrow"><span class="live-dot"></span> A BERKSHIRE TIME TRAVEL · 1967—2020</div>
+        <h1 id="startTitle" class="display">和巴菲特<br/><em>一起做决定</em></h1>
+        <p class="lead">十站历史岔路口。你先选，再看他当年怎么选、为什么。没有标准答案，只有思路的分岔。</p>
+        <div class="meta-row">
+          <span>10 个真实决定</span>
+          <span>约 8 分钟</span>
+          <span>只讲历史</span>
+        </div>
+        <div class="start-actions">
+          <button id="startBtn" class="btn btn-primary">上车，开始 <span class="arrow">→</span></button>
+          <button id="ledgerBtnStart" class="btn btn-ghost">先看一眼账本</button>
+        </div>
+        <p class="fineprint">只讲历史决定，不涉及当下买卖任何股票。非投资建议。</p>
+      </div>
+      <div class="start-side" aria-hidden="true">
+        <div class="years">1967 · 1972 · 1976 · 1985 · 1988<br/>1998 · 2008 · 2009 · 2011 · 2020</div>
+        <div class="vert">THE ORACLE LINE</div>
+      </div>
+    </section>
+
+    <aside id="panel" class="panel is-hidden" aria-live="polite">
+      <div class="panel-scroll">
+        <div id="decisionView"></div>
+        <div id="revealView" class="is-hidden"></div>
+      </div>
+      <div id="panelFooter" class="panel-footer is-hidden"></div>
+    </aside>
+
+    <section id="result" class="screen result is-hidden" aria-labelledby="resultTitle">
+      <div class="result-card">
+        <div class="eyebrow"><span class="live-dot"></span> THE ARRIVAL · 2026</div>
+        <h2 id="resultTitle">你的巴菲特契合度</h2>
+        <div class="score-wrap" aria-hidden="true">
+          <svg viewBox="0 0 180 180">
+            <defs>
+              <linearGradient id="scoreGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0E7C7B"/>
+                <stop offset="55%" stop-color="#2A9D8F"/>
+                <stop offset="100%" stop-color="#F2B544"/>
+              </linearGradient>
+            </defs>
+            <circle class="track" cx="90" cy="90" r="78"/>
+            <circle id="scoreBar" class="bar" cx="90" cy="90" r="78"/>
+          </svg>
+          <div class="score-num"><span id="scoreNum">0</span><span>%</span></div>
+        </div>
+        <p id="scoreHeadline" class="score-headline">正在对表…</p>
+        <p id="scoreSub" class="score-sub">—</p>
+        <div id="traits" class="traits"></div>
+        <details class="log">
+          <summary>行车记录 · 10 站</summary>
+          <div id="logList" class="log-list"></div>
+        </details>
+        <div class="result-actions">
+          <button id="replayBtn" class="btn btn-primary">再坐一次</button>
+          <button id="ledgerBtnResult" class="btn btn-ghost">看一眼账本</button>
+        </div>
+        <p class="fineprint">契合度只反映你与十次历史选择的思路接近程度，不是对错，也不是投资建议。<br/>所有数字与《伯克希尔账本.xlsx》一致。</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="travel" class="travel" aria-hidden="true">
+    <span id="travelYear" class="travel-year">1972</span>
+    <span class="travel-line"></span>
+    <span id="travelLabel" class="travel-label">下一站 · 喜诗糖果</span>
+  </div>
+
+  <div id="ledger" class="modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="ledgerTitle">
+    <div class="modal-card">
+      <button id="ledgerClose" class="modal-close" aria-label="关闭账本">×</button>
+      <div class="eyebrow">THE LEDGER · 与 EXCEL 一致</div>
+      <h2 id="ledgerTitle">账本小抄</h2>
+      <p class="modal-lead">这是这趟车背后的账本。数字来自 2025 年 10-K、2026 年二季度 10-Q 与业绩公告，和《伯克希尔账本.xlsx》的「分部利润」「保险与资产」页一致。</p>
+      <div id="ledgerGrid" class="ledger-grid"></div>
+      <p class="fineprint">来源：2025 年 10-K（MD&A p.K-34、Note 4、Note 22）；2026 年二季度业绩公告（2026-08-08）；2026 年二季度 10-Q。只做历史财务展示，不构成投资建议。</p>
+    </div>
+  </div>
+
+  <div id="loading" class="loading">
+    <div>
+      <div class="loader"><span></span><span></span><span></span><span></span><span></span></div>
+      <p>正在铺轨…</p>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/three.min.js"></script>
+<script src="vendor/CopyShader.js"></script>
+<script src="vendor/LuminosityHighPassShader.js"></script>
+<script src="vendor/EffectComposer.js"></script>
+<script src="vendor/RenderPass.js"></script>
+<script src="vendor/ShaderPass.js"></script>
+<script src="vendor/UnrealBloomPass.js"></script>
+<script src="js/data.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

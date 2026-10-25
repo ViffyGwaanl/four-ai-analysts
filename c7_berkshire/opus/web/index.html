@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#bfe6ff">
+<title>和巴菲特一起做决定</title>
+<meta name="description" content="一款 3D 互动小游戏：从伯克希尔·哈撒韦致股东信中挑出 10 个巴菲特真实做过的历史决定，先选择，再揭晓他怎么做、为什么。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd36b'/%3E%3Cstop offset='1' stop-color='%23f29f05'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='28' fill='url(%23g)'/%3E%3Cpath d='M20 40 L32 18 L44 40 Z' fill='%23ffffff' opacity='.9'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/build/three.module.min.js",
+    "three-addons": "./vendor/three/addons.bundle.js"
+  }
+}
+</script>
+</head>
+<body class="state-loading">
+  <!-- 3D 画布 -->
+  <div id="stage" aria-hidden="true"></div>
+  <!-- WebGL 不可用时的 2D 背景 -->
+  <div id="fallback-bg" aria-hidden="true">
+    <div class="fb-sun"></div><div class="fb-cloud c1"></div><div class="fb-cloud c2"></div><div class="fb-cloud c3"></div>
+  </div>
+  <div id="vignette" aria-hidden="true"></div>
+
+  <!-- 加载 -->
+  <div id="loader" role="status" aria-live="polite">
+    <div class="loader-ring"></div>
+    <p>正在铺开时间之河……</p>
+  </div>
+
+  <!-- 顶部 HUD -->
+  <header id="hud" aria-label="游戏状态">
+    <div class="hud-brand">
+      <span class="hud-mark" aria-hidden="true"></span>
+      <span class="hud-title">和巴菲特一起做决定</span>
+    </div>
+    <ol id="progress" aria-label="进度"></ol>
+    <div class="hud-right">
+      <div id="hud-score" title="你与巴菲特思路的契合度（已答题目平均）">
+        <svg viewBox="0 0 36 36" aria-hidden="true"><circle class="ring-bg" cx="18" cy="18" r="15.5"/><circle class="ring-fg" cx="18" cy="18" r="15.5"/></svg>
+        <div><small>契合度</small><b id="hud-score-val">—</b></div>
+      </div>
+      <button id="btn-sound" class="icon-btn" type="button" aria-label="声音开关" title="声音开关">
+        <svg class="ico-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="ico-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M17 9l5 6M22 9l-5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- 开场 -->
+  <section id="intro" class="screen" aria-labelledby="intro-title">
+    <div class="intro-card">
+      <p class="eyebrow">伯克希尔 · 致股东信 1983—2021</p>
+      <h1 id="intro-title"><span>和巴菲特</span><span>一起做决定</span></h1>
+      <p class="lead">十个真实的历史抉择：先由你拍板，再揭晓巴菲特当年怎么做、为什么——用他自己的话。</p>
+      <ul class="intro-points">
+        <li><b>10</b><span>个历史决定</span></li>
+        <li><b>20</b><span>段股东信原文</span></li>
+        <li><b>5</b><span>种投资思维</span></li>
+      </ul>
+      <button id="btn-start" class="btn-primary" type="button" disabled>
+        <span>开始旅程</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="fine">约 8 分钟 · 可用键盘 1–4 选择、回车继续 · 只讲历史，不构成投资建议</p>
+    </div>
+  </section>
+
+  <!-- 年份转场 -->
+  <div id="yearcard" aria-hidden="true"><div class="yc-year"></div><div class="yc-title"></div></div>
+
+  <!-- 题目面板 -->
+  <aside id="panel" class="panel" aria-live="polite" aria-label="当前决定">
+    <div class="panel-scroll" id="panel-scroll">
+      <div class="q-head">
+        <div class="q-year" id="q-year"></div>
+        <div class="q-meta">
+          <span class="q-no" id="q-no"></span>
+          <span class="q-dim" id="q-dim"></span>
+        </div>
+      </div>
+      <h2 class="q-title" id="q-title"></h2>
+      <p class="q-place" id="q-place"></p>
+      <p class="q-situation" id="q-situation"></p>
+      <p class="q-ask" id="q-ask"></p>
+      <div class="options" id="options" role="radiogroup"></div>
+      <div class="q-tools">
+        <button id="btn-hint" class="btn-ghost" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>翻翻锦囊</span><em id="hint-left"></em></button>
+        <p class="hint-text" id="hint-text" hidden></p>
+      </div>
+      <!-- 揭晓 -->
+      <div class="reveal" id="reveal" hidden>
+        <div class="verdict" id="verdict"></div>
+        <h3>巴菲特为什么这么做</h3>
+        <p class="why" id="why"></p>
+        <div class="quotes" id="quotes"></div>
+        <h3>后来</h3>
+        <p class="after" id="after"></p>
+        <button id="btn-next" class="btn-primary wide" type="button"><span id="btn-next-label">下一站</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 结算 -->
+  <section id="ending" class="screen" aria-labelledby="end-title">
+    <div class="end-wrap">
+      <div class="end-hero">
+        <div class="gauge">
+          <svg viewBox="0 0 200 200" aria-hidden="true">
+            <defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd36b"/><stop offset="1" stop-color="#ff7a59"/></linearGradient></defs>
+            <circle class="g-bg" cx="100" cy="100" r="86"/>
+            <circle class="g-fg" id="g-fg" cx="100" cy="100" r="86"/>
+          </svg>
+          <div class="g-center"><b id="end-score">0</b><span>% 契合</span></div>
+        </div>
+        <div class="end-text">
+          <p class="eyebrow">你与巴菲特思路的契合度</p>
+          <h2 id="end-title">—</h2>
+          <p id="end-desc"></p>
+          <div class="end-actions">
+            <button id="btn-replay" class="btn-primary" type="button"><span>再玩一次</span></button>
+            <button id="btn-card" class="btn-ghost" type="button"><span>保存成绩卡</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="end-grid">
+        <div class="end-box">
+          <h3>五种投资思维</h3>
+          <canvas id="radar" width="420" height="360" aria-label="五个维度的契合度雷达图"></canvas>
+          <ul class="dim-list" id="dim-list"></ul>
+        </div>
+        <div class="end-box">
+          <h3>十个决定回顾</h3>
+          <ol class="recap" id="recap"></ol>
+        </div>
+        <div class="end-box ledger">
+          <h3>今天的伯克希尔账本 <small id="ledger-asof"></small></h3>
+          <p class="ledger-lead">2026 年起，格雷格·阿贝尔接任首席执行官，巴菲特继续担任董事长。巴菲特留下的这本账，眼下是这样的：</p>
+          <ul id="ledger"></ul>
+          <p class="ledger-note" id="ledger-note"></p>
+        </div>
+      </div>
+      <p class="end-foot" id="end-foot"></p>
+    </div>
+  </section>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">需要启用 JavaScript 才能游玩。</div></noscript>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

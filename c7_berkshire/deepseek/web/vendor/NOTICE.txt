@@ -1,0 +1,14 @@
+Three.js r128 (0.128.0)
+Copyright 2010-2021 Three.js Authors
+License: MIT
+Source: https://unpkg.com/three@0.128.0/ (downloaded 2026-10-22)
+
+Files in this folder:
+- three.min.js (core, r128)
+- EffectComposer.js, RenderPass.js, ShaderPass.js, UnrealBloomPass.js
+- CopyShader.js, LuminosityHighPassShader.js
+These post-processing addons are from the same three.js r128 distribution
+(examples/js). They are loaded as classic scripts and expose THREE.* globals.
+
+The library is bundled locally so the game runs from a local HTTP server
+without any external CDN. No network requests are made at runtime.

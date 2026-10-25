@@ -1,0 +1,10 @@
+{
+  "name": "decision-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-only historical decision game; Three.js is vendored in vendor/.",
+  "dependencies": {
+    "three": "0.160.0"
+  }
+}

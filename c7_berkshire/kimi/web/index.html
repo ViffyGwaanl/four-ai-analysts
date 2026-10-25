@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#eef6ff">
+  <meta name="description" content="十个真实历史决策、十段股东信原文。先选择，再揭晓，在明亮的3D时间航线中理解长期资本配置。">
+  <title>和巴菲特一起做决定｜Decision Atlas</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232d6cdf'/%3E%3Cpath d='M32 10 52 21v22L32 54 12 43V21z' fill='%23fff'/%3E%3Cpath d='m32 10 20 11-20 12-20-12z' fill='%23f7c85e'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="scene" aria-hidden="true"></div>
+  <div class="light-wash" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div id="app">
+    <header class="topbar">
+      <button class="brand" id="homeBtn" aria-label="返回游戏首页">
+        <span class="brand-cube" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>DECISION ATLAS</strong><small>长期决策实验室</small></span>
+      </button>
+      <div class="topbar-center" id="topProgress" hidden>
+        <span id="progressLabel">决策 1 / 10</span>
+        <div class="progress-track"><i id="progressBar"></i></div>
+      </div>
+      <div class="top-actions">
+        <button class="icon-button" id="sourcesBtn" aria-label="查看素材出处">出处</button>
+        <button class="icon-button" id="motionBtn" aria-pressed="false" aria-label="切换动效">动效 开</button>
+        <button class="icon-button" id="soundBtn" aria-pressed="false" aria-label="切换声音">声音 关</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="screen active" id="startScreen" aria-labelledby="heroTitle">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow reveal-item">10 HISTORIC DECISIONS · 1972—2020</p>
+            <h1 id="heroTitle" class="reveal-item">和巴菲特<br><span>一起做决定</span></h1>
+            <p class="hero-intro reveal-item">回到十个真实的历史现场。信息不完备、价格有争议、未来看不清——你先做选择，再看巴菲特当年怎么做。</p>
+            <div class="feature-pills reveal-item" aria-label="游戏特色">
+              <span>10 个真实决策</span><span>逐字股东信</span><span>3D 时间航线</span>
+            </div>
+            <div class="hero-actions reveal-item">
+              <button class="primary-button" id="startBtn"><span>进入决策舱</span><b aria-hidden="true">→</b></button>
+              <button class="secondary-button" id="continueBtn" hidden>继续上次旅程</button>
+            </div>
+            <p class="hero-note reveal-item">只讲历史，不讨论当下买卖任何股票。契合度衡量思路，不代表结果正确。</p>
+          </div>
+          <aside class="hero-card reveal-item" aria-label="游戏玩法">
+            <div class="hero-card-top"><span>FIELD NOTES</span><i></i></div>
+            <div class="hero-number">10</div>
+            <p class="hero-card-title">十次站在<br>资本配置的分岔口</p>
+            <div class="mini-timeline"><span>1972</span><i></i><span>2020</span></div>
+            <ol class="rules">
+              <li><b>01</b><span>阅读当时处境<br><small>不剧透历史答案</small></span></li>
+              <li><b>02</b><span>锁定你的选择<br><small>每个选项都有思路分</small></span></li>
+              <li><b>03</b><span>揭晓实际做法<br><small>原文不超过两句</small></span></li>
+            </ol>
+            <div class="hero-card-foot"><span>预计 12 分钟</span><span>支持键盘 1 / 2 / 3</span></div>
+          </aside>
+        </div>
+        <div class="start-bottom">
+          <span>SCROLL THROUGH IDEAS, NOT TICKERS.</span>
+          <button id="howBtn">如何计算契合度？</button>
+        </div>
+      </section>
+
+      <section class="screen" id="gameScreen" aria-labelledby="questionTitle" hidden>
+        <div class="game-layout">
+          <div class="stage-copy">
+            <div class="year-watermark" id="yearWatermark" aria-hidden="true">1972</div>
+            <p class="eyebrow" id="questionKicker">喜诗糖果｜为无形资产付费</p>
+            <div class="decision-index"><span id="decisionIndex">DECISION 01</span><i></i><span id="decisionYear">1972</span></div>
+            <h2 id="questionTitle">一颗糖果，值多少经济商誉？</h2>
+            <div class="context-card">
+              <span class="context-label">当时处境</span>
+              <p id="questionContext"></p>
+            </div>
+            <div class="lesson-chip" id="lessonChip" hidden><span>本题要点</span><p id="lessonText"></p></div>
+          </div>
+
+          <div class="decision-panel" id="decisionPanel">
+            <div class="panel-topline"><span id="panelStep">STEP 1 · 先做选择</span><span class="lock-label">选择后锁定</span></div>
+            <div id="optionsWrap" class="options-wrap" role="group" aria-label="决策选项"></div>
+            <div id="revealWrap" class="reveal-wrap" hidden aria-live="polite">
+              <div class="choice-result">
+                <div><span>你的选择</span><strong id="yourChoice"></strong></div>
+                <div class="score-stamp"><span>思路契合</span><b id="choiceScore">+100</b></div>
+              </div>
+              <div class="match-note" id="matchNote"></div>
+              <div class="actual-block">
+                <span class="block-label">巴菲特实际怎么做</span>
+                <p id="actualText"></p>
+              </div>
+              <div class="why-block">
+                <span class="block-label">为什么</span>
+                <p id="whyText"></p>
+              </div>
+              <blockquote class="quote-block">
+                <span class="quote-mark" aria-hidden="true">“</span>
+                <p id="quoteText"></p>
+                <footer><span id="quoteSource"></span><b id="quoteYear"></b></footer>
+              </blockquote>
+              <button class="primary-button next-button" id="nextBtn"><span>下一个历史现场</span><b aria-hidden="true">→</b></button>
+            </div>
+          </div>
+        </div>
+        <nav class="timeline" id="timeline" aria-label="十个历史决策进度"></nav>
+      </section>
+
+      <section class="screen" id="endScreen" aria-labelledby="endTitle" hidden>
+        <div class="end-layout">
+          <div class="score-column">
+            <p class="eyebrow">JOURNEY COMPLETE · 10 / 10</p>
+            <h2 id="endTitle">你的长期决策画像</h2>
+            <div class="score-ring" id="scoreRing">
+              <div><span>总契合度</span><strong id="finalScore">0</strong><small>/ 100</small></div>
+            </div>
+            <h3 id="scoreTitle">长期主义同路人</h3>
+            <p id="scoreDescription"></p>
+            <div class="end-actions">
+              <button class="primary-button" id="restartBtn"><span>再走一遍时间航线</span><b aria-hidden="true">↻</b></button>
+              <button class="secondary-button" id="reviewBtn">查看逐题复盘</button>
+            </div>
+            <p class="best-score" id="bestScore"></p>
+          </div>
+          <div class="dimensions-column">
+            <div class="dimension-card">
+              <span class="block-label">四维思路雷达</span>
+              <div id="dimensionBars"></div>
+              <p>分数来自你选择的决策方式，而不是事后股价。Dexter 一题提醒我们：即使和巴菲特当年选择相同，也可能是后来需要承认的错误。</p>
+            </div>
+            <div class="principle-card">
+              <span class="block-label">这一路反复出现的原则</span>
+              <div class="principle-grid">
+                <span>理解企业</span><span>价格纪律</span><span>留住团队</span><span>保留现金</span>
+              </div>
+              <button class="text-button" id="endSourcesBtn">查看十段原文出处 →</button>
+            </div>
+          </div>
+        </div>
+        <div class="review-section" id="reviewSection" hidden>
+          <div class="review-heading"><p class="eyebrow">YOUR DECISION LOG</p><h3>十题复盘</h3></div>
+          <div id="reviewList"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>历史教育互动 · 不构成投资建议</span>
+      <span>THREE.JS 0.160.0 · LOCAL ONLY</span>
+    </footer>
+  </div>
+
+  <dialog class="info-dialog" id="infoDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-head"><div><p class="eyebrow">SOURCE NOTES</p><h2 id="dialogTitle">素材与评分说明</h2></div><button id="closeDialog" aria-label="关闭">×</button></div>
+    <div class="dialog-body" id="dialogBody"></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <noscript><div class="noscript">请启用 JavaScript，以运行这款本地 3D 互动游戏。</div></noscript>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
