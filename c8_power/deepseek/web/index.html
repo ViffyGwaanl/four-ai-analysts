@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#eef7ff">
+<title>AI 的电从哪来 · 托卡马克拆解与电力流向</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./css/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/three.module.js",
+    "three/addons/": "./vendor/three/addons/"
+  }
+}
+</script>
+</head>
+<body>
+<div class="stage" id="stage">
+  <canvas class="canvas-layer canvas-tokamak" id="canvas-tokamak" aria-label="托卡马克三维拆解"></canvas>
+  <canvas class="canvas-layer canvas-energy" id="canvas-energy" aria-label="电力流向三维可视化"></canvas>
+  <div class="stage-glow" aria-hidden="true"></div>
+</div>
+
+<div class="topbar">
+  <a class="brand" href="#top" aria-label="回到顶部">
+    <span class="brand-mark">AI</span>
+    <span class="brand-text">POWER ATLAS<em>电力 · 算力 · 来路</em></span>
+  </a>
+  <nav class="nav" aria-label="章节导航">
+    <a href="#tokamak" data-nav="tokamak">01 托卡马克拆解</a>
+    <a href="#energy" data-nav="energy">02 电力流向</a>
+  </nav>
+  <div class="top-meta">2026-10-22 · v1.0</div>
+</div>
+<div class="progress"><span id="progress-bar"></span></div>
+<div class="step-chip" id="global-step"><span id="step-num">00</span><i></i><span id="step-name">整机</span></div>
+<div class="part-index" id="global-part">00 / 07</div>
+
+<main id="top" class="scroll-content">
+
+  <section class="hero" data-scene="tokamak" data-step="0">
+    <div class="hero-inner">
+      <p class="eyebrow">AI POWER ATLAS / 2026</p>
+      <h1>AI 的电，<br><span>从哪来</span></h1>
+      <p class="hero-sub">把一台托卡马克拆开，再把一度电的来路画出来。</p>
+      <div class="hero-stats">
+        <div class="stat"><strong>415→945</strong><span>TWh<br>全球数据中心用电 2024→2030</span></div>
+        <div class="stat"><strong>444 TWh</strong><span>美国数据中心用电<br>2030 年基准情景</span></div>
+        <div class="stat"><strong>7.7 GW</strong><span>Meta 已锁定/可扩展<br>核电规模上限</span></div>
+      </div>
+      <div class="scroll-hint">
+        <span class="scroll-line"></span>
+        <span>向下滚动 · 拆解托卡马克</span>
+      </div>
+    </div>
+    <div class="hero-note">数据来源：IEA《Energy and AI》(2025-04)；Meta 2026 Q3 10-Q；Constellation 2025 10-K。完整出处见交付/数据表.xlsx。</div>
+  </section>
+
+  <section class="section tokamak-intro" id="tokamak" data-scene="tokamak" data-step="0">
+    <div class="section-inner">
+      <div class="card intro-card">
+        <p class="kicker">01 / TOKAMAK</p>
+        <h2>把「人造太阳」<br>拆成七层</h2>
+        <p>托卡马克是目前最成熟的磁约束聚变路线。它用环向场线圈把上亿度的等离子体约束在一个甜甜圈形的真空室里，再用极向场线圈控制等离子体的位置和形状。</p>
+        <p>这台装置里，没有一个部件是多余的。向下滚动，从最外层开始，一层一层拆开。</p>
+        <div class="mini-spec">
+          <div><span>装置</span><strong>托卡马克</strong></div>
+          <div><span>约束</span><strong>磁约束</strong></div>
+          <div><span>燃料</span><strong>氘 + 氚</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tokamak-section" data-scene="tokamak" data-step="1" data-part="vessel">
+    <div class="section-inner">
+      <div class="card part-card">
+        <p class="kicker">01 / VACUUM VESSEL</p>
+        <h2>真空室</h2>
+        <p class="part-en">Vacuum Vessel</p>
+        <p>第一层，是把等离子体装进一个「瓶子」。双层不锈钢真空室维持约 10⁻⁶ Pa 的超高真空，隔离等离子体与外界，同时承受电磁力、热负荷与中子辐照。</p>
+        <p>它不是简单的容器，而是整个装置的结构骨架：包层、偏滤器、诊断与加热系统，都挂在它身上。</p>
+        <div class="tags"><span>真空密封</span><span>烘烤除气</span><span>结构支撑</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tokamak-section" data-scene="tokamak" data-step="2" data-part="blanket">
+    <div class="section-inner">
+      <div class="card part-card">
+        <p class="kicker">02 / BLANKET</p>
+        <h2>包层</h2>
+        <p class="part-en">Blanket / First Wall</p>
+        <p>第二层，是把中子的能量接住。包层覆盖在第一壁上，吸收中子与热量、屏蔽辐射；在聚变堆里，它还要把中子转化为氚，实现燃料自持。</p>
+        <p>ITER 的测试包层模块（TBM），就是为这一步做工程验证。材料、冷却与氚增殖，是三个同时要解的难题。</p>
+        <div class="tags"><span>第一壁</span><span>氚增殖</span><span>热屏蔽</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tokamak-section" data-scene="tokamak" data-step="3" data-part="divertor">
+    <div class="section-inner">
+      <div class="card part-card">
+        <p class="kicker">03 / DIVERTOR</p>
+        <h2>偏滤器</h2>
+        <p class="part-en">Divertor</p>
+        <p>第三层，是把「灰」排出去。偏滤器位于真空室底部，排出氦灰与杂质，并控制等离子体边缘的热流。稳态热流可达 10 MW/m² 量级，是装置里工况最苛刻的部件之一。</p>
+        <p>钨、铜合金、主动冷却与可更换 cassette，是它的关键词。偏滤器的寿命，直接决定聚变堆的可用率。</p>
+        <div class="tags"><span>钨/铜合金</span><span>热流控制</span><span>杂质排出</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tokamak-section" data-scene="tokamak" data-step="4" data-part="magnets">
+    <div class="section-inner">
+      <div class="card part-card">
+        <p class="kicker">04 / MAGNET SYSTEM</p>
+        <h2>磁体系统</h2>
+        <p class="part-en">TF / PF / Central Solenoid</p>
+        <p>第四层，是用磁场把 1 亿度的火球悬空。环向场线圈（TF）产生环向磁场，约束等离子体；极向场线圈（PF）控制等离子体的位置与形状；中心螺线管（CS）感应等离子体电流。</p>
+        <p>高温超导（HTS）让同样场强下的装置更小、更强。SPARC 的环向场约 12 T，是它能把 400 MW 级 ARC 压缩到可接受尺寸的关键。</p>
+        <div class="tags"><span>TF 环向场</span><span>PF 极向场</span><span>HTS 高温超导</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tokamak-section" data-scene="tokamak" data-step="5" data-part="plasma">
+    <div class="section-inner">
+      <div class="card part-card">
+        <p class="kicker">05 / PLASMA</p>
+        <h2>等离子体</h2>
+        <p class="part-en">D-T Plasma</p>
+        <p>核心，是 1 亿度以上的「火球」。氘氚（D-T）聚变释放中子与能量；等离子体本身看不见，画面里的光是它辐射与装置反射的示意。</p>
+        <p>真正的难点不是「点着」，而是稳定性、约束时间、杂质控制与连续运行。Q&gt;1 是科学可行性的门槛，不是商业发电的终点。</p>
+        <div class="tags"><span>D-T 聚变</span><span>Q&gt;1</span><span>稳态运行</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tokamak-section" data-scene="tokamak" data-step="6" data-part="cryostat">
+    <div class="section-inner">
+      <div class="card part-card">
+        <p class="kicker">06 / CRYOSTAT &amp; AUXILIARY</p>
+        <h2>低温与辅助系统</h2>
+        <p class="part-en">Cryostat / Heating / Diagnostics</p>
+        <p>外围，是把磁体冷到 4 K，把热排出去。低温恒温器维持超导磁体的低温环境；加热与电流驱动（中性束、射频）把等离子体加热到聚变温度；诊断系统测量温度、密度与位置。</p>
+        <p>这些系统不直接产生能量，但没有它们，磁体无法工作、等离子体无法点火、运行无法闭环。</p>
+        <div class="tags"><span>4 K 低温</span><span>中性束/射频</span><span>诊断</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tokamak-section" data-scene="tokamak" data-step="7" data-part="whole">
+    <div class="section-inner">
+      <div class="card part-card whole-card">
+        <p class="kicker">07 / THE MACHINE</p>
+        <h2>整机：一台托卡马克的「体检表」</h2>
+        <p class="part-en">SPARC → ARC</p>
+        <p>以 CFS 的 SPARC 为例：大半径约 1.85 m、小半径约 0.57 m、环向场约 12 T，目标 Q&gt;1，2027 年首次等离子体；ARC 目标 400 MW 净出力，early 2030s 并网。</p>
+        <div class="spec-grid">
+          <div><span>大半径 R</span><strong>1.85 m</strong></div>
+          <div><span>小半径 a</span><strong>0.57 m</strong></div>
+          <div><span>环向场 B</span><strong>12 T</strong></div>
+          <div><span>首次等离子体</span><strong>2027</strong></div>
+          <div><span>ARC 净出力</span><strong>400 MW</strong></div>
+          <div><span>并网</span><strong>early 2030s</strong></div>
+        </div>
+        <p class="fine">注：SPARC / ARC 参数为公开目标值，不代表已实现性能。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section energy-intro" id="energy" data-scene="energy" data-step="0">
+    <div class="section-inner">
+      <div class="card intro-card energy-card">
+        <p class="kicker">02 / POWER FLOW</p>
+        <h2>把 444 TWh<br>拆成五条河流</h2>
+        <p>美国数据中心 2030 年用电约 444 TWh。天然气、可再生、核电、煤电，各自沿着自己的路径流向数据中心；聚变还在路上。</p>
+        <p>这不是一条直线的能源转型：煤退、气进、可再生与核补位。下面这张「电力流向图」，用的是《数据表.xlsx》里的同一组数字。</p>
+        <div class="mini-spec">
+          <div><span>2024</span><strong>186.75 TWh</strong></div>
+          <div><span>2030</span><strong>444.15 TWh</strong></div>
+          <div><span>非化石</span><strong>53%</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section energy-section" data-scene="energy" data-step="1">
+    <div class="energy-ui">
+      <div class="energy-head">
+        <div>
+          <p class="kicker">POWER FLOW / 2030</p>
+          <h2>电从五条路来，<br>汇入同一座数据中心</h2>
+        </div>
+        <div class="energy-total">
+          <span>数据中心用电</span>
+          <strong id="energy-total">444.2</strong>
+          <em>TWh / 年</em>
+        </div>
+      </div>
+
+      <div class="energy-dash">
+        <div class="year-toggle" role="group" aria-label="切换年份">
+          <button type="button" data-year="2024">2024</button>
+          <button type="button" data-year="2030" class="active">2030</button>
+        </div>
+        <div class="mix-bar" id="mix-bar" aria-hidden="true"></div>
+        <div class="mix-legend" id="mix-legend"></div>
+      </div>
+
+      <div class="energy-note">
+        <strong id="energy-caption">2030 年：气电 46%、可再生 33%、核电 20%、煤电 1%。</strong>
+        <span>聚变 0 TWh——首批 PPA 在 2028–2030 年代，尚未商业上网。</span>
+      </div>
+    </div>
+    <div class="source-labels" id="source-labels"></div>
+  </section>
+
+  <section class="section closing" data-scene="energy" data-step="2">
+    <div class="section-inner">
+      <div class="card closing-card">
+        <p class="kicker">DATA &amp; NOTES</p>
+        <h2>数字有来路，<br>判断有边界。</h2>
+        <p>本页用到的每一个数字，都来自《数据表.xlsx》：全球数据中心用电（IEA，2025-04）、美国数据中心用电与电源结构（本报告情景假设）、Meta 2026 Q3 资本开支（Meta，2026-10-21）、Constellation 2025 年报（2026-02-24）。</p>
+        <p>3D 场景中的托卡马克为示意性结构，部件比例、数量与颜色经过简化，不对应某一台具体装置；SPARC / ARC 的参数为公开目标值，不代表已实现性能。</p>
+        <p>本网页为研究与展示用途，不构成投资建议。所有来源只写名称与日期，不放置可点击的外部链接。</p>
+        <div class="closing-meta">
+          <div><span>三维</span><strong>Three.js r169</strong></div>
+          <div><span>数据版本</span><strong>2026-10-22</strong></div>
+          <div><span>入口</span><strong>web/index.html</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<aside class="parts-panel" id="parts-panel" aria-label="托卡马克部件索引">
+  <p class="panel-title">部件索引</p>
+  <ol>
+    <li data-part="vessel"><span>01</span>真空室<em>Vacuum Vessel</em></li>
+    <li data-part="blanket"><span>02</span>包层<em>Blanket</em></li>
+    <li data-part="divertor"><span>03</span>偏滤器<em>Divertor</em></li>
+    <li data-part="magnets"><span>04</span>磁体系统<em>TF / PF / CS</em></li>
+    <li data-part="plasma"><span>05</span>等离子体<em>Plasma</em></li>
+    <li data-part="cryostat"><span>06</span>低温与辅助<em>Cryostat</em></li>
+    <li data-part="whole"><span>07</span>整机<em>SPARC / ARC</em></li>
+  </ol>
+</aside>
+
+<div class="callout-layer" id="callout-layer" aria-hidden="true"></div>
+
+<div class="webgl-fallback" id="webgl-fallback" hidden>
+  <div class="fallback-card">
+    <h2>3D 场景未加载</h2>
+    <p>当前浏览器或设备不支持 WebGL。你仍然可以阅读下方的关键数字与部件说明。</p>
+    <p><strong>415 → 945 TWh</strong> 全球数据中心用电 2024 → 2030；<strong>444 TWh</strong> 美国 2030 年数据中心用电；<strong>7.7 GW</strong> Meta 核电规模上限。</p>
+  </div>
+</div>
+
+<script src="./js/data.js"></script>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

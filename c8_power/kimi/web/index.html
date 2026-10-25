@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#eef7fc">
+  <meta name="description" content="AI 的电从哪来：滚动拆解托卡马克，探索数据中心电力流向。离线 Three.js 交互研究。">
+  <title>AI 的电从哪来｜3D 能源交互研究</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23102a43'/%3E%3Cellipse cx='32' cy='32' rx='23' ry='9' fill='none' stroke='%2312a99a' stroke-width='4' transform='rotate(-25 32 32)'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23f4b942'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="page-progress" aria-hidden="true"><span id="page-progress-bar"></span></div>
+  <header class="topbar">
+    <a class="brand" href="#reactor-scroll" aria-label="返回装置开篇">
+      <span class="brand-mark" aria-hidden="true"><i></i><b></b></span>
+      <span><strong>AI 的电从哪来</strong><small>ENERGY × COMPUTE</small></span>
+    </a>
+    <nav class="nav-links" aria-label="页面导航">
+      <a href="#reactor-scroll">01 装置拆解</a>
+      <a href="#energy">02 电力流向</a>
+      <a href="#data-notes">03 数据口径</a>
+    </nav>
+    <span class="edition">研究版 · 2026-10-22</span>
+  </header>
+
+  <main>
+    <section id="reactor-scroll" class="reactor-scroll" aria-label="托卡马克滚动拆解">
+      <div id="reactor-stage" class="stage reactor-stage">
+        <canvas id="reactor-canvas" aria-label="托卡马克三维拆解动画"></canvas>
+        <div class="stage-light" aria-hidden="true"></div>
+        <div id="intro-overlay" class="intro-overlay">
+          <div class="intro-copy">
+            <p class="eyebrow">INTERACTIVE RESEARCH / 01</p>
+            <h1>AI 的电，<br><em>从哪里来？</em></h1>
+            <p class="intro-lead">先拆开一台托卡马克，理解聚变如何工作；再沿着电流，追踪数据中心的能源来源。</p>
+            <div class="intro-actions">
+              <a class="button button-primary" href="#stage-01">开始拆解 <span>↓</span></a>
+              <a class="button button-ghost" href="#energy">直达电力流向 <span>→</span></a>
+            </div>
+          </div>
+          <div class="intro-metrics" aria-label="关键数据">
+            <article><strong>485 <small>TWh</small></strong><span>2025 全球数据中心用电</span><cite>IEA · 2026-04-16</cite></article>
+            <article><strong>950 <small>TWh</small></strong><span>2030 中央预测</span><cite>IEA · 2026-04-16</cite></article>
+            <article><strong>18.06 <small>TWh</small></strong><span>Meta 2024 数据中心用电</span><cite>Meta 环境数据 · 2025-10-17</cite></article>
+          </div>
+        </div>
+
+        <div id="stage-ui" class="stage-ui">
+          <div id="stage-nav" class="stage-nav" role="tablist" aria-label="装置部件"></div>
+          <aside id="part-panel" class="part-panel" aria-live="polite">
+            <p id="part-kicker" class="panel-kicker"></p>
+            <h2 id="part-title"></h2>
+            <p id="part-role" class="part-role"></p>
+            <p id="part-detail" class="part-detail"></p>
+            <div id="part-fact" class="part-fact"></div>
+          </aside>
+        </div>
+
+        <div class="reactor-bottom-ui">
+          <div class="explosion-meter" aria-label="拆解进度">
+            <span>ASSEMBLED</span><div><i id="explosion-bar"></i></div><span>EXPLODED</span>
+          </div>
+          <p id="scroll-cue"><span class="mouse-icon" aria-hidden="true"></span><b>滚动以逐层拆解</b></p>
+        </div>
+        <div id="reactor-fallback" class="webgl-fallback" hidden>
+          <h2>当前设备未启用 WebGL</h2>
+          <p>仍可通过左侧部件按钮阅读各层作用；电力流向和全部数据在下方保留。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="energy" class="energy-section" aria-label="数据中心电力流向">
+      <div class="stage energy-stage">
+        <canvas id="energy-canvas" aria-label="发电来源经电网流向数据中心的动画"></canvas>
+        <div class="energy-heading">
+          <p class="eyebrow">INTERACTIVE RESEARCH / 02</p>
+          <h2>电力流向</h2>
+          <p>从一次能源，经区域电网，到数据中心。流量采用 IEA 2024 物理供电结构，而非企业合同采购标签。</p>
+        </div>
+        <div class="energy-total">
+          <span>全球数据中心终端用电</span>
+          <strong>415 <small>TWh</small></strong>
+          <cite>IEA《Energy and AI》· 2025-04-10</cite>
+        </div>
+        <div id="energy-controls" class="energy-controls" aria-label="筛选发电来源"></div>
+        <aside id="energy-detail" class="energy-detail" aria-live="polite"></aside>
+        <div id="energy-legend" class="energy-legend" aria-label="供电结构数据"></div>
+        <p class="energy-footnote">折算电量 = 415 TWh × IEA 约份额；逐燃料 TWh 为公式计算值。聚变未单列，0 仅为展示假设。</p>
+      </div>
+    </section>
+
+    <section id="data-notes" class="data-section" aria-label="数据与口径">
+      <div class="data-wrap">
+        <div class="section-heading">
+          <p class="eyebrow">INTERACTIVE RESEARCH / 03</p>
+          <h2>数字相同，口径不能不同</h2>
+          <p>网页是随附 Excel 的同源静态快照。资本开支不等于用电量，PPA 不等于物理专线，年度匹配不等于全天候无碳供电。</p>
+        </div>
+        <div id="global-cards" class="global-cards"></div>
+        <div class="data-grid">
+          <article class="data-card capex-card">
+            <p class="card-kicker">2026 日历年上半年</p>
+            <h3>科技资本开支</h3>
+            <p class="card-subtitle">十亿美元｜定义不同，不作简单排名</p>
+            <div id="capex-bars"></div>
+          </article>
+          <article class="data-card method-card">
+            <p class="card-kicker">READ BEFORE USE</p>
+            <h3>四个必须保留的边界</h3>
+            <ol>
+              <li><b>415 与 460 TWh</b>分别是终端用电和发电侧供电量，不能混用。</li>
+              <li><b>物理与合同结构</b>不同。100% 年度匹配不代表每小时同一电源。</li>
+              <li><b>功率与电量</b>不同。MW 是瞬时能力，TWh 是一段时间的累计电量。</li>
+              <li><b>聚变里程碑</b>不等于净上网电力；未来时间表均为公司目标。</li>
+            </ol>
+          </article>
+        </div>
+        <div class="source-panel">
+          <div>
+            <p class="card-kicker">SOURCES & DATES</p>
+            <h3>主要来源</h3>
+            <p>IEA《Energy and AI》· 2025-04-10<br>IEA《Key Questions on Energy and AI》· 2026-04-16<br>Meta 2026Q3 Form 10-Q · 2026-10-21<br>Meta 2025 Environmental Data Index · 2025-10-17<br>Alphabet、Amazon、Microsoft SEC 与环境披露 · 2026</p>
+          </div>
+          <div class="deliverable-links">
+            <p>完整数据、公式和来源索引见配套文件。</p>
+            <a class="button button-primary" href="../研究报告.docx" download>研究报告.docx</a>
+            <a class="button button-ghost" href="../数据表.xlsx" download>数据表.xlsx</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>AI 的电从哪来 · 能源与科技行业研究</span>
+    <span>研究用途，不构成投资建议 · 数据截至 2026-10-22</span>
+  </footer>
+
+  <noscript>
+    <div class="noscript-panel">
+      <h2>当前浏览器未启用 JavaScript</h2>
+      <p>核心数据：2025 年全球数据中心用电约 485 TWh；IEA 2030 中央预测约 950 TWh。2024 物理供电结构为煤电 30%、天然气 26%、可再生能源 27%、核电 15%、其他 2%。</p>
+      <p>托卡马克部件：真空室维持洁净真空；磁体约束并控制等离子体；包层换热并在 D-T 设计中增殖氚；偏滤器排出热与杂质；中心螺线管驱动电流；低温恒温器保持超导环境。</p>
+    </div>
+  </noscript>
+</body>
+</html>
